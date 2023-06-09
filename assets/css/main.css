@@ -294,7 +294,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 20px;
+    padding: 14px 36px;
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 400;
@@ -1108,7 +1108,7 @@ section {
 --------------------------------------------------------------*/
 .about .about-img {
   position: relative;
-  margin: 60px 0 0 60px;
+  /* margin: 60px 0 0 60px; */
 }
 
 .about .about-img:before {
@@ -1116,10 +1116,29 @@ section {
   inset: -60px 0 0 -60px;
   z-index: -1;
   content: "";
-  background: url("../img/about-bg.png") top left;
+  /* background: url("../img/about-bg.png") top left; */
   background-repeat: no-repeat;
 }
+.about .text-about {
+  text-align: justify;
+  /* color: rgba(var(--color-secondary-rgb), 0.8); */
+  color: #1a1f24;
+  margin: 0px 0px 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
 
+.about .text-about .title-about{
+  margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 300;
+    /* color: var(--color-secondary); */
+    color: #5670a0;
+    font-family: var(--font-secondary);
+}
+.about .text-about .title-about span{
+  color: #3279fc;
+}
 @media (max-width: 575px) {
   .about .about-img {
     margin: 30px 0 0 30px;
