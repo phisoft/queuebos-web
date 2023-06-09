@@ -3194,3 +3194,15 @@ section {
   background: var(--color-primary);
   text-decoration: none;
 }
+
+.footer .footer-queuebosinfo img{
+  width: 50%;
+  height: 20%;
+}
+
+.footer .footer-queuebosinfo {
+  text-align: justify;
+}
+.footer .footer-queuebosinfo p {
+  width: 90%;
+}
