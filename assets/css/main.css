@@ -1648,6 +1648,36 @@ section {
   transform: scale(1.2);
 }
 
+/* Before Service section */
+   .platformperform{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/queuebos-web.png) no-repeat;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    /* background: #203881; */
+    position: relative;
+    z-index: 1;
+    background-size: auto, auto;
+    background-size: cover;   }
+
+    .platformperform .text-plat{
+      align-items: right;
+      width: 100%;
+      text-align: center;
+      padding-left: 60%;
+      color: white;
+    }
+    /* .platformperform .text-plat h1{
+      color: blue;
+    } */
+
+  /* .platformperform .text-plat p{
+      color: white;
+    } */
+
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
