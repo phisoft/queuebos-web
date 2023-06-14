@@ -1653,7 +1653,7 @@ section {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../img/queue-5.png) no-repeat;
+    background: url(../img/images/bgqueue.png) no-repeat;
     padding-top: 100px;
     padding-bottom: 90px;
     /* background: #203881; */
@@ -1666,7 +1666,7 @@ section {
       align-items: right;
       width: 100%;
       text-align: center;
-      padding-left: 60%;
+      width: 40%;
       color: white;
     }
     /* .platformperform .text-plat h1{
@@ -1983,9 +1983,14 @@ section {
     flex-direction: column;
   }
 
-  .left,
-  .right {
+  .left {
     text-align: center;
+    flex-direction: column;
+  }
+  
+  .right{
+    text-align: center;
+    flex-direction: column-reverse;
   }
 
   .text-left,
@@ -1997,6 +2002,10 @@ section {
   .image-right {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .platformperform .text-plat{
+    width: 80%;
+    padding-left: 10%;
   }
 }
 
