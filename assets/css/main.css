@@ -261,6 +261,7 @@ section {
   .header .btn-getstarted,
   .header .btn-getstarted:focus {
     margin-right: 50px;
+    display: none;
   }
 }
 
