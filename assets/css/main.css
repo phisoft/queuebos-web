@@ -1917,11 +1917,15 @@ section {
 }
 
 .titleWhatwedo h2 {
-    font-size: 48px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: var(--color-secondary);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #5670a0;
   text-align: center;
+}
+
+.titleWhatwedo h2 span{
+  color: #3279fc;
 }
 
 .titleWhatwedo p {
