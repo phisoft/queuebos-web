@@ -1140,6 +1140,11 @@ section {
 .about .text-about .title-about span{
   color: #3279fc;
 }
+
+.about .text-about .p {
+  text-align: justify;
+}
+
 @media (max-width: 575px) {
   .about .about-img {
     margin: 30px 0 0 30px;
