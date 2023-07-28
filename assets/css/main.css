@@ -176,8 +176,8 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 995;
-  background: var(--color-secondary-light);
-  /* background: #013087; */
+  /* background: var(--color-secondary-light); */
+  background: #013087;
   width: 40px;
   height: 40px;
   border-radius: 4px;
