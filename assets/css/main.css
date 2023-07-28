@@ -1167,6 +1167,12 @@ section {
   border: none;
 }
 
+@media (max-width: 810px) {
+  .about .about-img {
+    margin: 30px 0 0 150px;
+  }
+}
+
 @media (max-width: 575px) {
   .about .about-img {
     margin: 30px 0 0 30px;
@@ -1235,6 +1241,62 @@ section {
   margin-right: 8px;
   color: var(--color-primary);
 }
+
+/*--------------------------------------------------------------
+# Use Case Section
+--------------------------------------------------------------*/
+.use-case {
+  background: white;
+}
+
+.use-case .tabs-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.use-case .tabs {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.use-case .tabs li {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.use-case .tabs li.active {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.use-case .tab-content {
+  display: flex;
+}
+
+.use-case .tab-panel {
+  display: none;
+}
+
+.use-case .tab-panel.active {
+  display: flex;
+}
+
+.use-case .tab-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.use-case .tab-description {
+  padding: 20px;
+}
+
 
 /*--------------------------------------------------------------
 # Clients Section
