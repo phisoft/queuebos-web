@@ -176,7 +176,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 995;
-  background: var(--color-primary);
+  background: #013087;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -1128,6 +1128,7 @@ section {
   /* background: url("../img/about-bg.png") top left; */
   background-repeat: no-repeat;
 }
+
 .about .text-about {
   text-align: justify;
   /* color: rgba(var(--color-secondary-rgb), 0.8); */
@@ -1151,6 +1152,19 @@ section {
 
 .about .text-about .p {
   text-align: justify;
+}
+
+.about .list-group-item {
+  text-align: justify;
+}
+
+.about .list-group-item i.bi-check2-circle {
+  color: #013087;
+  font-size: 24px;
+}
+
+.about .list-group-item {
+  border: none;
 }
 
 @media (max-width: 575px) {
