@@ -1260,32 +1260,45 @@ section {
   display: flex;
   padding: 0;
   margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .use-case .tabs li {
   cursor: pointer;
   padding: 10px 15px;
-  margin-right: 10px;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 5px 5px 0 0;
+  margin-right: 30px;
 }
 
 .use-case .tabs li.active {
-  background-color: #fff;
-  border-bottom: none;
+  color: #013087;
+  border-bottom: 2px solid #013087;
 }
 
 .use-case .tab-content {
   display: flex;
+  justify-content: center;
 }
 
 .use-case .tab-panel {
+  width: 100%;
   display: none;
+}
+
+.use-case .tab-panel .tab-content-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .use-case .tab-panel.active {
   display: flex;
+}
+
+.use-case .tab-image {
+  margin-bottom: 20px;
+  flex: 1;
 }
 
 .use-case .tab-image img {
@@ -1294,9 +1307,53 @@ section {
 }
 
 .use-case .tab-description {
+  flex: 1;
   padding: 20px;
+  text-align: justify;
+  font-size:16px;
 }
 
+.tab-description .key-benefits {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tab-description .key-benefits li {
+  margin-bottom: 10px;
+}
+
+.tab-description .key-benefits li i {
+  margin-right: 10px;
+  color: #013087; /* Set icon color to match your design */
+}
+
+.tab-description .key-benefits li b {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .use-case .tab-content {
+    flex-direction: column;
+  }
+
+  .use-case .tab-panel {
+    max-width: none;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs in a row */
+    flex-wrap: wrap;
+  }
+
+  .tabs li {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width and spacing for 3 tabs in a row */
+    max-width: calc(33.33% - 10px);
+    margin: 5px;
+  }
+  
+}
 
 /*--------------------------------------------------------------
 # Clients Section

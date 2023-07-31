@@ -226,51 +226,70 @@
 
     <!-- ======= Use Case Section ======= -->
     <section id="use-case" class="use-case">
-      <div class="container">
-        <div class="titleWhatwedo">
-          <h2>One <span>QueueBos,</span><br>Endless <span>Management Solutions</h2>
-          <p>QueueBos Aim In Elevating Service Efficiency Across Sectors</p>
+  <div class="container">
+    <div class="titleWhatwedo">
+      <h2>One <span>QueueBos,</span><br>Endless <span>Management Solutions</h2>
+      <p>QueueBos Aim In Elevating Service Efficiency Across Sectors</p>
+    </div>
+    <div class="tabs-container">
+      <ul class="tabs">
+        <li class="active" data-tab="banking">Banking</li>
+        <li data-tab="government">Government</li>
+        <li data-tab="restaurant">Restaurant</li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-panel active" data-tab="banking">
+          <div class="tab-content-container">
+            <div class="tab-image">
+              <img src="./assets/img/images/q-banking.jpg" alt="Banking">
+            </div>
+            <div class="tab-description">
+              <p>With QueueBos, customers enjoy a seamless banking experience with virtual queues and reduced waiting times.
+                It boosts customer satisfaction, loyalty, and bank benefits from better resource management and improvement
+                of staff productivity.</p>
+              <ul class="key-benefits">
+                <li><i class="bi bi-check2-circle"></i> <b>Enhanced Customer Satisfaction:</b> QueueBos ensures a smooth banking process, delighting customers with faster service.</li>
+                <li><i class="bi bi-check2-circle"></i> <b>Improved Resource Management:</b> Banks benefit from optimized resource allocation, leading to increased efficiency and productivity among staff.</li>
+                <li><i class="bi bi-check2-circle"></i> <b>Efficient Transaction Processing:</b> With QueueBos, banks experience faster and more accurate transaction processing, reducing errors and enhancing customer experience.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="tabs-container">
-          <ul class="tabs">
-            <li class="active" data-tab="banking">Banking</li>
-            <li data-tab="government">Government</li>
-            <li data-tab="restaurant">Restaurant</li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-panel active" data-tab="banking">
-              <div class="tab-image">
-                <img src="path_to_banking_image.jpg" alt="Banking">
-              </div>
-              <div class="tab-description">
-                <p>With QueueBos, customer enjoy a seamless banking experience with virtual queues and reduced waiting times.
-                  It boosts customer satisfaction, loyalty and bank benefits from better resource management and improvement
-                  of staff productivity.</p>
-              </div>
+        <div class="tab-panel" data-tab="government">
+          <div class="tab-content-container">
+            <div class="tab-image">
+              <img src="./assets/img/images/q-goverment.jpg" alt="Government">
             </div>
-            <div class="tab-panel" data-tab="government">
-              <div class="tab-image">
-                <img src="path_to_government_image.jpg" alt="Government">
-              </div>
-              <div class="tab-description">
-                <p>Citizens experience improved access to goverment services with QueueBos online scheduling and reduced
-wait times. Transparent data and efficient resource management enhance public trust and optimize operations
-for goverment agencies.</p>
-              </div>
+            <div class="tab-description">
+              <p>Citizens experience improved access to government services with QueueBos online scheduling and reduced wait times. Transparent data and efficient resource management enhance public trust and optimize operations for government agencies.</p>
+              <ul class="key-benefits">
+                <li><i class="bi bi-check2-circle"></i> <b>Improved Access to Services:</b> QueueBos streamlines government service access, reducing wait times and ensuring citizens can access services efficiently.</li>
+                <li><i class="bi bi-check2-circle"></i> <b>Enhanced Data Transparency:</b> Transparent data management empowers government agencies to make data-driven decisions, promoting trust and accountability.</li>
+                <li><i class="bi bi-check2-circle"></i> <b>Optimized Resource Utilization:</b> QueueBos enables efficient resource allocation, leading to cost-effective government operations and improved public service delivery.</li>
+              </ul>
             </div>
-            <div class="tab-panel" data-tab="restaurant">
-              <div class="tab-image">
-                <img src="path_to_restaurant_image.jpg" alt="Restaurant">
-              </div>
-              <div class="tab-description">
-                <p>QueueBos revolutionizes dining by allowing remote table reservations, real time updates and optimized
-                  table turnover. Restaurants with QueueBos achieve higher customer satisfaction, loyalty and increased revenue.</p>
-              </div>
+          </div>
+        </div>
+        <div class="tab-panel" data-tab="restaurant">
+          <div class="tab-content-container">
+            <div class="tab-image">
+              <img src="./assets/img/images/q-restaurant.jpg" alt="Restaurant">
+            </div>
+            <div class="tab-description">
+              <p>QueueBos revolutionizes dining by allowing remote table reservations, real-time updates, and optimized table turnover. Restaurants with QueueBos achieve higher customer satisfaction, loyalty, and increased revenue.</p>
+              <ul class="key-benefits">
+                <li><i class="bi bi-check2-circle"></i> <b>Effortless Table Reservations:</b> QueueBos simplifies the reservation process, allowing customers to book tables remotely and conveniently.</li>
+                <li><i class="bi bi-check2-circle"></i> <b>Real-time Updates:</b> QueueBos provides real-time status updates, enabling diners to stay informed about their table availability and wait times.</li>
+                <li><i class="bi bi-check2-circle"></i> <b>Optimized Table Turnover:</b> With QueueBos, restaurants can efficiently manage table turnover, maximizing seating capacity and revenue potential.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
     
     <!-- End Use Case Section -->
 
@@ -1157,6 +1176,29 @@ for goverment agencies.</p>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".tabs li");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        const dataTab = this.getAttribute("data-tab");
+
+        tabs.forEach(function (tab) {
+          tab.classList.remove("active");
+        });
+
+        tabPanels.forEach(function (panel) {
+          panel.classList.remove("active");
+        });
+
+        this.classList.add("active");
+        document.querySelector(`.tab-panel[data-tab="${dataTab}"]`).classList.add("active");
+      });
+    });
+  });
+  </script>
 
 </body>
 
