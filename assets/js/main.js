@@ -296,3 +296,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Function to reset the form after successful submission
+  function resetForm() {
+    const form = document.getElementById('contactForm');
+    form.reset(); // Reset the form fields to their default values
+  }
+
+  // Add event listener to the form submission
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    setTimeout(function() {
+      resetForm(); 
+      window.location.reload(); 
+    }, 500); 
+  });
+});
