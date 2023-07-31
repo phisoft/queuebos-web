@@ -1824,6 +1824,55 @@ section {
       color: white;
     } */
 
+/*--------------------------------------------------------------
+#  Solution Section
+--------------------------------------------------------------*/
+
+.solution {
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.solution .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.solution .column {
+  flex: 1;
+  max-width: 200px;
+  margin: 0 10px;
+  padding: 0 5px; 
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.solution .column:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.solution .icon {
+  font-size: 30px;
+  color: #013087;
+  margin-bottom: 10px;
+}
+
+.solution p {
+  font-size: 16px;
+}
+
+@media (max-width: 490px) { 
+  .solution .row {
+    flex-wrap: wrap; 
+  }
+  
+  .solution .column {
+    margin-bottom: 20px; 
+  }
+}
 
 /*--------------------------------------------------------------
 # Testimonials Section
