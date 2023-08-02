@@ -1105,6 +1105,10 @@ section {
   color: var(--color-primary);
 }
 
+.featured-services .service-item:hover .icon i {
+  color: #013087;
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
