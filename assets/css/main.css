@@ -3274,3 +3274,19 @@ section {
     transform: rotate(360deg);
   }
 }
+
+.services .service-item{
+  display: flex;
+}
+
+.services .service-item .content-service{
+  text-align: left;
+  color: #013087;
+}
+
+.services .service-img{
+  /* width: 200px;
+  height: 300px; */
+  object-fit: scale-down;
+  
+}
