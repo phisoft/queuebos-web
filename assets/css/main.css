@@ -1357,6 +1357,44 @@ section {
 }
 
 /*--------------------------------------------------------------
+# How it works section
+--------------------------------------------------------------*/
+.how-itworks .columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.how-itworks .column {
+  flex-basis: 18%;
+  text-align: center;
+}
+
+.how-itworks .column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.how-itworks .icon {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 28px;
+  color: #013087;
+}
+
+@media (max-width: 768px) {
+  .how-itworks .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .how-itworks .column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
