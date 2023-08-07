@@ -1069,6 +1069,10 @@ section {
   height: 100%;
 }
 
+.featured-services p {
+  text-align: justify;
+}
+
 .featured-services .service-item .icon {
   margin-bottom: 10px;
 }
