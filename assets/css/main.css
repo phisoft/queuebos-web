@@ -3285,12 +3285,16 @@ section {
 
 .services .service-item .content-service {
   text-align: left;
-  color: var(--color-secondary);
-  width: 50%;
+  /* color: var(--color-secondary); */
 }
-
-.services .service-img {
-  width: 50%;
+.services .service-item .content-service h2{
+  color: var(--color-black);
+}
+.services .service-item .content-service h4{
+  color: var(--color-secondary);
+}
+.services .service-item .content-service h3{
+  color: #013087;
 }
 
 .services .service-img img {
@@ -3316,13 +3320,3 @@ section {
   opacity: 1;
 }
 
-@media (max-width: 767px) {
-  .services .service-item {
-    flex-direction: column;
-  }
-
-  .services .service-item .content-service,
-  .services .service-img {
-    width: 100%;
-  }
-}
