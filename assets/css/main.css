@@ -561,19 +561,32 @@ section {
 /*--------------------------------------------------------------
 # Animated Hero Section
 --------------------------------------------------------------*/
+/* Add this rule to your CSS */
 .hero-animated {
   width: 100%;
-  min-height: 50vh;
-  background: url("../img/hero-bg.png") center center;
+  min-height: 90vh;
+  background: url("../img/header-queuebos/queuebos-1.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
 }
 
+.hero-animated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 244, 244, 0.75); 
+}
+
+
 .hero-animated h2 {
+  text-align: left;
   margin: 0 0 10px 0;
   font-size: 48px;
-  font-weight: 300;
+  font-weight:500;
   color: var(--color-secondary);
   font-family: var(--font-secondary);
 }
@@ -583,15 +596,17 @@ section {
 }
 
 .hero-animated p {
-  color: rgba(var(--color-secondary-rgb), 0.8);
+  text-align: left;
+  color: rgba(var(--color-secondary-rgb));
   margin: 0 0 30px 0;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-.hero-animated .animated {
-  margin-bottom: 60px;
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+.hero-animated .img-column {
+  width: 80%;
+  height: 80%;
+  object-fit: cover; 
 }
 
 @media (min-width: 992px) {
@@ -615,14 +630,14 @@ section {
 .hero-animated .btn-get-started {
   font-size: 16px;
   font-weight: 400;
-  display: inline-block;
   padding: 10px 28px;
   border-radius: 4px;
   transition: 0.5s;
   color: var(--color-white);
-  background: var(--color-primary);
+  background: #013087;
   font-family: var(--font-secondary);
 }
+
 
 .hero-animated .btn-get-started:hover {
   background: rgba(var(--color-primary-rgb), 0.8);
@@ -1072,6 +1087,10 @@ section {
   height: 100%;
 }
 
+.featured-services p {
+  text-align: justify;
+}
+
 .featured-services .service-item .icon {
   margin-bottom: 10px;
 }
@@ -1106,6 +1125,10 @@ section {
 
 .featured-services .service-item:hover h4 a {
   color: var(--color-primary);
+}
+
+.featured-services .service-item:hover .icon i {
+  color: #013087;
 }
 
 /*--------------------------------------------------------------
@@ -1357,6 +1380,44 @@ section {
     margin: 5px;
   }
   
+}
+
+/*--------------------------------------------------------------
+# How it works section
+--------------------------------------------------------------*/
+.how-itworks .columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.how-itworks .column {
+  flex-basis: 18%;
+  text-align: center;
+}
+
+.how-itworks .column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.how-itworks .icon {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 28px;
+  color: #013087;
+}
+
+@media (max-width: 768px) {
+  .how-itworks .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .how-itworks .column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
