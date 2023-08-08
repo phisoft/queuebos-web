@@ -1084,6 +1084,10 @@ section {
   height: 100%;
 }
 
+.featured-services p {
+  text-align: justify;
+}
+
 .featured-services .service-item .icon {
   margin-bottom: 10px;
 }
@@ -1118,6 +1122,10 @@ section {
 
 .featured-services .service-item:hover h4 a {
   color: var(--color-primary);
+}
+
+.featured-services .service-item:hover .icon i {
+  color: #013087;
 }
 
 /*--------------------------------------------------------------
