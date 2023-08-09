@@ -1131,6 +1131,10 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .container {
+  margin-top: 10px;
+}
+
 .about .col-lg-7 {
   margin-top: -20px;
 }
@@ -1140,8 +1144,7 @@ section {
 }
 
 .about .about-img {
-  position: relative;
-  /* margin: 60px 0 0 60px; */
+  text-align: center;
 }
 
 .about .about-img:before {
@@ -1193,10 +1196,15 @@ section {
 
 @media (max-width: 810px) {
   .about .about-img {
-    margin: 30px 0 0 150px;
+    margin: 30px auto;
+    text-align: center; 
+  }
+
+  .about .about-img img {
+    display: block;
+    margin: 0 auto; 
   }
 }
-
 @media (max-width: 575px) {
   .about .about-img {
     margin: 30px 0 0 30px;
