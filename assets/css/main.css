@@ -637,7 +637,7 @@ section {
 
 
 .hero-animated .btn-get-started:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: rgba(var(#0192da), 0.8);
 }
 
 .hero-animated .btn-watch-video {
@@ -2190,7 +2190,7 @@ section {
 
 .titleWhatwedo p {
     margin: 0 auto;
-  color: var(--color-secondary-light);
+  color: #013087;
   text-align: center;
 }
 
