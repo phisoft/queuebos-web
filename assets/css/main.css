@@ -244,7 +244,7 @@ section {
 .header .btn-getstarted:focus {
   font-size: 16px;
   color: var(--color-white);
-  background: var(--color-primary);
+  background: #013087;
   padding: 8px 23px;
   border-radius: 4px;
   transition: 0.3s;
@@ -580,20 +580,20 @@ section {
 
 
 .hero-animated h2 {
-  text-align: left;
+  text-align: center;
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight:500;
-  color: var(--color-secondary);
+  color: #0192da;
   font-family: var(--font-secondary);
 }
 
 .hero-animated h2 span {
-  color: var(--color-primary);
+  color: #013087;
 }
 
 .hero-animated p {
-  text-align: left;
+  text-align: center;
   color: rgba(var(--color-secondary-rgb));
   margin: 0 0 30px 0;
   font-size: 20px;
@@ -637,7 +637,7 @@ section {
 
 
 .hero-animated .btn-get-started:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: rgba(var(#0192da), 0.8);
 }
 
 .hero-animated .btn-watch-video {
@@ -1093,7 +1093,7 @@ section {
 }
 
 .featured-services .service-item .icon i {
-  color: var(--color-primary);
+  color: #0192da;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -1121,7 +1121,7 @@ section {
 }
 
 .featured-services .service-item:hover h4 a {
-  color: var(--color-primary);
+  color: #0192da;
 }
 
 .featured-services .service-item:hover .icon i {
@@ -2180,7 +2180,7 @@ section {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #3279fc;
+  color: #0192da;
   text-align: center;
 }
 
@@ -2190,7 +2190,7 @@ section {
 
 .titleWhatwedo p {
     margin: 0 auto;
-  color: var(--color-secondary-light);
+  color: #013087;
   text-align: center;
 }
 
