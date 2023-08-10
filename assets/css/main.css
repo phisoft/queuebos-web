@@ -561,7 +561,7 @@ section {
 /* Add this rule to your CSS */
 .hero-animated {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   background: url("../img/header-queuebos/queuebos-1.jpg") center center;
   background-size: cover;
   position: relative;
