@@ -1794,26 +1794,98 @@ section {
   }
 }
 
-/* Before Service section */
+/*--------------------------------------------------------------
+#  Call to action
+--------------------------------------------------------------*/
 .platformperform{
-  height: 100vh;
+  height: 150vh;
   display: flex;
   align-items: center;
-  background: url(../img/images/bgqueue.png) no-repeat;
   padding-top: 100px;
   padding-bottom: 90px;
   /* background: #203881; */
   position: relative;
   z-index: 1;
   background-size: auto, auto;
-  background-size: cover;   }
+  background-size: cover;   
+}
 
-  .platformperform .text-plat{
-    align-items: right;
-    width: 100%;
-    text-align: center;
-    width: 40%;
+.box-container {
+  display: flex;
+  border-radius: 10px;
+  padding: 100px;
+  background-color:hsla(0,0%,100%,1);
+  background-image:
+  radial-gradient(at 29% 16%, hsla(200,99%,42%,1) 0px, transparent 50%),
+  radial-gradient(at 73% 92%, hsla(217,98%,26%,1) 0px, transparent 50%);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.box-container {
+  display: flex;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #0192da;
+}
+
+.left-box,
+.right-box {
+  flex: 1; /* Both boxes will share the same size */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-box img {
+  margin-right: -40px;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+
+.calldesc {
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin-left: 35px;
+}
+
+.calldesc h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.calldesc h2 span {
+  color: #013087;
+}
+
+.calldesc p {
+  color: #013087;
+}
+  
+  .calldesc .form-button i {
+    font-size: 20px;
+  }
+
+  .calldesc .button-cta {
+    margin-top: 20px;
+  }
+
+  
+  .calldesc .inner-button {
+    margin-top: 20px;
+    background-color: #013087;
     color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    align-items: left;
+    right: 10px; 
+    transform: translateY(-50%);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   }
 
 /*--------------------------------------------------------------

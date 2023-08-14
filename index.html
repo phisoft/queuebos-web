@@ -664,17 +664,30 @@
     </section> -->
     <!-- End Features Section -->
 
-
-    <!-- Change this for issue#10 -->
-    <!-- Section for before service -->
-    <section class="platformperform">
-      <div class="container">
-        <div class="text-plat">
-          <h1>A platform where you wait is valued.</h1>
-          <p>Solves queue woes with just a few clicks!</p>
+ <!-- ======= Call to action section ======= -->
+ <section class="platformperform">
+  <div class="container">
+    <div class="box-container">
+      <div class="right-box">
+        <div class="calldesc">
+          <h2>Experience <span>Effortless Waiting</span></h2>
+          <p><b>From restaurant to banking service, QueueBos can do it all.</b></p>
+          <p>Cut Wait Times, Boost Satisfaction: Try Our Queue System</p>
+          <div class="button-cta">
+            <a href="#footer" class="inner-button">Let's get started <i class="bi bi-arrow-down-right-circle-fill"></i></a>
+          </div>
         </div>
       </div>
-    </section>
+        <div class="left-box" id="imageSlider">
+          <img src="assets/img/banking-cta.jpg" alt="Image 1">
+          <img src="assets/img/restaurant-cta.jpg" alt="Image 2">
+          <img src="assets/img/goverment-cta.jpg" alt="Image 3">
+        </div>        
+    </div>
+  </div>
+</section>
+
+         <!-- End Call to action Section -->
 
     <section class="services" id="services">
       <div class="container" data-aos="fade-up">
@@ -1340,6 +1353,22 @@
     });
   });
   </script>
+
+<script>
+  const imageSlider = document.getElementById('imageSlider');
+  const images = imageSlider.querySelectorAll('img');
+  let currentImageIndex = 0;
+
+  function rotateImages() {
+    images[currentImageIndex].style.display = 'none';
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = 'block';
+  }
+
+  // Start the image rotation
+  setInterval(rotateImages, 4000); // Change image every 4 seconds
+</script>
+
 
 </body>
 
