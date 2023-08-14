@@ -244,7 +244,7 @@ section {
 .header .btn-getstarted:focus {
   font-size: 16px;
   color: var(--color-white);
-  background: var(--color-primary);
+  background: #013087;
   padding: 8px 23px;
   border-radius: 4px;
   transition: 0.3s;
@@ -558,37 +558,52 @@ section {
 /*--------------------------------------------------------------
 # Animated Hero Section
 --------------------------------------------------------------*/
+/* Add this rule to your CSS */
 .hero-animated {
   width: 100%;
-  min-height: 50vh;
-  background: url("../img/hero-bg.png") center center;
+  min-height: 100vh;
+  background: url("../img/header-queuebos/queuebos-1.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
 }
 
+.hero-animated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 244, 244, 0.75); 
+}
+
+
 .hero-animated h2 {
+  text-align: center;
   margin: 0 0 10px 0;
   font-size: 48px;
-  font-weight: 300;
-  color: var(--color-secondary);
+  font-weight:500;
+  color: #0192da;
   font-family: var(--font-secondary);
 }
 
 .hero-animated h2 span {
-  color: var(--color-primary);
+  color: #013087;
 }
 
 .hero-animated p {
-  color: rgba(var(--color-secondary-rgb), 0.8);
+  text-align: center;
+  color: rgba(var(--color-secondary-rgb));
   margin: 0 0 30px 0;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-.hero-animated .animated {
-  margin-bottom: 60px;
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+.hero-animated .img-column {
+  width: 80%;
+  height: 80%;
+  object-fit: cover; 
 }
 
 @media (min-width: 992px) {
@@ -612,17 +627,17 @@ section {
 .hero-animated .btn-get-started {
   font-size: 16px;
   font-weight: 400;
-  display: inline-block;
   padding: 10px 28px;
   border-radius: 4px;
   transition: 0.5s;
   color: var(--color-white);
-  background: var(--color-primary);
+  background: #013087;
   font-family: var(--font-secondary);
 }
 
+
 .hero-animated .btn-get-started:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: rgba(var(#0192da), 0.8);
 }
 
 .hero-animated .btn-watch-video {
@@ -1069,12 +1084,16 @@ section {
   height: 100%;
 }
 
+.featured-services p {
+  text-align: justify;
+}
+
 .featured-services .service-item .icon {
   margin-bottom: 10px;
 }
 
 .featured-services .service-item .icon i {
-  color: var(--color-primary);
+  color: #0192da;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -1102,12 +1121,20 @@ section {
 }
 
 .featured-services .service-item:hover h4 a {
-  color: var(--color-primary);
+  color: #0192da;
+}
+
+.featured-services .service-item:hover .icon i {
+  color: #013087;
 }
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .container {
+  margin-top: 10px;
+}
+
 .about .col-lg-7 {
   margin-top: -20px;
 }
@@ -1117,8 +1144,7 @@ section {
 }
 
 .about .about-img {
-  position: relative;
-  /* margin: 60px 0 0 60px; */
+  text-align: center;
 }
 
 .about .about-img:before {
@@ -1168,6 +1194,17 @@ section {
   border: none;
 }
 
+@media (max-width: 810px) {
+  .about .about-img {
+    margin: 30px auto;
+    text-align: center; 
+  }
+
+  .about .about-img img {
+    display: block;
+    margin: 0 auto; 
+  }
+}
 @media (max-width: 575px) {
   .about .about-img {
     margin: 30px 0 0 30px;
@@ -1235,6 +1272,157 @@ section {
   line-height: 0;
   margin-right: 8px;
   color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Use Case Section
+--------------------------------------------------------------*/
+.use-case {
+  background: white;
+}
+
+.use-case .tabs-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.use-case .tabs {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.use-case .tabs li {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-right: 30px;
+}
+
+.use-case .tabs li.active {
+  color: #013087;
+  border-bottom: 2px solid #013087;
+}
+
+.use-case .tab-content {
+  display: flex;
+  justify-content: center;
+}
+
+.use-case .tab-panel {
+  width: 100%;
+  display: none;
+}
+
+.use-case .tab-panel .tab-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.use-case .tab-panel.active {
+  display: flex;
+}
+
+.use-case .tab-image {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.use-case .tab-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.use-case .tab-description {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+  font-size:16px;
+}
+
+.tab-description .key-benefits {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tab-description .key-benefits li {
+  margin-bottom: 10px;
+}
+
+.tab-description .key-benefits li i {
+  margin-right: 10px;
+  color: #013087; /* Set icon color to match your design */
+}
+
+.tab-description .key-benefits li b {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .use-case .tab-content {
+    flex-direction: column;
+  }
+
+  .use-case .tab-panel {
+    max-width: none;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs in a row */
+    flex-wrap: wrap;
+  }
+
+  .tabs li {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width and spacing for 3 tabs in a row */
+    max-width: calc(33.33% - 10px);
+    margin: 5px;
+  }
+  
+}
+
+/*--------------------------------------------------------------
+# How it works section
+--------------------------------------------------------------*/
+.how-itworks .columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.how-itworks .column {
+  flex-basis: 18%;
+  text-align: center;
+}
+
+.how-itworks .column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.how-itworks .icon {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 28px;
+  color: #013087;
+}
+
+@media (max-width: 768px) {
+  .how-itworks .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .how-itworks .column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1706,6 +1894,55 @@ section {
       color: white;
     } */
 
+/*--------------------------------------------------------------
+#  Solution Section
+--------------------------------------------------------------*/
+
+.solution {
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.solution .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.solution .column {
+  flex: 1;
+  max-width: 200px;
+  margin: 0 10px;
+  padding: 0 5px; 
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.solution .column:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.solution .icon {
+  font-size: 30px;
+  color: #013087;
+  margin-bottom: 10px;
+}
+
+.solution p {
+  font-size: 16px;
+}
+
+@media (max-width: 490px) { 
+  .solution .row {
+    flex-wrap: wrap; 
+  }
+  
+  .solution .column {
+    margin-bottom: 20px; 
+  }
+}
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1943,7 +2180,7 @@ section {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #3279fc;
+  color: #0192da;
   text-align: center;
 }
 
@@ -1953,7 +2190,7 @@ section {
 
 .titleWhatwedo p {
     margin: 0 auto;
-  color: var(--color-secondary-light);
+  color: #013087;
   text-align: center;
 }
 
