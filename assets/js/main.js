@@ -279,7 +279,6 @@ document.addEventListener('DOMContentLoaded', () => {
       clickable: true
     }
   });
-
   /**
    * Animation on scroll function and init
    */
@@ -313,5 +312,21 @@ document.addEventListener('DOMContentLoaded', function() {
       resetForm(); 
       window.location.reload(); 
     }, 500); 
+  });
+});
+// Ensure the DOM is fully loaded before executing the script
+document.addEventListener("DOMContentLoaded", function () {
+  
+  const mySwiper = new Swiper(".services-slider", {
+    
+    pagination: {
+      el: ".swiper-pagination",
+      type: 'bullets',
+      clickable: true, 
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    }
   });
 });
