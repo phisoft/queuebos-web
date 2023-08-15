@@ -1795,61 +1795,65 @@ section {
 }
 
 /*--------------------------------------------------------------
-#  Call to action
+#  Call to action section
 --------------------------------------------------------------*/
-.platformperform{
-  height: 150vh;
+.platformperform {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 90px;
-  /* background: #203881; */
+  height: 100vh;
+  background: rgb(1, 48, 135);
+  background: radial-gradient(
+    circle,
+    rgba(1, 48, 135, 1) 0%,
+    rgba(1, 146, 218, 1) 100%
+  );
   position: relative;
   z-index: 1;
-  background-size: auto, auto;
-  background-size: cover;   
+  background-size: cover;
 }
 
-.box-container {
-  display: flex;
-  border-radius: 10px;
-  padding: 100px;
-  background-color:hsla(0,0%,100%,1);
-  background-image:
-  radial-gradient(at 29% 16%, hsla(200,99%,42%,1) 0px, transparent 50%),
-  radial-gradient(at 73% 92%, hsla(217,98%,26%,1) 0px, transparent 50%);
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.box-container {
-  display: flex;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #0192da;
-}
-
-.left-box,
-.right-box {
-  flex: 1; /* Both boxes will share the same size */
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.left-box img {
-  margin-right: -40px;
+.platformperform::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
   width: 100%;
-  height: auto;
-  display: none;
+  height: 100%;
+  transform: translate(100%, 80%);
+  background: rgb(1, 48, 135);
+  background: radial-gradient(
+    circle,
+    rgba(1, 48, 135, 1) 0%,
+    rgba(1, 146, 218, 1) 100%
+  );
 }
 
+.platformperform::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 75%;
+  height: 100%;
+  background: rgb(1, 48, 135);
+  background: radial-gradient(
+    circle,
+    rgba(1, 48, 135, 1) 0%,
+    rgba(1, 146, 218, 1) 100%
+  );
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
 
 .calldesc {
+  margin-top: -70px;
   padding: 25px 0px;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  text-align: left;
-  margin-left: 35px;
+  align-items: center;
+  text-align: center;
 }
 
 .calldesc h2 {
@@ -1860,34 +1864,52 @@ section {
 }
 
 .calldesc h2 span {
-  color: #013087;
+ font-style: italic;
+ margin-left: 1px;
+ margin-right: 1px;
 }
 
 .calldesc p {
-  color: #013087;
+  margin: 0 auto;
+  color: #fff;
 }
-  
-  .calldesc .form-button i {
-    font-size: 20px;
-  }
 
-  .calldesc .button-cta {
-    margin-top: 20px;
-  }
+.calldesc .form-button {
+  margin-top: 30px;
+  margin-bottom: -30px;
+  background-color: rgba(1, 146, 218, 0.8); 
+  width: 50%;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 20px 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  white-space: nowrap;
+}
 
-  
-  .calldesc .inner-button {
-    margin-top: 20px;
-    background-color: #013087;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 10px;
-    align-items: left;
-    right: 10px; 
-    transform: translateY(-50%);
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-  }
+.calldesc .form-button i {
+  font-size: 20px;
+}
 
+.calldesc .inner-button {
+  margin-top: 10px;
+  background-color: #013087;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  position: absolute;
+  right: 10px; 
+  transform: translateY(-50%);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.calldesc .calldesc-img img{
+  margin-bottom: -170px;
+  width:1000px;
+  height: auto;
+}
 /*--------------------------------------------------------------
 #  Solution Section
 --------------------------------------------------------------*/
@@ -2183,7 +2205,7 @@ section {
 }
 
 .titleWhatwedo p {
-    margin: 0 auto;
+  margin: 0 auto;
   color: #013087;
   text-align: center;
 }
@@ -3419,6 +3441,32 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# More services Section
+--------------------------------------------------------------*/
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+}
+
+.services::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+}
+
 .services .service-item {
   display: flex;
   flex-direction: row;
@@ -3460,4 +3508,3 @@ section {
   background-color: var(--color-secondary-dark);
   opacity: 1;
 }
-
