@@ -3389,3 +3389,33 @@ section {
   opacity: 1;
 }
 
+
+
+.title-of-desc{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.title-of-desc h1{
+  color: #0192da;
+}
+.title-of-desc h1 span, .title-of-desc p{
+  color: #013087;
+}
+
+.text-desc {
+  margin-top: 1rem;
+}
+.new-platform .sec-a img{
+  width: 100%;
+  height: 100%;
+}
+
+.new-platform .sec-b .text-desc h2{
+  font-weight: 600;
+  font-size: 24px;
+  color:#013087;
+}
+
+.new-platform .sec-b .text-desc p{
+  color: black;
+}
