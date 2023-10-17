@@ -1168,6 +1168,34 @@ section {
   color: #013087;
 }
 
+.container .instant-service-box {
+  width: 100%;
+  min-height: 70vh;
+  background-color: #D5EDEC;
+  justify-content: space-around ;
+  border-radius: 25px;
+  padding-left: 50px;
+  margin-top: 40px;
+  display: grid;
+}
+
+.instant-service-img{
+  position: relative;
+  padding: 14px;
+  width: 100%; 
+  height: 100%; 
+  flex-direction: column; 
+  align-items: center;
+  display: inline-flex;
+}
+
+.instant-service-box h4{
+  font-weight: 600;
+}
+  
+  /* background-color: rgba(247, 244, 244, 0.75); */
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
