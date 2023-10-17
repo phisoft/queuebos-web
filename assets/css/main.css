@@ -1168,6 +1168,37 @@ section {
   color: #013087;
 }
 
+.container .instant-service-box {
+  width: 100%;
+  min-height: 60vh;
+  background-color: #D5EDEC;
+  align-content: space-around;
+  justify-content: space-around ;
+  border-radius: 25px;
+  padding-left: 50px;
+  margin-top: 40px;
+  display: grid;
+}
+
+.instant-service-img{
+  position: relative;
+  padding: 0px;
+  width: 100%; 
+  height: 100%; 
+  flex-direction: column; 
+  align-items: center;
+  display: inline-flex;
+}
+
+.container .instant-service-box::before {
+  content: "-";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  /* background-color: rgba(247, 244, 244, 0.75); */
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
