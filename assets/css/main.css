@@ -1170,9 +1170,8 @@ section {
 
 .container .instant-service-box {
   width: 100%;
-  min-height: 60vh;
+  min-height: 70vh;
   background-color: #D5EDEC;
-  align-content: space-around;
   justify-content: space-around ;
   border-radius: 25px;
   padding-left: 50px;
@@ -1182,7 +1181,7 @@ section {
 
 .instant-service-img{
   position: relative;
-  padding: 0px;
+  padding: 14px;
   width: 100%; 
   height: 100%; 
   flex-direction: column; 
@@ -1190,11 +1189,9 @@ section {
   display: inline-flex;
 }
 
-.container .instant-service-box::before {
-  content: "-";
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.instant-service-box h4{
+  font-weight: 600;
+}
   
   /* background-color: rgba(247, 244, 244, 0.75); */
 }
