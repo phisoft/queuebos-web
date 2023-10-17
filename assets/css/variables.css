@@ -38,7 +38,7 @@
 
   /* Primary colors */
   --color-primary: #044b4a;
-  --color-primary-light: #066b69;
+  --color-primary-light: #066867;
   --color-primary-dark: #079492;
 
   --color-primary-rgb: 14, 162, 189;
@@ -48,10 +48,10 @@
   /* Secondary colors */
   --color-secondary: #079492;
   --color-secondary-light: #066b69;
-  --color-secondary-dark: #044b4a;
+  --color-secondary-dark: #066867;
 
   --color-secondary-rgb: 72, 86, 100;
-  --color-secondary-light-rgb: 143, 159, 174;
+  --color-secondary-light-rgb: 143, 159, 174; /* (FIX RGB) */
   --color-secondary-dark-rgb: 58, 71, 83;
 
   /* General colors */
