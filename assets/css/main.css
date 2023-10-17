@@ -3345,7 +3345,7 @@ section {
 }
 
 .footer .footer-content {
-  background: var(--color-secondary);
+  background: #079492;
   padding: 60px 0 30px 0;
 }
 
@@ -3375,8 +3375,8 @@ section {
 }
 
 .footer .footer-content h4 {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
   color: var(--color-white);
   position: relative;
   padding-bottom: 12px;
@@ -3392,6 +3392,7 @@ section {
   background: var(--color-primary);
   bottom: 0;
   left: 0;
+  visibility: hidden;
 }
 
 .footer .footer-content .footer-links {
@@ -3405,7 +3406,7 @@ section {
 }
 
 .footer .footer-content .footer-links ul i {
-  padding-right: 2px;
+  padding-right: 5px;
   color: var(--color-white);
   font-size: 12px;
   line-height: 1;
@@ -3425,7 +3426,8 @@ section {
   color: rgba(var(--color-white-rgb), 0.7);
   transition: 0.3s;
   display: inline-block;
-  line-height: 1;
+  line-height:;
+  font-weight: 900;
 }
 
 .footer .footer-content .footer-links ul a:hover {
@@ -3471,7 +3473,7 @@ section {
 
 .footer .footer-legal {
   padding: 30px 0;
-  background: var(--color-secondary-dark);
+  background: #066867;
 }
 
 .footer .footer-legal .credits {
@@ -3504,14 +3506,28 @@ section {
   text-decoration: none;
 }
 
+.footer .footer-queuebosinfo{
+  align-items: center;
+  padding-top: 1cm ;
+}
+
 .footer .footer-queuebosinfo img{
-  width: 50%;
+  width: 70%;
   height: 20%;
+  border-radius: 30px;
+}
+
+.footer .footer-queuebosinfo p{
+  font-size: 30px;
+  font-weight: 800;
 }
 
 .footer .footer-sosmed {
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-evenly;
+  font-size: larger;
 }
 
 .footer .footer-sosmed a i{
@@ -3578,9 +3594,11 @@ section {
 .footer .contactus .php-email-form input[type=text],
 .footer .contactus .php-email-form input[type=email],
 .footer .contactus .php-email-form textarea {
-  border-radius: 0px;
+  border-radius: 10px;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400px;
+  color : #D9D9D9;
 }
 
 .footer .contactus .php-email-form input[type=text]:focus,
@@ -3601,17 +3619,17 @@ section {
 } */
 
 .footer .contactus .php-email-form button[type=submit] {
-  background: var(--color-secondary-light);
+  background: black;
   border: 0;
   padding: 10px 50px;
-  color: var(--color-white);
+  color: white;
   transition: 0.4s;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .footer .contactus .php-email-form button[type=submit]:hover {
-  background: rgba(var(--color-primary-rgb), 0.95);
-  color: white;
+  background: whitesmoke;
+  color: black;
 }
 
 @keyframes animate-loading {
