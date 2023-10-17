@@ -112,24 +112,36 @@ section {
 }
 
 .btn-see-more {
-  width: 160px;
   border-radius: 40px;
   border: 4px solid #FFF;
   color: #FFF;
-  width: 160px;
+  width: 130px;
   height: 40px;
   flex-shrink: 0;
   background-color: #000;
   text-align: center;
-  padding-block: 3px ;
   display: block;
   float: right;
+  padding-block: 5px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .header .btn-see-more:hover,
 .header .btn-see-more:focus:hover {
   color: var(--color-white);
   background: rgba(var(--color-primary-rgb), 0.85);
+}
+
+.brand-tilt{
+  padding: 15px;
+  padding-top: 30%;
+}
+
+.header-box{
+  padding: 10px;
+  margin-right: -20px ;
+  align-content: flex-start;
 }
 
 /*--------------------------------------------------------------
@@ -262,9 +274,10 @@ section {
   font-weight: 500;
 }
 
-.header .btn-lang,
-.header .btn-lang:focus {
+.header .button,
+.header .button:focus {
   font-size: 16px;
+  font-weight: bold;
   color: black;
   /* background: var(--color-primary);
   padding: 8px 23px;
@@ -273,16 +286,16 @@ section {
   font-family: var(--font-secondary);
 }
 
-.header .btn-lang:hover,
-.header .btn-lang:focus:hover {
+.header .button:hover,
+.header .button:focus:hover {
   color: black;
   /* background: rgba(var(--color-primary-rgb), 0.85); */
 }
 
 @media (max-width: 1279px) {
 
-  .header .btn-lang,
-  .header .btn-lang:focus {
+  .header .button,
+  .header .button:focus {
     margin-right: 50px;
     display: none;
   }
@@ -588,7 +601,7 @@ section {
 .hero-animated {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/header-queuebos/header-bg-no-mockup.jpg") center center;
+  background: url("../img/header-queuebos/header-bg-pl.png") center center;
   background-size: cover;
   position: relative;
   padding: 120px 10 60px;

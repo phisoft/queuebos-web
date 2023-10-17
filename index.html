@@ -113,17 +113,19 @@
           <!-- <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li> -->
         </ul>
      </nav> 
-     <nav class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-      <a class="btn-lang scrollto align-items-lg-center" href="index.html#about" >EN</a>
-      <i class="bi bi-list mobile-nav-toggle d-none"></i><i class="bi bi-search"></i></li>
-    </nav>
-      
+      <nav class="logo col align-self-center row justify-content-lg-end">
+        <!-- <a class="btn-lang scrollto align-items-lg-center" href="index.html#about" >EN</a> -->
+        <div class="col-2">
+          <button type="button" class="btn btn-light">EN<i class="bi bi-chevron-down dropdown-indicator"></i></button>
+          <i class="bi bi-search" style="-webkit-text-stroke-width: 1px;"></i>
+        </div>
+      </nav>
     </div>
   </header><!-- End Header -->
   
 
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
-    <div class="row" style="padding-top: 42px; padding-left: 70%;">
+    <div class="row col-md-12" style="padding-top: 42px;justify-content: space-evenly;">
       <!---
       <div class="row">
         <div class=" d-flex justify-content-center align-items-center" data-aos="zoom-out" data-aos-delay="150">
@@ -135,18 +137,25 @@
             <img src="assets/img/header-queuebos/titleheader.png" alt="mockup">
           </div> 
         </div> -->
-        <div class="about col-md-3" style="align-items: right" data-aos="zoom-out">
-          <div class="about about-box">
+        <div class="col-md-7 align-items-center " data-aos="zoom-out">
+          <div class="brand-tilt">
+            <img src="assets/img/header-queuebos/brand-tilt.png" alt="brand-title">
+          </div>
+        </div>
+        <div class="col-md-1 align-items-center" data-aos="zoom-out">
+          <div class="header-box">
             <img src="assets/img/header-queuebos/mockup.png" alt="mockup">
-          </div> 
+          </div>
+        </div>
+        <div class="col-md-3 col align-items-lg-center" data-aos="zoom-out" style="padding-top:30%;" >
+          <!-- <h2>Welcome to <span>QueueBos</span>.</h2>
+          <p>Revolutionizing queues with advanced technology for a waiting experience that's ahead of the curve.</p> -->
+          <a href="index.html#about" class="nav-link scroll-to  btn-see-more">See More</a>
         </div>
       </div>
+      
     </div>
-    <div class="d-flex justify-content-start" data-aos="zoom-out" style="margin-right: -50% ;" >
-      <!-- <h2>Welcome to <span>QueueBos</span>.</h2>
-      <p>Revolutionizing queues with advanced technology for a waiting experience that's ahead of the curve.</p> -->
-      <a href="index.html#about" class="nav-link scroll-to  btn-see-more">See More</a>
-    </div>
+    
     
   </section>
   
