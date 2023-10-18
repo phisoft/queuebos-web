@@ -2379,6 +2379,10 @@ section {
   padding: 25px 0px 25px 0px;
 }
 
+.titleWhatwedosmall{
+  padding: 25px 0px 25px 0px;
+}
+
 .titleWhatwedo h2 {
   font-size: 90px;
   font-weight: 400;
@@ -2428,6 +2432,15 @@ section {
   font-style: normal;
   line-height: normal;
   margin-bottom: 50px;
+}
+
+.titleWhatwedosmall a {
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  font-size : 18px;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 /* Content styling */
