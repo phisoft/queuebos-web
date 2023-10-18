@@ -1128,16 +1128,18 @@ section {
 
 .step-box {
   padding-top: 20px;
-}
+  display: grid;
+  justify-content:space-evenly;
 
+}
 
 .step-count {
   display: flex;
   width: fit-content;
   height: 57px;
-  justify-content: left;
   align-items: left;
   gap: 15px;
+  
 }
 
 .step-count-box {
@@ -1151,10 +1153,12 @@ section {
   background: #079492;
   color: #FFF;
   text-align: center;
-  font-size: 30px;
-  font-weight: 800;
-  max-width: 200px;
+  max-width: 150px;
   max-height: 50px;
+}
+
+.step-count-box h2 {
+  font-weight: 500;
 }
 
 .step-text-box {
@@ -2427,25 +2431,45 @@ section {
 /* Timeline container */
 
 /* Title styling */
-.titleWhatwedo{
+.title-what-we-do{
   padding: 25px 0px 25px 0px;
 }
 
-.titleWhatwedosmall{
-  padding: 25px 0px 25px 0px;
+.title-what-we-do h1 {
+  color: #079492;
+  text-align: center;
+  display: block;
+  font-weight: 900;
 }
 
-.titleWhatwedo h2 {
-  font-size: 90px;
-  font-weight: 400;
+.title-what-we-do h1 span{
+  color: #000000;
+  font-weight: 600;
+}
+
+.title-what-we-do h2 {
   margin-top: -30px;
   margin-bottom: 20px;
   color: #000000;
   text-align: center;
+  display: block;
 }
 
-.titleWhatwedosmall h2 {
-  font-size: 70px;
+.title-what-we-do h2 span{
+  color: #000000;
+  font-weight: 600;
+}
+
+.title-what-we-do p {
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title-what-we-do h3 {
   font-weight: 700;
   margin-top: 30px;
   margin-bottom: 5px;
@@ -2453,45 +2477,28 @@ section {
   text-align: center;
 }
 
-.titleWhatwedo h2 span{
-  color: #000000;
-  font-weight: 600;
-}
-
-.titleWhatwedosmall h2 span{
-  color: #000000;
-  font-weight: 700;
-}
-
-.titleWhatwedo p {
+.title-what-we-do h4{
   margin: 0 auto;
   text-align: center;
   color: #000000;
-  font-weight: 600;
-  font-size : 25px;
-  color: #000;
-  font-style: normal;
+  font-style: bold;
   line-height: normal;
+  margin-bottom: 10px;
 }
 
-.titleWhatwedosmall p {
+.title-what-we-do h5{
   margin: 0 auto;
   text-align: center;
   color: #000000;
-  font-weight: 700;
-  font-size : 25px;
-  color: #000;
-  font-style: normal;
+  font-style: bold;
   line-height: normal;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-.titleWhatwedosmall a {
+.title-what-we-do a {
   text-align: center;
   color: #000000;
-  font-weight: 700;
-  font-size : 18px;
-  color: #000;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
