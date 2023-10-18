@@ -1122,6 +1122,7 @@ section {
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
+  position: center relative;
 }
 
 .featured-services p {
@@ -1211,10 +1212,9 @@ section {
 
 .about-bg {
   width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   background: url("../img/about/about-bg.jpg") center center;
   background-size: cover;
-  position: relative;
   padding: 120px 10 60px;
 }
 
@@ -1709,6 +1709,12 @@ section {
 .clients .swiper-slide img:hover {
   filter: none;
   opacity: 1;
+}
+
+.slider-box{
+  padding: 40px 40px 10px 40px;
+  border-radius: 25px;
+  background-color: #B5DFDE;
 }
 
 /*--------------------------------------------------------------
@@ -2376,7 +2382,7 @@ section {
   font-size: 70px;
   font-weight: 700;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #079492;
   text-align: center;
 }
@@ -2406,11 +2412,12 @@ section {
   margin: 0 auto;
   text-align: center;
   color: #000000;
-  font-weight: 600;
+  font-weight: 700;
   font-size : 25px;
   color: #000;
   font-style: normal;
   line-height: normal;
+  margin-bottom: 50px;
 }
 
 /* Content styling */
@@ -3673,10 +3680,12 @@ section {
 .services .service-item {
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px;
 }
 
 .services .service-item .content-service {
-  text-align: left;
+  text-align: center;
+  padding-top: 5%;
   /* color: var(--color-secondary); */
 }
 .services .service-item .content-service h2{
@@ -3686,13 +3695,24 @@ section {
   color: var(--color-secondary);
 }
 .services .service-item .content-service h3{
-  color: #013087;
+  color: black;
+  font-size: 40px;
+  padding-top: 15%;
+  padding-bottom: 0px;
+  font-weight: 800;
+  position: relative;
+}
+
+.services .service-item .content-service p{
+  font-weight: 600;
+  font-style: bold ;
 }
 
 .services .service-img img {
   width: 100%;
   height: auto;
   object-fit: scale-down;
+  border-radius: 20px;
 }
 
 .services .swiper-pagination {
