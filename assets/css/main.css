@@ -1128,22 +1128,21 @@ section {
 
 .step-box {
   padding-top: 20px;
-  display: grid;
-  justify-content:space-evenly;
-
+  justify-content:start;
+  padding-left: 10px ;
+  width: 100%;
 }
 
 .step-count {
   display: flex;
-  width: fit-content;
+  width: 100%;
   height: 57px;
   align-items: left;
   gap: 15px;
-  
 }
 
 .step-count-box {
-  display: flex;
+  display: inline-block;
   width: 150px;
   height: 57px;
   padding: 9px;
@@ -1158,16 +1157,45 @@ section {
 }
 
 .step-count-box h2 {
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .step-text-box {
   color: #000;
-  width: fit-content;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@media (max-width:900px) {
+  .step-count {
+    padding-left: 10px;
+    gap: 10px;
+    margin-left: 10px;
+
+    .step-count-box {
+      display: flex;
+      max-width: 20%;
+      height: 35px;
+      padding: 5px;
+      min-width: 100px;
+      font-size: small;
+      border-radius: hidden;
+    }
+
+    .step .step-img {
+      border-radius: hidden;
+    }
+
+    .step-text-box h2{
+      font-size: 20px;
+    }
+
+   
+      
+  
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2433,6 +2461,7 @@ section {
 /* Title styling */
 .title-what-we-do{
   padding: 25px 0px 25px 0px;
+  display: ;
 }
 
 .title-what-we-do h1 {
@@ -2451,7 +2480,6 @@ section {
   margin-top: -30px;
   margin-bottom: 20px;
   color: #000000;
-  text-align: center;
   display: block;
 }
 
@@ -2467,6 +2495,7 @@ section {
   font-weight: 500;
   font-style: normal;
   line-height: normal;
+  display: block;
 }
 
 .title-what-we-do h3 {
@@ -2475,6 +2504,7 @@ section {
   margin-bottom: 5px;
   color: #079492;
   text-align: center;
+  display: block;
 }
 
 .title-what-we-do h4{
@@ -2484,6 +2514,7 @@ section {
   font-style: bold;
   line-height: normal;
   margin-bottom: 10px;
+  display: block;
 }
 
 .title-what-we-do h5{
@@ -2493,6 +2524,7 @@ section {
   font-style: bold;
   line-height: normal;
   margin-bottom: 10px;
+  display: block;
 }
 
 .title-what-we-do a {
@@ -2500,6 +2532,7 @@ section {
   color: #000000;
   font-weight: bold;
   margin-bottom: 10px;
+  display: block;
 }
 
 /* Content styling */
@@ -2592,6 +2625,12 @@ section {
   .platformperform .text-plat{
     width: 80%;
     padding-left: 10%;
+  }
+
+  .title-what-we-do h1 h2 h3 h4 h5{
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
   }
 }
 
