@@ -1118,6 +1118,9 @@ section {
 # Step Section
 --------------------------------------------------------------*/
 
+.step .row {
+}
+
 .step-box {
   padding-top: 20px;
   padding-left: 10px ;
@@ -1137,7 +1140,6 @@ section {
 .step-count {
   display: flex;
   width: 100%;
-  height: 57px;
   align-items: left;
   gap: 15px;
 }
@@ -1156,8 +1158,8 @@ section {
 }
 
 .step-count-box h2 {
-  font-weight: 800;
-  padding: 8px;
+  font-weight: 700;
+  padding: 5px;
 }
 
 .step-text-box h2{
@@ -1165,17 +1167,15 @@ section {
 }
 
 .step-count .step-text-box .dropdown-content {
-  display: none;
+  display:  none ;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 300px;
-  min-height: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   margin-left: 4px;
 }
 
 .step-count .dropdown-content .step-img-how {
-  position: absolute;
+  position: relative;
   align-items: center;
   max-width: 300px;
   max-height: 300px;
@@ -1193,31 +1193,36 @@ section {
   display: block;
 }
 
-/*
-@media (max-width: 575.98px) { 
+
+@media (max-width: 600px) { 
   .step{
+    .row{
+      margin: 5px;
+    }
+
     .step-count{
-      width: 50%;
-      height: 50%;
+      width: 100%;
       text-align: start;
     }
       
     .step-count .step-count-box {
-      display: block;
-      width: 100%;
-      align-items: center;
-      height: 60%;
+      display: absolute ;
+      width: 20%;
+
     }
   
     .step-count .step-count-box h2{
-      width: 100%;
-      padding: 5px;
       font-size: 15px;
+      height: 10%;
     }
   
     .step-count .step-text-box {
-      font-size: 15px;
+      width: 80%;
       flex-wrap: wrap;
+    }
+
+    .step-count .step-text-box h3{
+      font-size: medium;
     }
   
     .step-count .dropdown-content .step-img-how {
@@ -1228,36 +1233,64 @@ section {
     .step .step-img a {
       margin-bottom: 10px;
     }
+
+    .step-count .dropdown-content .step-img-how {
+      max-width: 200px;
+      max-height: 200px;
+    }
   
   }
-
  
 }
 
+@media (max-width: 900px) { 
+  .step{
+    .row{
+      margin: 5px;
+    }
 
-/* 
-@media (max-width: 767.98px) { 
+    .step-count{
+      width: 100%;
+      text-align: start;
+    }
+      
+    .step-count .step-count-box {
+      display: absolute ;
+      width: 20%;
 
-  .step-count .step-count-box {
-    width:100%;
-    height:80%;
+    }
+  
+    .step-count .step-count-box h2{
+      font-size: 18px;
+      height: 10%;
+    }
+  
+    .step-count .step-text-box {
+      width: 80%;
+      flex-wrap: wrap;
+    }
+
+    .step-count .step-text-box h3{
+      font-size: larger;
+    }
+  
+    .step-count .dropdown-content .step-img-how {
+      position: relative;
+      align-items: center;
+    }
+  
+    .step .step-img a {
+      margin-bottom: 10px;
+    }
+
+    .step-count .dropdown-content .step-img-how {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  
   }
-
-  .step-count .step-count-box h2{
-    width: 100%;
-    height: 57px;
-    font-size: 20px;
-  }
-
-  .step-count .step-text-box {
-    font-size: 10px;
-  }
-
-  .step-count .dropdown-content .step-img-how {
-    position: relative;
-    align-items: center;
-  }
-} */
+ 
+}
 
 /*--------------------------------------------------------------
 # Featured Services Section
