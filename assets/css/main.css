@@ -1143,7 +1143,6 @@ section {
 }
 
 .step-count-box {
-  display: block;
   width: 100%;
   height: 100%;
   max-width: 150px;
@@ -1161,11 +1160,8 @@ section {
   padding: 8px;
 }
 
-.step-text-box {
-  color: #000;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+.step-text-box h2{
+  font-weight: 400;
 }
 
 .step-count .step-text-box .dropdown-content {
@@ -1197,59 +1193,71 @@ section {
   display: block;
 }
 
-
-
-
-
-
+/*
 @media (max-width: 575.98px) { 
-    
-  .step-count .step-count-box {
-    width:30%;
-    height:80%;
+  .step{
+    .step-count{
+      width: 50%;
+      height: 50%;
+      text-align: start;
+    }
+      
+    .step-count .step-count-box {
+      display: block;
+      width: 100%;
+      align-items: center;
+      height: 60%;
+    }
+  
+    .step-count .step-count-box h2{
+      width: 100%;
+      padding: 5px;
+      font-size: 15px;
+    }
+  
+    .step-count .step-text-box {
+      font-size: 15px;
+      flex-wrap: wrap;
+    }
+  
+    .step-count .dropdown-content .step-img-how {
+      position: relative;
+      align-items: center;
+    }
+  
+    .step .step-img a {
+      margin-bottom: 10px;
+    }
+  
   }
 
-  .step-count .step-count-box h2{
-    width: 20%;
-    height: 57px;
-    font-size: 20px;
-  }
-
-  .step-count .step-text-box {
-    font-size: 15px;
-  }
-
-  .step-count .dropdown-content .step-img-how {
-    position: relative;
-    align-items: center;
-    max-width: 300px;
-    max-height: 300px;
-  }
-
+ 
 }
 
+
+/* 
 @media (max-width: 767.98px) { 
 
   .step-count .step-count-box {
-    width:30%;
+    width:100%;
     height:80%;
   }
 
   .step-count .step-count-box h2{
-    width: 20%;
+    width: 100%;
     height: 57px;
     font-size: 20px;
   }
 
   .step-count .step-text-box {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .step-count .dropdown-content .step-img-how {
     position: relative;
     align-items: center;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Featured Services Section
