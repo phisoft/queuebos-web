@@ -1117,6 +1117,14 @@ section {
 /*--------------------------------------------------------------
 # Step Section
 --------------------------------------------------------------*/
+
+.step-box {
+  padding-top: 20px;
+  padding-left: 10px ;
+  width: 100%;
+  display: flex;
+}
+
 .step .step-img {
   position: relative;
   align-items: start;
@@ -1124,13 +1132,6 @@ section {
   max-height: 100%;
   display: inline-block;
   border-radius: 0px 25px 25px 0px;
-}
-
-.step-box {
-  padding-top: 20px;
-  justify-content:start;
-  padding-left: 10px ;
-  width: 100%;
 }
 
 .step-count {
@@ -1142,59 +1143,111 @@ section {
 }
 
 .step-count-box {
-  display: inline-block;
-  width: 150px;
-  height: 57px;
-  padding: 9px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  max-height: 50px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   background: #079492;
   color: #FFF;
   text-align: center;
-  max-width: 150px;
-  max-height: 50px;
 }
 
 .step-count-box h2 {
   font-weight: 800;
+  padding: 8px;
 }
 
 .step-text-box {
   color: #000;
-  font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-@media (max-width:900px) {
-  .step-count {
-    padding-left: 10px;
-    gap: 10px;
-    margin-left: 10px;
+.step-count .step-text-box .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  min-height: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-left: 4px;
+}
 
-    .step-count-box {
-      display: flex;
-      max-width: 20%;
-      height: 35px;
-      padding: 5px;
-      min-width: 100px;
-      font-size: small;
-      border-radius: hidden;
-    }
+.step-count .dropdown-content .step-img-how {
+  position: absolute;
+  align-items: center;
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: -10px;
+}
 
-    .step .step-img {
-      border-radius: hidden;
-    }
 
-    .step-text-box h2{
-      font-size: 20px;
-    }
+.step-count .dropdown-content a {
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
 
-   
-      
-  
+.step-count:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+@media (max-width: 575.98px) { 
+    
+  .step-count .step-count-box {
+    width:30%;
+    height:80%;
+  }
+
+  .step-count .step-count-box h2{
+    width: 20%;
+    height: 57px;
+    font-size: 20px;
+  }
+
+  .step-count .step-text-box {
+    font-size: 15px;
+  }
+
+  .step-count .dropdown-content .step-img-how {
+    position: relative;
+    align-items: center;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+}
+
+@media (max-width: 767.98px) { 
+
+  .step-count .step-count-box {
+    width:30%;
+    height:80%;
+  }
+
+  .step-count .step-count-box h2{
+    width: 20%;
+    height: 57px;
+    font-size: 20px;
+  }
+
+  .step-count .step-text-box {
+    font-size: 15px;
+  }
+
+  .step-count .dropdown-content .step-img-how {
+    position: relative;
+    align-items: center;
   }
 }
 
