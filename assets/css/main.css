@@ -1332,11 +1332,22 @@ section {
 # Featured Services Section
 --------------------------------------------------------------*/
 .featured-services .service-item {
-  padding: 30px;
+  padding: 30px 30px 70px 30px;
   transition: all ease-in-out 0.4s;
-  background: var(--color-white);
   height: 100%;
   position: center relative;
+}
+
+@media (max-width: 1190px) {
+  .featured-services .service-item {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-services .service-item {
+    padding: 0 30px;
+  }
 }
 
 .featured-services p {
@@ -1370,10 +1381,10 @@ section {
   margin-bottom: 0;
 }
 
-.featured-services .service-item:hover {
+/* .featured-services .service-item:hover {
   transform: translateY(-10px);
   box-shadow: 0px 0 60px 0 rgba(var(--color-secondary-rgb), 0.1);
-}
+} */
 
 .featured-services .service-item:hover h4 a {
   color: var(--color-primary);
@@ -1385,13 +1396,12 @@ section {
 
 .container .instant-service-box {
   width: 100%;
-  min-height: 70vh;
   background-color: #D5EDEC;
   justify-content: space-around ;
   border-radius: 25px;
-  padding-left: 50px;
   margin-top: 40px;
   display: grid;
+  padding: 50px;
 }
 
 .instant-service-img{
@@ -3982,5 +3992,11 @@ section {
 .services .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-secondary-dark);
   opacity: 1;
+}
+
+.service-img img {
+  width: auto;
+  text-align: center;
+  height: 150px;
 }
 
