@@ -1140,17 +1140,16 @@ section {
 .step-count {
   display: flex;
   width: 100%;
+  height: 50px;
   align-items: left;
   gap: 15px;
+  text-wrap: wrap;
 }
 
 .step-count-box {
   width: 100%;
-  height: 100%;
   max-width: 150px;
   max-height: 50px;
-  justify-content: center;
-  align-items: center;
   border-radius: 20px;
   background: #079492;
   color: #FFF;
@@ -1194,7 +1193,7 @@ section {
 }
 
 
-@media (max-width: 600px) { 
+@media (max-width: 1400px) { 
   .step{
     .row{
       margin: 5px;
@@ -1202,18 +1201,16 @@ section {
 
     .step-count{
       width: 100%;
+      height: auto;
       text-align: start;
+      text-wrap: none;
     }
       
     .step-count .step-count-box {
-      display: absolute ;
-      width: 20%;
-
     }
   
     .step-count .step-count-box h2{
-      font-size: 15px;
-      height: 10%;
+      height: 1%;
     }
   
     .step-count .step-text-box {
@@ -1223,6 +1220,8 @@ section {
 
     .step-count .step-text-box h3{
       font-size: medium;
+      display: block;
+      text-wrap: wrap;
     }
   
     .step-count .dropdown-content .step-img-how {
@@ -1230,8 +1229,8 @@ section {
       align-items: center;
     }
   
-    .step .step-img a {
-      margin-bottom: 10px;
+    .step .step-img{
+      margin-bottom: 30px;
     }
 
     .step-count .dropdown-content .step-img-how {
@@ -1243,7 +1242,7 @@ section {
  
 }
 
-@media (max-width: 900px) { 
+@media (max-width: 400px) { 
   .step{
     .row{
       margin: 5px;
@@ -1251,18 +1250,22 @@ section {
 
     .step-count{
       width: 100%;
+      height: auto;
       text-align: start;
+      display:block;
+      flex-direction: row;
+      text-wrap: none;
     }
       
     .step-count .step-count-box {
-      display: absolute ;
       width: 20%;
-
+      flex-direction: row;
+      padding: none;
     }
   
     .step-count .step-count-box h2{
-      font-size: 18px;
-      height: 10%;
+      font-size: 15px;
+      height: 1%;
     }
   
     .step-count .step-text-box {
@@ -1271,7 +1274,9 @@ section {
     }
 
     .step-count .step-text-box h3{
-      font-size: larger;
+      font-size: medium;
+      display: block;
+      text-wrap: wrap;
     }
   
     .step-count .dropdown-content .step-img-how {
@@ -1279,8 +1284,8 @@ section {
       align-items: center;
     }
   
-    .step .step-img a {
-      margin-bottom: 10px;
+    .step .step-img{
+      margin-bottom: 30px;
     }
 
     .step-count .dropdown-content .step-img-how {
