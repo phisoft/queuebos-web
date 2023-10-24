@@ -1172,6 +1172,7 @@ section {
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   margin-left: 4px;
+  object-fit: scale-down;
 }
 
 .step-count .dropdown-content .step-img-how {
@@ -1228,11 +1229,12 @@ section {
     margin-bottom: 30px;
   }
 
-  .step-count .dropdown-content .step-img-how {
+  .step .step-count .dropdown-content .step-img-how {
     max-width: 200px;
     max-height: 200px;
+    display: inline;
+    flex: 0 0 auto;
   }
-
 }
     
  
@@ -1241,13 +1243,20 @@ section {
 @media (max-width: 1080px) { 
   .step .row{
     margin-left: 2px;
+    row-gap: 10px;
   }
 
   .step .step-count{
     width: 100%;
     height: auto;
     text-align: start;
+    align-items: center;
   }
+
+  .step .step-count .step-count-box{
+    margin: auto;
+  }
+
   .step .step-count .step-count-box h2{
     height: 1%;
     font-size: x-large;
@@ -1295,12 +1304,14 @@ section {
   }
     
   .step .step-count .step-count-box {
+    height: 25px;
     width: 20%;
+    border-radius: 15px;
     flex-direction: row;
+    align-items: baseline;
   }
 
   .step .step-count .step-count-box h2{
-    height: 1%;
     font-size: small;
   }
 
@@ -1313,23 +1324,8 @@ section {
     font-size: small;
     display: block;
     text-wrap: wrap;
+    margin: none;
   }
-
-  .step .step-count .dropdown-content .step-img-how {
-    position: relative;
-    align-items: center;
-  }
-
-  .step .step-img{
-    margin-bottom: 10px;
-  }
-
-  .step-count .dropdown-content .step-img-how {
-    max-width: 200px;
-    max-height: 200px;
-  }
-
-}
 }
 
 /*--------------------------------------------------------------
