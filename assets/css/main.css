@@ -1116,6 +1116,219 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Step Section
+--------------------------------------------------------------*/
+
+.step .row {
+}
+
+.step-box {
+  padding-top: 20px;
+  padding-left: 10px ;
+  width: 100%;
+  display: flex;
+}
+
+.step .step-img {
+  position: relative;
+  align-items: start;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.step-count {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  gap: 15px;
+  text-wrap: wrap;
+}
+
+.step-count-box {
+  width: 100%;
+  max-width: 150px;
+  max-height: 50px;
+  border-radius: 20px;
+  background: #079492;
+  color: #FFF;
+  text-align: center;
+}
+
+.step-count-box h2 {
+  font-weight: 700;
+  padding: 5px;
+}
+
+.step-text-box h2{
+  font-weight: 400;
+}
+
+.step-count .step-text-box .dropdown-content {
+  display:  none ;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-left: 4px;
+  object-fit: scale-down;
+}
+
+.step-count .dropdown-content .step-img-how {
+  position: relative;
+  align-items: center;
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: -10px;
+}
+
+
+.step-count .dropdown-content a {
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.step-count:hover .dropdown-content {
+  display: block;
+}
+
+
+@media (max-width: 1400px) { 
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    text-wrap: none;
+  }
+
+  .step .step-count .step-count-box h2{
+    height: 1%;
+  }
+
+  .step .step-count .step-text-box {
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: x-large;
+    display: block;
+    text-wrap: wrap;
+  }
+
+  .step .step-count .dropdown-content .step-img-how {
+    .step-count .dropdown-content .step-img-how {
+    position: relative;
+    align-items: center;
+  }
+
+  .step .step-img{
+    margin-bottom: 30px;
+  }
+
+  .step .step-count .dropdown-content .step-img-how {
+    max-width: 200px;
+    max-height: 200px;
+    display: inline;
+    flex: 0 0 auto;
+  }
+}
+    
+ 
+}
+
+@media (max-width: 1080px) { 
+  .step .row{
+    margin-left: 2px;
+    row-gap: 10px;
+  }
+
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    align-items: center;
+  }
+
+  .step .step-count .step-count-box{
+    margin: auto;
+  }
+
+  .step .step-count .step-count-box h2{
+    height: 1%;
+    font-size: x-large;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: larger;
+  }
+
+}
+
+@media (max-width: 850px) { 
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .step .step-count .step-count-box h2{
+    height: 1%;
+    font-size: x-large;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: x-large;
+  }
+
+}
+
+@media (max-width: 400px) { 
+  .step .title-what-we-do{
+    padding: 20px
+  }
+
+  .step .row{
+      margin-left: 2px;
+  }
+
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    margin: 0;
+  }
+    
+  .step .step-count .step-count-box {
+    height: 25px;
+    width: 20%;
+    border-radius: 15px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .step .step-count .step-count-box h2{
+    font-size: small;
+  }
+
+  .step .step-count .step-text-box {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: small;
+    display: block;
+    text-wrap: wrap;
+    margin: none;
+  }
+}
+
+/*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
 .featured-services .service-item {
@@ -1213,7 +1426,7 @@ section {
 
 .about-bg{
   width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   background: url("../img/about/about-bg.jpg") center center;
   background-size: cover;
   padding: 120px 10 60px;
@@ -2376,59 +2589,81 @@ section {
 /* Timeline container */
 
 /* Title styling */
-.titleWhatwedo{
-  padding: 25px 0px 25px 0px;
+.title-what-we-do{
+  padding-bottom: 25px;
+  align-items: center;
+  text-wrap: wrap;
 }
 
-.titleWhatwedo h2 {
-  font-size: 90px;
-  font-weight: 400;
+.title-what-we-do h1 {
+  color: #079492;
+  text-align: center;
+  display: block;
+  font-weight: 900;
+}
+
+.title-what-we-do h1 span{
+  color: #000000;
+  font-weight: 600;
+}
+
+.title-what-we-do h2 {
   margin-top: -30px;
   margin-bottom: 20px;
   color: #000000;
-  text-align: center;
+  display: block;
 }
 
-.titleWhatwedosmall h2 {
-  font-size: 70px;
+.title-what-we-do h2 span{
+  color: #000000;
+  font-weight: 600;
+}
+
+.title-what-we-do p {
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  display: block;
+}
+
+.title-what-we-do h3 {
   font-weight: 700;
   margin-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   color: #079492;
   text-align: center;
+  display: block;
 }
 
-.titleWhatwedo h2 span{
-  color: #000000;
-  font-weight: 600;
-}
-
-.titleWhatwedosmall h2 span{
-  color: #000000;
-  font-weight: 700;
-}
-
-.titleWhatwedo p {
+.title-what-we-do h4{
   margin: 0 auto;
   text-align: center;
   color: #000000;
-  font-weight: 600;
-  font-size : 25px;
-  color: #000;
-  font-style: normal;
+  font-style: bold;
   line-height: normal;
+  margin-bottom: 10px;
+  display: block;
 }
 
-.titleWhatwedosmall p {
+.title-what-we-do h5{
   margin: 0 auto;
   text-align: center;
   color: #000000;
-  font-weight: 700;
-  font-size : 25px;
-  color: #000;
-  font-style: normal;
+  font-style: bold;
   line-height: normal;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.title-what-we-do a {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
 }
 
 /* Content styling */
@@ -2521,6 +2756,12 @@ section {
   .platformperform .text-plat{
     width: 80%;
     padding-left: 10%;
+  }
+
+  .title-what-we-do h1 h2 h3 h4 h5{
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
   }
 }
 
