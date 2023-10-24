@@ -1142,7 +1142,7 @@ section {
   display: flex;
   width: 100%;
   height: 50px;
-  align-items: left;
+  align-items: center;
   gap: 15px;
   text-wrap: wrap;
 }
@@ -1195,109 +1195,141 @@ section {
 
 
 @media (max-width: 1400px) { 
-  .step{
-    .row{
-      margin: 5px;
-    }
-
-    .step-count{
-      width: 100%;
-      height: auto;
-      text-align: start;
-      text-wrap: none;
-    }
-      
-    .step-count .step-count-box {
-      
-    }
-  
-    .step-count .step-count-box h2{
-      height: 1%;
-    }
-  
-    .step-count .step-text-box {
-      width: 80%;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .step-count .step-text-box h3{
-      font-size: medium;
-      display: block;
-      text-wrap: wrap;
-    }
-  
-    .step-count .dropdown-content .step-img-how {
-      position: relative;
-      align-items: center;
-    }
-  
-    .step .step-img{
-      margin-bottom: 30px;
-    }
-
-    .step-count .dropdown-content .step-img-how {
-      max-width: 200px;
-      max-height: 200px;
-    }
-  
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    text-wrap: none;
   }
+
+  .step .step-count .step-count-box h2{
+    height: 1%;
+  }
+
+  .step .step-count .step-text-box {
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: x-large;
+    display: block;
+    text-wrap: wrap;
+  }
+
+  .step .step-count .dropdown-content .step-img-how {
+    .step-count .dropdown-content .step-img-how {
+    position: relative;
+    align-items: center;
+  }
+
+  .step .step-img{
+    margin-bottom: 30px;
+  }
+
+  .step-count .dropdown-content .step-img-how {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+}
+    
  
 }
 
-@media (max-width: 400px) { 
-  .step{
-    .row{
-      margin: 5px;
-    }
-
-    .step-count{
-      width: 100%;
-      height: auto;
-      text-align: start;
-      display:block;
-      flex-direction: row;
-      text-wrap: none;
-    }
-      
-    .step-count .step-count-box {
-      width: 20%;
-      flex-direction: row;
-      padding: none;
-    }
-  
-    .step-count .step-count-box h2{
-      font-size: 15px;
-      height: 1%;
-    }
-  
-    .step-count .step-text-box {
-      width: 80%;
-      flex-wrap: wrap;
-    }
-
-    .step-count .step-text-box h3{
-      font-size: medium;
-      display: block;
-      text-wrap: wrap;
-    }
-  
-    .step-count .dropdown-content .step-img-how {
-      position: relative;
-      align-items: center;
-    }
-  
-    .step .step-img{
-      margin-bottom: 30px;
-    }
-
-    .step-count .dropdown-content .step-img-how {
-      max-width: 200px;
-      max-height: 200px;
-    }
-  
+@media (max-width: 1080px) { 
+  .step .row{
+    margin-left: 2px;
   }
- 
+
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+  }
+  .step .step-count .step-count-box h2{
+    height: 1%;
+    font-size: x-large;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: larger;
+  }
+
+}
+
+@media (max-width: 850px) { 
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .step .step-count .step-count-box h2{
+    height: 1%;
+    font-size: x-large;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: x-large;
+  }
+
+}
+
+@media (max-width: 400px) { 
+  .step .title-what-we-do{
+    padding: 20px
+  }
+
+  .step .row{
+      margin-left: 2px;
+  }
+
+  .step .step-count{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    margin: 0;
+  }
+    
+  .step .step-count .step-count-box {
+    width: 20%;
+    flex-direction: row;
+  }
+
+  .step .step-count .step-count-box h2{
+    height: 1%;
+    font-size: small;
+  }
+
+  .step .step-count .step-text-box {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .step .step-count .step-text-box h3{
+    font-size: small;
+    display: block;
+    text-wrap: wrap;
+  }
+
+  .step .step-count .dropdown-content .step-img-how {
+    position: relative;
+    align-items: center;
+  }
+
+  .step .step-img{
+    margin-bottom: 10px;
+  }
+
+  .step-count .dropdown-content .step-img-how {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+}
 }
 
 /*--------------------------------------------------------------
@@ -2562,8 +2594,9 @@ section {
 
 /* Title styling */
 .title-what-we-do{
-  padding: 25px 0px 25px 0px;
-  display: ;
+  padding-bottom: 25px;
+  align-items: center;
+  text-wrap: wrap;
 }
 
 .title-what-we-do h1 {
