@@ -1745,21 +1745,37 @@ section {
   background: white;
 }
 
-.use-case .left-image {
+.use-case-box {
+  width: 100%;
+  max-width: 150px;
+  max-height: 50px;
+  border-radius: 20px;
+  background: #079492;
+  color: #FFF;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.use-case-text-box h2{
+  font-weight: 400;
+  font-size: xx-large;
+}
+
+.use-case .left-img {
   position: relative;
-  align-items: center;
-  max-width: 100px;
-  max-height: 100px;
+  align-items: start;
+  max-width: 100%;
+  max-height: 100%;
   display: inline-block;
   border-radius: 0px 50px 50px 0px;
   padding : 10px;
 }
 
-.use-case .right-image {
+.use-case .right-img {
   position: relative;
-  align-items: center;
-  max-width: 100px;
-  max-height: 100px;
+  align-items: end;
+  max-width: 100%;
+  max-height: 100%;
   display: inline-block;
   border-radius: 50px 0px 0px 50px;
   padding: 10px;
