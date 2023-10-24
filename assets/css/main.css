@@ -1756,8 +1756,20 @@ section {
   text-wrap: wrap;
 }
 
+.use-case-text-box-right{
+  padding: 30px;
+  word-wrap: break-word;
+  padding-right: 100px;
+}
+
+.use-case-text-box-left{
+  padding: 30px;
+  word-wrap: break-word;
+  padding-left: 100px;
+}
+
 .use-case-text-box h2{
-  font-weight: 400;
+  font-weight: 700;
   font-size: xx-large;
 }
 
