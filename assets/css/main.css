@@ -1408,22 +1408,6 @@ section {
   font-weight: 600;
 }
   
-  /* background-color: rgba(247, 244, 244, 0.75); */
-}
-
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-/* .about .col-lg-7 {
-  margin-top: -20px;
-}
-
-.about .text-about {
-  border: 0px;
-} */
-
-/* About Bg */
-
 .about-bg{
   width: 100%;
   min-height: 80vh;
@@ -1745,24 +1729,20 @@ section {
   background: white;
 }
 
-.use-case-box {
-  width: 100%;
-  max-width: 150px;
-  max-height: 50px;
-  border-radius: 20px;
-  background: #079492;
-  color: #FFF;
-  text-align: center;
-  text-wrap: wrap;
+.use-case .container .row .{
+  display: flex;
+  flex-direction: column;
 }
 
 .use-case-text-box-left{
+  width: 100%;
   padding: 30px;
   word-wrap: break-word;
   padding-left: 120px;
 }
 
 .use-case-text-box-right{
+  width:100%;
   padding: 30px;
   word-wrap: break-word;
   padding-right: 120px;
@@ -1796,14 +1776,6 @@ section {
   display: inline-block;
   border-radius: 50px 0px 0px 50px;
   padding: 10px;
-}
-
-.use-case .US-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  max-width: 70px;
-  max-height: 30px;
 }
 
 .use-case .tabs-container {
@@ -1889,27 +1861,76 @@ section {
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
-  .use-case .tab-content {
+
+@media (max-width: 1000px) {
+  .use-case .container .row .{
+    padding: 20px;
     flex-direction: column;
   }
 
-  .use-case .tab-panel {
-    max-width: none;
-  }
-
-  .tabs {
-    display: flex;
-    justify-content: center; /* Center the tabs in a row */
-    flex-wrap: wrap;
-  }
-
-  .tabs li {
-    flex: 0 0 calc(33.33% - 10px); /* Adjust the width and spacing for 3 tabs in a row */
-    max-width: calc(33.33% - 10px);
-    margin: 5px;
+  .use-case-text-box-left{
+    width: 50%;
   }
   
+  .use-case-text-box-right{
+    width: 50%;
+  }
+  
+
+  .use-case-text-box-left h2{
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  
+  .use-case-text-box-right h2{
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  
+  .use-case .left-img {
+    max-width: 40%;
+  }
+  
+  .use-case .right-img {
+    max-width: 40%;
+  }
+}
+
+
+@media (max-width: 850px) { 
+  .use-case .row .{
+    padding: 20px;
+  }
+
+  .use-case-text-box-left{
+    width: 60%;
+  }
+  
+  .use-case-text-box-right{
+    width:60%;
+  }
+
+
+  .use-case-text-box-left h2{
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  
+  .use-case-text-box-right h2{
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  
+  .use-case .left-img {
+    max-width: 40%;
+  }
+  
+  .use-case .right-img {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 400px) { 
 }
 
 /*--------------------------------------------------------------
