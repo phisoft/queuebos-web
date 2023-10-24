@@ -331,9 +331,9 @@ section {
 .navbar a:focus {
   display: flex;
   align-items: left;
-  justify-content: flex-start; /* Change from "space-between" to "flex-start" */
+  justify-content: flex-start;
   padding: 14px 36px;
-  font-family: var(--font-secondary);
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(var(--color-secondary-dark-rgb), 0.7);
@@ -517,8 +517,9 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;;
     color: rgba(var(--color-white-rgb), 0.7);
     white-space: nowrap;
     transition: 0.3s;
@@ -1195,7 +1196,7 @@ section {
 }
   
   /* background-color: rgba(247, 244, 244, 0.75); */
-}
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -1239,18 +1240,18 @@ section {
 }
 
 
-.about-bg h2 {
-  /*text-align: left;
+/* .about-bg h2 {
+  text-align: left;
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight:500;
   color: var(--color-secondary);
-  font-family: var(--font-secondary);*/
-}
+  font-family: var(--font-secondary);
+} */
 
-.about-bg h2 span {
-  /*color: var(--color-primary);*/
-}
+/* .about-bg h2 span {
+  color: var(--color-primary);
+} */
 
 .about-bg p {
   text-align: left;
@@ -1465,7 +1466,7 @@ section {
 }
 
 .about .nav-pills {
-  border-bottom: #079492);
+  border-bottom: #079492;
 }
 
 .about .nav-pills li+li {
@@ -3471,7 +3472,7 @@ section {
   color: rgba(var(--color-white-rgb), 0.7);
   transition: 0.3s;
   display: inline-block;
-  line-height:;
+  line-height:1;
   font-weight: 900;
 }
 
