@@ -1531,7 +1531,6 @@ section {
   max-width: 100%;
   margin: 40px;
   margin-bottom: 0;
-  border: 2px solid blue;
 }
 
 /*--------------------------------------------------------------
@@ -2459,7 +2458,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 2px solid red;
 }
 
 .left,
