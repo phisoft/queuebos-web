@@ -54,7 +54,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color: white;">
-    <div class="container-fluid d-flex align-items-lg-start">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -112,8 +112,12 @@
           </li> -->
           <!-- <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li> -->
         </ul>
-     </nav> 
-      <nav class="logo col align-self-center row justify-content-lg-end">
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+     </nav><!-- .navbar --> 
+     <a class="btn-getstarted scrollto" href="index.html#about" style="opacity: 0; pointer-events: none;">Get Started</a>
+     </div>
+  </header><!-- End Header -->
+      <!-- <nav class="logo col align-self-center row justify-content-lg-end"> -->
         <!-- <a class="btn-lang scrollto align-items-lg-center" href="index.html#about" >EN</a> -->
         <div class="col-2">
           <button type="button" class="btn btn-light">EN<i class="bi bi-chevron-down dropdown-indicator"></i></button>
@@ -121,48 +125,37 @@
         </div>
       </nav>
     </div> -->
-  </header><!-- End Header -->
+
   
 
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
-    <div class="row col-md-12" style="padding-top: 42px;justify-content: space-evenly;">
-      <!---
+    <div class="container">
       <div class="row">
-        <div class=" d-flex justify-content-center align-items-center" data-aos="zoom-out" data-aos-delay="150">
-          <img src="assets/img/header-queuebos/queuebos-transparentbg3.png" class="img-column">
-        </div>
-        </div> --->
-        <!-- <div class="about col-md-7" style="align-items: right">
-          <div class="about about-box">
-            <img src="assets/img/header-queuebos/titleheader.png" alt="mockup">
-          </div> 
-        </div> -->
-        <div class="col-md-7 align-items-center " data-aos="zoom-out">
+        <div class="flex-column justify-content-center text-center col-md-7 align-items-center position-relative" data-aos="zoom-out">
           <div class="brand-tilt">
             <img src="assets/img/header-queuebos/brand-tilt.png" alt="brand-title">
           </div>
         </div>
-        <div class="col-md-1 align-items-center" data-aos="zoom-out">
+        <div class="flex-column justify-content-center text-center col-md-1 align-items-center position-relative" data-aos="zoom-out">
           <div class="header-box">
             <img src="assets/img/header-queuebos/mockup.png" alt="mockup">
           </div>
         </div>
-        <div class="col-md-3 col align-items-lg-center" data-aos="zoom-out" style="padding-top:30%;" >
+        <div class="flex-column justify-content-center text-center col-md-3 col align-items-lg-center position-relative" data-aos="zoom-out" style="padding-top:30%;" >
           <!-- <h2>Welcome to <span>QueueBos</span>.</h2>
           <p>Revolutionizing queues with advanced technology for a waiting experience that's ahead of the curve.</p> -->
-          <a href="index.html#about" class="nav-link scroll-to  btn-see-more">See More</a>
+          <a href="index.html#about" class="btn-see-more">See More</a>
         </div>
-      </div>
-      
     </div>
-    
-    
+    </div>
   </section>
   
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about-bg d-flex align-items-center about " data-aos="fade-up" data-aos-delay="200" >
+    <section id="about" class="about-bg d-flex align-items-center about ">
+
+    <div class="container" data-aos="fade-up">
     
       <!-- <div class="container" data-aos="fade-up"data-aos-delay="200"> -->
         <!-- <div class="section-header">
@@ -173,10 +166,12 @@
         -->
          <!--  <div class="about-container-fluid"> 
           </div> -->
+          <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="title-what-we-do">
-              <h1>ABOUT <span>QUEUEBOS</span></h1>
-              <h4>The Ultimate Queue Handling Solution</h4>
+            <div class="title-what-we-do display-1 align-items-lg-center mb-0">
+              <h1>ABOUT QUEUEBOS</h1>
+              <h5>The Ultimate Queue Handling Solution.</h5>
+            </div>
 
             <div class="about row-about">
                 <div class="about col-md-3">
@@ -189,7 +184,7 @@
                 </div>
                 <div class="about col-md-3">
                   <div class="about about-box">
-                    <img src="assets/img/about/about-2.jpg" class="about-img alt="Logo">
+                    <img src="assets/img/about/about-2.jpg" class="about-img" alt="Logo">
                   <a class="about-a">
                     Whether in computer algorithms or event management, queues guarantee fairness and streamline task processing for optimal efficiency.
                   </a>
@@ -202,8 +197,7 @@
                     QueueBos perfectly embodies these benefits, offering a swift, comprehensive and efficient queue management solution for you.
                   </a>
                   </div>
-                </div>
-              </ul>           
+                </div>          
             </div>
             </div>
     </section><!-- End About Section -->
@@ -255,52 +249,51 @@
 </section>
 <!-- ======= End Solution Section ======= -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container align-items-center">
-        <div class="title-what-we-do">
-          <h1>Unlock <span>Instant Service</span><br>with <span>QueueBos</span></h1>
-          <h4>For every problem, there is a solution. <br>QueueBos is the solution to your Queue Management Challenges.</h4>
-        </div>
-
-        <div class="instant-service-box">
-              <div class="col-md-12 about row-about justify-content-center">
-                <div class="col-md-3 align-items-center">
-                  <div class="about instant-service-img">
-                    <img src="assets/img/instant-services/instant-service-img-1.png" class="instant-service-img" alt="instant-service-img-1">
-                  </div>
-                  <strong><h4>Improve Service Efficiency</h4></strong>
-                  <a class="about-a">
-                    Amplifying efficiency with swift service workflow to minimize costs without compromising customer experiences. 
-                  </a>
-                </div>
-                <div class="about col-md-3 align-items-center">
-                  <div class="instant-service-img">
-                    <img src="assets/img/instant-services/instant-service-img-2.png" class="instant-service-img" alt="instant-service-img-2">
-                  </div>
-                  <strong><h4>Boost Customer Experience</h4></strong>
-                  <a class="about-a">
-                    Transforming queues into engaging moments. Customers will feel attended to and cherished through seamless flow.
-                  </a>
-                </div>
-                <div class="col-md-3 align-items-center">
-                  <div class="about instant-service-img">
-                    <img src="assets/img/instant-services/instant-service-img-3.png" class="instant-service-img" alt="instant-service-img-3">
-                  </div>
-                  <strong><h4>Increase Staff Productivity</h4></strong>
-                  <a class="about-a">
-                    Empower staffs and elevate results. Achieve productivity peaks through strategic operational enhancements. 
-                  </a>
-                </div>
-              </ul>           
-            </div>
-            <!-- End Service Item -->
-
+<!-- ======= Services Section ======= -->
+<section id="featured-services" class="featured-services">
+  <div class="container align-items-center">
+    <div class="title-what-we-do display-1 align-items-lg-center mb-0">
+      <h1>Unlock <span>Instant Service</span> with <span>QueueBos</span></h1>
+      <h5>QueueBos is the solution to your Queue Management Challenges.</h5>
+    </div>
+    <div class="instant-service-box">
+      <div class="row gy-4 justify-content-center">
+        
+        <div class="col-xl-4 col-md-12 d-flex">
+          <div class="service-item position-relative mx-auto">
+            <div class="service-img text-center mb-4"><img src="assets/img/instant-services/instant-service-img-3.png"></div>
+            <h4 class="text-center">Improve Service Efficiency</a></h4>
+            <p class="mb-2 text-center">Amplifying efficiency with swift service workflow to minimize costs without compromising customer experiences. 
+            </p>
           </div>
         </div>
+
+        <div class="col-xl-4 col-md-12 d-flex">
+          <div class="service-item position-relative mx-auto">
+            <div class="service-img text-center mb-4"><img src="assets/img/instant-services/instant-service-img-2.png"></div>
+            <h4 class="text-center">Boost Customer Experience</a></h4>
+            <p class="mb-2 text-center">
+              Transforming queues into engaging moments. Customers will feel attended to and cherished through seamless flow.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-12 d-flex">
+          <div class="service-item position-relative mx-auto">
+            <div class="service-img text-center mb-4"><img src="assets/img/instant-services/instant-service-img-3.png"></div>
+            <h4 class="text-center">Increase Staff Productivity</a></h4>
+            <p class="mb-2 text-center">
+              Empower staffs and elevate results. Achieve productivity peaks through strategic operational enhancements. 
+            </p>
+          </div>
+        </div>
+
       </div>
-    </section>
-    <!-- End Featured Services Section -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Featured Services Section -->
 
 <!-- ======= Step Section ======= -->
 <section id="step" class="row step ">
