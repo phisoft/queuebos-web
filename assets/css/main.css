@@ -567,7 +567,6 @@ section {
 /* Add this rule to your CSS */
 .hero-animated {
   width: 100%;
-  min-height: 100vh;
   background: url("../img/header-queuebos/header-bg-pl.png") center center;
   background-size: cover;
   position: relative;
@@ -642,13 +641,11 @@ section {
   border-radius: 40px;
   border: 4px solid #FFF;
   color: #FFF;
-  width: 130px;
-  height: 40px;
   background-color: #000;
   text-align: center;
   display: block;
   float: right;
-  padding-block: 5px;
+  padding: 10px 20px;
   font-size: 15px;
   font-weight: 400;
 }
@@ -658,27 +655,66 @@ section {
   background: rgba(var(--color-primary-rgb), 0.85);
 }
 
-.hero-animated .brand-tilt{
-  padding: 15px;
+#hero-animated .brand-tilt{
+  object-fit: contain;
+  background-repeat: no-repeat;
   padding-top: 30%;
+  width: 100%;
+  height: auto;
+  align-items: end;
 }
 
-.hero-animated .header-box{
-  padding: 10px;
-  /* margin-right: -20px ; */
-  align-content: flex-start;
+#hero-animated .header-box{
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width: 810px) {
-  .hero-animated .header-box{
-    padding: 150px 0px 0px 0px;
+#hero-animated .header-home{
+padding-bottom: 100px;
+}
+
+#hero-animated .header-mockup{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1081px) {
+  #hero-animated .header-home{
+    padding-bottom: 40px;
   }
+}
+
+@media (max-width: 811px) {
   .hero-animated .btn-see-more{
-    display:none;
+    display: none;
   }
-}
-@media (max-width: 1200px) {
 
+  #hero-animated .header-box {
+    padding-bottom: 50px;
+  }
+
+  #hero-animated .header-home{
+    padding-bottom: 0px;
+  }
+    
+}
+@media (max-width: 760px) {
+  #hero-animated .brand-tilt{
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+
+  #hero-animated .header-home{
+    padding: 100px 50px !important;
+  }
+
+  #hero-animated .header-box {
+    padding-bottom: 0px;
+  }
+    
 }
 
 /* .hero-animated .btn-get-started {
