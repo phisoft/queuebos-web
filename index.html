@@ -910,30 +910,29 @@
 
           <div class="contactus col-lg-4 col-md-6">
             <h4>Contact</h4>
-                <form action="#" method="post" role="form" class="php-email-form" id="contactForm">
+                <form action="#" onsubmit="sendEmail(); reset(); return false;" role="form" class="php-email-form" id="contactForm">
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                      <input type="text" name="name" class="form-control demo-input" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                      <input type="email" class="form-control demo-input" name="email" id="email" placeholder="Your Email" required>
                     </div>
                   </div>
                   <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    <input type="text" class="form-control demo-input" name="subject" id="subject" placeholder="Subject" required>
                   </div>
                   <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    <textarea class="form-control demo-input" name="message" id="message" placeholder="Message" required></textarea>
                   </div>
                   <!-- <div class="my-3">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
                   </div> -->
-                  <div class="text-center mt-3"><button type="submit">Send Message</button></div>
+                  <div class="text-center mt-3"><button onclick="sendEmail();" type="button">Send Message</button></div>
                 </form>
           </div>
-
         </div>
       </div>
     </div>
@@ -1005,6 +1004,44 @@
     });
   });
   </script>
+
+  <!-- SMTP JS -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail() {
+			if (validateForm()) {
+				Email.send({
+					Host: "smtp.elasticemail.com",
+					Username: "phisoft.marketing@gmail.com",
+					Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
+					To: 'hello@phisoft.my',
+					From: "phisoft.marketing@gmail.com",
+					Subject: "Queuebos Contact Form Submission",
+					Body: "Name: " + document.getElementById("name").value +
+						"<br> Email: " + document.getElementById("email").value +
+						"<br> Subject: " + document.getElementById("subject").value +
+						"<br> Message: " + document.getElementById("message").value
+				}).then(
+					message => alert("Message successfully sent.")
+				);
+			} else {
+				alert("Please fill in all required fields.");
+			}
+		}
+		function validateForm() {
+			var isValid = true;
+			var inputs = document.getElementsByClassName('demo-input');
+			for (var i = 0; i < inputs.length; i++) {
+				if (!inputs[i].value) {
+					isValid = false;
+					inputs[i].classList.add('is-invalid');
+				} else {
+					inputs[i].classList.remove('is-invalid');
+				}
+			}
+			return isValid;
+		}
+	</script>
 
 </body>
 
