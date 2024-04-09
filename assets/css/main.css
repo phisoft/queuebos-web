@@ -585,20 +585,20 @@ section {
 
 
 .hero-animated h2 {
-  text-align: left;
+  text-align: center;
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight:500;
-  color: var(--color-secondary);
+  color: #0192da;
   font-family: var(--font-secondary);
 }
 
 .hero-animated h2 span {
-  color: var(--color-primary);
+  color: #013087;
 }
 
 .hero-animated p {
-  text-align: left;
+  text-align: center;
   color: rgba(var(--color-secondary-rgb));
   margin: 0 0 30px 0;
   font-size: 20px;
@@ -1412,7 +1412,7 @@ padding-bottom: 100px;
 }
 
 .featured-services .service-item .icon i {
-  color: var(--color-primary);
+  color: #0192da;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -1440,7 +1440,7 @@ padding-bottom: 100px;
 } */
 
 .featured-services .service-item:hover h4 a {
-  color: var(--color-primary);
+  color: #0192da;
 }
 
 .featured-services .service-item:hover .icon i {
@@ -1692,7 +1692,6 @@ padding-bottom: 100px;
     /* margin: 30px 0 0 150px; */
   }
 }
-
 @media (max-width: 575px) {
   .about .about-img {
     margin: 0px 30px 0px 30px;
