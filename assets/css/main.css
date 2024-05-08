@@ -586,6 +586,28 @@ section {
   font-size: 18px;
 }
 
+.btn-header {
+  background-color: #1398B2;
+  border: 2px solid #1398B2;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: var(--font-secondary);
+  font-size: 18px;
+}
+
+.btn-header-secondary {
+  background-color: #ffffff;
+  border: 2px solid #1398B2;
+  padding: 15px 40px;
+  border-radius: 30px;
+  color: #1398B2;
+  font-weight: 500;
+  font-family: var(--font-secondary);
+  font-size: 18px;
+}
+
 .btn-header-white-secondary {
   background-color: transparent;
   border: 2px solid white;
@@ -1817,7 +1839,6 @@ padding-bottom: 100px;
   }
 
   .about .about-box{
-    padding: 0px;
     max-width: 100%;
   }
 
@@ -4062,11 +4083,6 @@ padding-bottom: 100px;
   line-height: 35px;
 }
 
-/* .footer .contactus .php-email-form {
-  width: 100%;
-  background: var(--color-white);
-} */
-
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
@@ -4128,17 +4144,6 @@ padding-bottom: 100px;
   border-color: var(--color-secondary-light);
 }
 
-/* .footer .contactus .php-email-form input[type=text],
-.footer .contactus .php-email-form input[type=email] {
-  height: 48px;
-  padding: 10px 15px;
-} */
-
-/* .footer .contactus .php-email-form textarea {
-  padding: 10px 12px;
-  height: 290px;
-} */
-
 .footer .contactus .php-email-form button[type=submit] {
   background: black;
   border: 0;
@@ -4151,6 +4156,35 @@ padding-bottom: 100px;
 .footer .contactus .php-email-form button[type=submit]:hover {
   background: whitesmoke;
   color: black;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-queuebosinfo img {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer .footer-queuebosinfo img {
+    width: 50%;
+    text-align: centre;
+  }
+
+  .footer .footer-content .footer-info p {
+    font-size: 14px;
+  }
+
+  .footer .footer-content .footer-links ul li {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .footer .footer-content h5 {
+    font-size: 18px;
+  }
 }
 
 @keyframes animate-loading {
@@ -4222,6 +4256,23 @@ padding-bottom: 100px;
   width: auto;
   text-align: center;
   height: 150px;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  color: #1398B2;
+  font-family: var(--font-secondary);
+  padding: 20px 0 5px 0;
+  font-size: 14px;
+}
+
+.contact-form input {
+  font-family: var(--font-secondary);
+  font-size: 14px;
 }
 
 
