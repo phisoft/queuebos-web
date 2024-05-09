@@ -575,6 +575,10 @@ section {
 --------------------------------------------------------------*/
 /* Add this rule to your CSS */
 
+.header-btn {
+  width: 100vw;
+}
+
 .btn-header-white {
   background-color: white;
   border: 2px solid white;
@@ -611,6 +615,11 @@ section {
   font-weight: 500;
   font-family: var(--font-secondary);
   font-size: 18px;
+}
+
+.btn-header-secondary:hover {
+  background-color: #1398B2;
+  color: #ffffff;
 }
 
 .btn-header-white-secondary {
