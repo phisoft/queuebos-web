@@ -575,6 +575,10 @@ section {
 --------------------------------------------------------------*/
 /* Add this rule to your CSS */
 
+.header-btn {
+  width: 100vw;
+}
+
 .btn-header-white {
   background-color: white;
   border: 2px solid white;
