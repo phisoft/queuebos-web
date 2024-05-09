@@ -50,7 +50,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo/qbos-logo.png" alt="logo">
+        <img src="assets/img/logo/qbos-v2.png" alt="logo">
         <!-- <h1>HeroBiz<span>.</span></h1> -->
       </a>
 
@@ -58,24 +58,26 @@
         <ul>
           <li><a class="nav-link scrollto" href="#">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#featured-services">Services</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Features</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
      </nav><!-- .navbar --> 
      <a class="btn-getstarted scrollto" href="index.html#about" style="opacity: 0; pointer-events: none;">Get Started</a>
      </div>
   </header><!-- End Header -->
-
+  
+  <main id="main">
   <section id="hero-animated" class="hero-animated hero-animated-bg">
+    <div class="container" data-aos="fade-up">
+
     <div class="header-size">
       <div class="row py-5 px-5">
         <div class="col-xl-5 col-md-5 col-sm-12 px-3">
           <div class="hero-text">
             <h2 class="color-white">Streamline Queue Management for Operational Efficiency</h2>
             <p class="color-white">Enhance customer satisfaction and leverage insightful service analytics.</p>
-            <button type="submit" class="btn-header-white" style="margin-right: 5px;">Book a Demo</button>
-            <button type="submit" class="btn-header-white-secondary">Read More</button>
+            <a class="btn-header-white" style="margin-right: 5px;" href="index.html#contact">Book a Demo</a>
+            <a type="submit" class="btn-header-white-secondary" href="index.html#about">Read More</a>
           </div>
         </div>
         <div class="col-xl-7 col-md-7 col-sm-12 px-0">
@@ -83,12 +85,11 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
-  
-  <main id="main">
 
   <!-- ======= About Section ======= -->
-  <section id="about" class="hero-animated d-flex align-items-center about ">
+  <section id="about" class="hero-animated d-flex align-items-center about">
   <div class="container" data-aos="fade-up">
     <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
       <div class="mb-5">
@@ -122,7 +123,7 @@
   </section><!-- End About Section -->
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="hero-animated d-flex align-items-center about ">
+  <section id="contact" class="hero-animated d-flex align-items-center contact ">
     <div class="container" data-aos="fade-up">
       <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
         <div class="mb-5">
@@ -137,13 +138,13 @@
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
               <label for="exampleFormControlTextarea1">EMAIL</label>
-              <input type="email" class="form-control demo-input" name="email" id="email" placeholder="example@mail.com" required>
+              <input type="email" class="form-control demo-input" name="email" id="email" required>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6 form-group">
               <label for="exampleFormControlTextarea1">PHONE NUMBER</label>
-              <input type="text" name="phone" class="form-control demo-input" id="phone" placeholder="+60123456789" required>
+              <input type="text" name="phone" class="form-control demo-input" id="phone" required>
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
               <label for="exampleFormControlTextarea1">COMPANY NAME</label>
@@ -152,10 +153,10 @@
           </div>
           <div class="form-group mt-3">
             <label for="exampleFormControlTextarea1">MESSAGE</label>
-            <textarea class="form-control demo-input" name="message" id="message" placeholder="Message" required></textarea>
+            <textarea class="form-control demo-input" name="message" id="message" required></textarea>
           </div>
           <div class="text-center mt-5">
-            <button class="btn-header-secondary" onclick="sendEmail();" type="button">SUBMIT</button>
+            <button class="btn-header-secondary" onclick="sendEmail();" type="button">Submit</button>
           </div>
         </form>
 
@@ -176,10 +177,9 @@
           <div class="color-primary col-lg-2 col-md-2 footer-links px-4">
             <h5 class="mb-4">Quick Link </h5>
             <ul>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="#">Start</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="#">Features</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="#">Solutions</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="#">Contact</a></li>
+              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="#">Home</a></li>
+              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#about">About</a></li>
+              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#contact">Contact</a></li>
             </ul>
           </div>
           
@@ -210,12 +210,12 @@
         </div>
       </div>
 
-      <div class="footer-legal text-center">
+      <div class="footer-legal footer-info text-center">
         <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
         <div class="d-flex flex-column align-items-center align-items-lg-center">
           <hr>
           <div class="copyright color-grey">
-            Copyright &copy; 2024 QueueBos. All Rights Reserved.
+            <p>Copyright &copy; 2024 QueueBos. All Rights Reserved.</p>
           </div>
           <div class="credits">
           </div>
@@ -280,7 +280,8 @@
 					Subject: "Queuebos Contact Form Submission",
 					Body: "Name: " + document.getElementById("name").value +
 						"<br> Email: " + document.getElementById("email").value +
-						"<br> Subject: " + document.getElementById("subject").value +
+						"<br> Phone Number: " + document.getElementById("phone").value +
+            "<br> Company: " + document.getElementById("company").value +
 						"<br> Message: " + document.getElementById("message").value
 				}).then(
 					message => alert("Message successfully sent.")
