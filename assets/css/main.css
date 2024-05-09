@@ -613,6 +613,11 @@ section {
   font-size: 18px;
 }
 
+.btn-header-secondary:hover {
+  background-color: #1398B2;
+  color: #ffffff;
+}
+
 .btn-header-white-secondary {
   background-color: transparent;
   border: 2px solid white;
