@@ -6,11 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>QueueBos</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="queue management system" name="queue management system">
 
   <!-- Favicons -->
-  <!--  Waiting image logo to uploaded on the Odoo -->
   <link href="assets\img\logo\qbos-icon.png" rel="icon">
   <link href="assets\img\logo\qbos-icon.png" rel="apple-touch-icon">
 
@@ -28,18 +26,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
-  <!-- <link href="assets/css/variables.css" rel="stylesheet"> -->
   <link href="assets/css/variables-blue.css" rel="stylesheet">
-  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
-  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
-  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
-  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
-  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -47,13 +38,10 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color: white;">
     <div class="container-fluid d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo/qbos-v2.png" alt="logo">
-        <!-- <h1>HeroBiz<span>.</span></h1> -->
       </a>
-
       <nav id="navbar" class="navbar ">
         <ul>
           <li><a class="nav-link scrollto" href="#">Home</a></li>
@@ -61,7 +49,7 @@
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
-     </nav><!-- .navbar --> 
+     </nav>
      <a class="btn-getstarted scrollto" href="index.html#about" style="opacity: 0; pointer-events: none;">Get Started</a>
      </div>
   </header><!-- End Header -->
@@ -69,7 +57,6 @@
   <main id="main">
   <section id="hero-animated" class="hero-animated hero-animated-bg">
     <div class="container" data-aos="fade-up">
-
     <div class="header-size">
       <div class="row py-5 px-5">
         <div class="col-xl-5 col-md-5 col-sm-12 px-0">
@@ -121,7 +108,7 @@
             </div>
           </div>          
       </div>
-      </div>
+    </div>
   </section><!-- End About Section -->
 
   <!-- ======= Contact Section ======= -->
@@ -165,7 +152,6 @@
         </div>
     </section><!-- End Contact Section -->
 
-
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="footer-content">
@@ -175,7 +161,6 @@
             <div class="d-none d-md-block mb-4"><img src="assets\img\logo\qbos-v2.png" alt="logo">
             </div>
           </div>
-
           <div class="color-primary col-lg-2 col-md-2 footer-links px-4">
             <h5 class="mb-4">Quick Link </h5>
             <ul>
@@ -184,7 +169,6 @@
               <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#contact">Contact</a></li>
             </ul>
           </div>
-          
           <div class="col-lg-4 col-md-4 px-4">
             <div class="footer-info">
               <h5 class="color-primary mb-4">Our Info</h5>
@@ -196,7 +180,6 @@
               </p>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-3 footer-links footer-info px-4">
             <h5 class="color-primary">Follow Us</h5>
             <div class="footer-sosmed mb-1">
@@ -208,10 +191,8 @@
           <p class="color-grey">Phone: +6012 - 873 1819</p>
           <p class="color-grey">Email: hello@phisoft.my</p>
           </div>    
-
         </div>
       </div>
-
       <div class="footer-legal footer-info text-center">
         <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
         <div class="d-flex flex-column align-items-center align-items-lg-center">
@@ -225,9 +206,6 @@
       </div>
     </div>
     </div>
-
-
-
   </footer><!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -267,46 +245,6 @@
     });
   });
   </script>
-
-  <!-- SMTP JS -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script>
-		function sendEmail() {
-			if (validateForm()) {
-				Email.send({
-					Host: "smtp.elasticemail.com",
-					Username: "phisoft.marketing@gmail.com",
-					Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
-					To: 'hello@phisoft.my',
-					From: "phisoft.marketing@gmail.com",
-					Subject: "Queuebos Contact Form Submission",
-					Body: "Name: " + document.getElementById("name").value +
-						"<br> Email: " + document.getElementById("email").value +
-						"<br> Phone Number: " + document.getElementById("phone").value +
-            "<br> Company: " + document.getElementById("company").value +
-						"<br> Message: " + document.getElementById("message").value
-				}).then(
-					message => alert("Message successfully sent.")
-				);
-			} else {
-				alert("Please fill in all required fields.");
-			}
-		}
-		function validateForm() {
-			var isValid = true;
-			var inputs = document.getElementsByClassName('demo-input');
-			for (var i = 0; i < inputs.length; i++) {
-				if (!inputs[i].value) {
-					isValid = false;
-					inputs[i].classList.add('is-invalid');
-				} else {
-					inputs[i].classList.remove('is-invalid');
-				}
-			}
-			return isValid;
-		}
-	</script>
-
 </body>
 
 </html>
