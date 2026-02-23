@@ -655,6 +655,7 @@ a:hover {
   font-size: 2.5rem;
   margin-bottom: 16px;
   display: block;
+  color: var(--qb-highlight);
 }
 
 .industry-card h3 {
