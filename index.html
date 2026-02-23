@@ -5,17 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>QueueBos</title>
-  <meta content="queue management system" name="queue management system">
+  <title>QueueBos - Smart Queue Management System</title>
+  <meta content="QueueBos - Transform your business with intelligent queue management. Reduce wait times, improve customer satisfaction, and gain valuable insights." name="description">
 
   <!-- Favicons -->
-  <link href="assets\img\logo\qbos-icon.png" rel="icon">
-  <link href="assets\img\logo\qbos-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo/qbos-icon.png" rel="icon">
+  <link href="assets/img/logo/qbos-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Google Icon -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -26,191 +26,452 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/variables-blue.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- Modern Theme CSS -->
+  <link href="assets/css/modern.css" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color: white;">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo/qbos-v2.png" alt="logo">
-      </a>
-      <nav id="navbar" class="navbar ">
-        <ul>
-          <li><a class="nav-link scrollto" href="#">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle d-none"></i>
-     </nav>
-     <a class="btn-getstarted scrollto" href="index.html#about" style="opacity: 0; pointer-events: none;">Get Started</a>
-     </div>
-  </header><!-- End Header -->
-  
-  <main id="main">
-  <section id="hero-animated" class="hero-animated hero-animated-bg">
-    <div class="container" data-aos="fade-up">
-    <div class="header-size">
-      <div class="row py-5 px-5">
-        <div class="col-xl-5 col-md-5 col-sm-12 px-0">
-          <div class="hero-text">
-            <h2 class="color-white">Streamline Queue Management for Operational Efficiency</h2>
-            <p class="color-white">Enhance customer satisfaction and leverage insightful service analytics.</p>
-            <div class="header-btn">
-              <a class="btn-header-white" style="margin-right: 5px;" href="index.html#contact">Book a Demo</a>
-              <a type="submit" class="btn-header-white-secondary" href="index.html#about">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-7 col-md-7 col-sm-12 px-0">
-          <img src="assets/img/header1.png" class="img-header">
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/img/logo/qbos-v2.png" alt="QueueBos Logo">
+        </a>
+        
+        <nav class="nav-menu d-none d-lg-flex">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#industries" class="nav-link">Industries</a>
+          <a href="#contact" class="nav-cta">
+            <span>Book a Demo</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </nav>
+
+        <div class="mobile-nav-toggle d-lg-none">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
-    </div>
-  </section>
+  </header>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="hero-animated d-flex align-items-center about">
-  <div class="container" data-aos="fade-up">
-    <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-      <div class="mb-5">
-        <h2 class="text-center">We help customer save their waiting time</h2>
-        <p class="text-center">We provide comprehensive solutions to optimize your business.</p>
-      </div>
-      <div class="about row-about">
-          <div class="about col-lg-4 col-md-4 py-3 px-3">
-            <div class="about about-box">
-              <img src="assets/img/queue.png" class="about-img">
-              <p class="mb-0 mt-3 text-bold">Virtual Queues</p>
-              <p class="mb-0">Customers can join the queue virtually on their mobile devices, saving them time to focus on what matters most.</p>
+  <main>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+              <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Trusted by 500+ Businesses</span>
+              </div>
+              <h1 class="hero-title">
+                Streamline Queue Management for <span class="highlight">Operational Excellence</span>
+              </h1>
+              <p class="hero-description">
+                Enhance customer satisfaction with our intelligent queue management system. 
+                Reduce wait times, optimize service efficiency, and gain actionable insights 
+                with real-time analytics.
+              </p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">
+                  <span>Get Started</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="#how-it-works" class="btn-secondary">
+                  <span>Learn More</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="about col-lg-4 col-md-4 py-3 px-3">
-            <div class="about about-box">
-              <img src="assets/img/notify.png" class="about-img">
-              <p class="mb-0 mt-3 text-bold">Customer Notifications</p>
-              <p class="mb-0">Receive real-time notifications on devices, displaying the current queue number and providing updates.</p>
+          <div class="col-lg-6">
+            <div class="hero-visual" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/header1.png" alt="QueueBos Dashboard" class="hero-image">
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                  <div class="stat-content">
+                    <h4>50,000+</h4>
+                    <p>Daily Users</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="about col-lg-4 col-md-4 py-3 px-3">
-            <div class="about about-box">
-              <img src="assets/img/analytics.png" class="about-img">
-              <p class="mb-0 mt-3 text-bold">Queue Assessment</p>
-              <p class="mb-0">The system collects and evaluates data on queue performance, facilitating improvements in service procedures.</p>
-            </div>
-          </div>          
-      </div>
-    </div>
-  </section><!-- End About Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="hero-animated d-flex align-items-center contact ">
-    <div class="container" data-aos="fade-up">
-      <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-        <div class="mb-5">
-          <h2 class="text-center">Request a Demo</h2>
-          <p class="text-center">Transform your business with our queue management system today</p>
         </div>
-        <form action="#" onsubmit="sendEmail(); reset(); return false;" role="form" class="php-email-form contact-form" id="contactForm">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <label for="exampleFormControlTextarea1">NAME</label>
-              <input type="text" name="name" class="form-control demo-input" id="name" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <label for="exampleFormControlTextarea1">EMAIL</label>
-              <input type="email" class="form-control demo-input" name="email" id="email" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <label for="exampleFormControlTextarea1">PHONE NUMBER</label>
-              <input type="text" name="phone" class="form-control demo-input" id="phone" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <label for="exampleFormControlTextarea1">COMPANY NAME</label>
-              <input type="email" class="form-control demo-input" name="company" id="company" required>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <label for="exampleFormControlTextarea1">MESSAGE</label>
-            <textarea class="form-control demo-input" name="message" id="message" required></textarea>
-          </div>
-          <div class="text-center mt-5">
-            <button class="btn-header-secondary" onclick="sendEmail();" type="button">Submit</button>
-          </div>
-        </form>
+      </div>
+    </section>
 
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Powerful <span class="highlight">Features</span></h2>
+          <p>Everything you need to transform your queue management and deliver exceptional customer experiences.</p>
         </div>
-    </section><!-- End Contact Section -->
+        
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="bi bi-phone-fill"></i>
+            </div>
+            <h3>Virtual Queues</h3>
+            <p>Customers can join queues remotely via mobile app or web, eliminating physical waiting and enabling them to focus on what matters most.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="feature-icon">
+              <i class="bi bi-bell-fill"></i>
+            </div>
+            <h3>Smart Notifications</h3>
+            <p>Real-time SMS, WhatsApp, and push notifications keep customers informed about their queue position and estimated wait time.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h3>Advanced Analytics</h3>
+            <p>Comprehensive dashboards and reports provide deep insights into queue performance, peak hours, and service efficiency.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="feature-icon">
+              <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <h3>Multi-Branch Management</h3>
+            <p>Manage multiple locations from a single dashboard. Monitor performance, allocate resources, and standardize operations across all branches.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="bi bi-display-fill"></i>
+            </div>
+            <h3>Digital Display Integration</h3>
+            <p>Seamlessly connect with digital signage to show real-time queue information, promotional content, and wait time estimates.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="feature-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h3>Enterprise Security</h3>
+            <p>Bank-grade security with encrypted data storage, role-based access control, and compliance with data protection regulations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= How It Works Section ======= -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>How It <span class="highlight">Works</span></h2>
+          <p>Get your queue management system up and running in minutes with our simple setup process.</p>
+        </div>
+        
+        <div class="steps-container">
+          <div class="step-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-number">1</div>
+            <h3>Sign Up</h3>
+            <p>Create your account and set up your organization in just a few clicks.</p>
+          </div>
+          
+          <div class="step-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-number">2</div>
+            <h3>Configure</h3>
+            <p>Customize your queue types, services, and notification preferences.</p>
+          </div>
+          
+          <div class="step-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-number">3</div>
+            <h3>Deploy</h3>
+            <p>Add counters, train staff, and start serving customers efficiently.</p>
+          </div>
+          
+          <div class="step-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="step-number">4</div>
+            <h3>Optimize</h3>
+            <p>Use analytics to continuously improve service times and customer satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Industries Section ======= -->
+    <section id="industries" class="industries">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Industries We <span class="highlight">Serve</span></h2>
+          <p>Versatile solutions tailored for various industries with unique queue management needs.</p>
+        </div>
+        
+        <div class="industries-grid">
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="industry-icon">🏦</span>
+            <h3>Banking & Finance</h3>
+          </div>
+          
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="150">
+            <span class="industry-icon">🏛️</span>
+            <h3>Government</h3>
+          </div>
+          
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="industry-icon">🏥</span>
+            <h3>Healthcare</h3>
+          </div>
+          
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="250">
+            <span class="industry-icon">🍽️</span>
+            <h3>Restaurant</h3>
+          </div>
+          
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="industry-icon">🛒</span>
+            <h3>Retail</h3>
+          </div>
+          
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="350">
+            <span class="industry-icon">📱</span>
+            <h3>Telecommunications</h3>
+          </div>
+          
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
+            <span class="industry-icon">🎓</span>
+            <h3>Education</h3>
+          </div>
+          
+          <div class="industry-card" data-aos="fade-up" data-aos-delay="450">
+            <span class="industry-icon">✈️</span>
+            <h3>Transportation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>What Our <span class="highlight">Clients Say</span></h2>
+          <p>Join hundreds of businesses that have transformed their customer experience with QueueBos.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"QueueBos has transformed how we serve customers. Wait times have decreased by 60% and customer satisfaction has never been higher."</p>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">AK</div>
+              <div class="testimonial-info">
+                <h4>Ahmad Khan</h4>
+                <p>Branch Manager, Bank Rakyat</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"The analytics dashboard is incredibly powerful. We've been able to optimize our staff scheduling and reduce customer wait times significantly."</p>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">SL</div>
+              <div class="testimonial-info">
+                <h4>Sarah Lee</h4>
+                <p>Operations Director, City Council</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"Our customers love the SMS notification feature. They can shop around while waiting and never miss their turn. Game changer!"</p>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">MC</div>
+              <div class="testimonial-info">
+                <h4>Michael Chen</h4>
+                <p>Owner, TechZone Electronics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA Section ======= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+          <h2>Ready to Transform Your Customer Experience?</h2>
+          <p>Join hundreds of businesses already using QueueBos to deliver exceptional service.</p>
+          <a href="#contact" class="cta-button">
+            <span>Start Your Free Trial</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right">
+            <h2>Get In Touch</h2>
+            <p>Ready to streamline your queue management? Contact us today for a personalized demo.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <h4>Sales Office</h4>
+                  <p>H-03-09, Aeropod Commercial Square,<br>Jalan Aeropod Off Jalan Kepayan,<br>88200 Kota Kinabalu, Sabah, MY</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>hello@queuebos.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+6012 8731 819</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper" data-aos="fade-left">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Company Name" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="How can we help you?" rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="footer-content">
-      <div class="container footer-border">
-        <div class="row align-items-lg-start">
-          <div class="col-lg-3 col-md-2 footer-queuebosinfo align-items-center">
-            <div class="d-none d-md-block mb-4"><img src="assets\img\logo\qbos-v2.png" alt="logo">
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo/qbos-v2.png" alt="QueueBos Logo" style="height: 40px; margin-bottom: 20px;">
+          <p>Transform your business with intelligent queue management. Reduce wait times, improve satisfaction, and grow.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/phisoft.my/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/phisoft.my/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.phisoft.my/index.html"><i class="bi bi-globe2"></i></a>
+            <a href="mailto:hello@phisoft.my"><i class="bi bi-envelope-fill"></i></a>
           </div>
-          <div class="color-primary col-lg-2 col-md-2 footer-links px-4">
-            <h5 class="mb-4">Quick Link </h5>
-            <ul>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="#">Home</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#about">About</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-4 px-4">
-            <div class="footer-info">
-              <h5 class="color-primary mb-4">Our Info</h5>
-              <p class="color-grey">
-                <strong>Sales Office</strong>
-                <br>Lot 45, Lok Kawi Industrial Estate, PH2C, <br>
-                89580 Lok Kawi, Sabah, MY <br>
-                <br>
-                <strong>R & D Office</strong>
-                <br>H-8-10, Aeropod Commercial Square, <br>
-                Jalan Aeropod Off Jalan Kepayan, <br>
-                88200 Kota Kinabalu, Sabah, MY <br><br> 
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 footer-links footer-info px-4">
-            <h5 class="color-primary">Follow Us</h5>
-            <div class="footer-sosmed mb-1">
-              <a href="https://www.facebook.com/phisoft.my/"><i class="bi bi-facebook color-primary"></i></a>
-              <a href="https://www.instagram.com/phisoft.my/"><i class="bi bi-instagram color-primary"></i></a>
-              <a href="https://www.phisoft.my/index.html"><i class="bi bi-globe2 color-primary"></i></a>
-              <a href="mailto:hello@phisoft.my"><i class="bi bi-envelope-fill color-primary"></i></a> 
-          </div>
-          <p class="color-grey">Phone: +6011 - 5769 2496</p>
-          <p class="color-grey">Email: hello@queuebos.com</p>
-          </div>    
         </div>
+        
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Industries</h4>
+          <ul class="footer-links">
+            <li><a href="#">Banking</a></li>
+            <li><a href="#">Government</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Retail</a></li>
+          </ul>
+        </div>
+        
       </div>
-      <div class="footer-legal footer-info text-center">
-        <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
-        <div class="d-flex flex-column align-items-center align-items-lg-center">
-          <hr>
-          <div class="copyright color-grey">
-            <p>Copyright &copy; 2024 QueueBos. All Rights Reserved.</p>
-          </div>
-          <div class="credits">
-          </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 QueueBos. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
       </div>
     </div>
-    </div>
-  </footer><!-- End Footer -->
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/60128731819" target="_blank" class="whatsapp-float" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" style="position: fixed; bottom: 30px; right: 30px; background-color: #25d366; border-radius: 50px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 24px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 1000; transition: transform 0.3s ease, box-shadow 0.3s ease; text-decoration: none;">
+    <i class="bi bi-whatsapp" style="color: white; font-size: 24px;"></i>
+    <span style="color: white; font-weight: 600; font-size: 14px;">Contact Us</span>
+  </a>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -226,28 +487,58 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll(".tabs li");
-    const tabPanels = document.querySelectorAll(".tab-panel");
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 100
+    });
 
-    tabs.forEach(function (tab) {
-      tab.addEventListener("click", function () {
-        const dataTab = this.getAttribute("data-tab");
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
 
-        tabs.forEach(function (tab) {
-          tab.classList.remove("active");
-        });
+    // Mobile navigation
+    const mobileToggle = document.querySelector('.mobile-nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+    }
 
-        tabPanels.forEach(function (panel) {
-          panel.classList.remove("active");
-        });
-
-        this.classList.add("active");
-        document.querySelector(`.tab-panel[data-tab="${dataTab}"]`).classList.add("active");
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
     });
-  });
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Add your form submission logic here
+      alert('Thank you for your interest! We will contact you soon.');
+      this.reset();
+    });
   </script>
 </body>
 
