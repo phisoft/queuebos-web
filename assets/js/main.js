@@ -296,24 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Function to reset the form after successful submission
-  function resetForm() {
-    const form = document.getElementById('contactForm');
-    form.reset(); // Reset the form fields to their default values
-  }
-
-  // Add event listener to the form submission
-  const form = document.getElementById('contactForm');
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    setTimeout(function() {
-      resetForm(); 
-      window.location.reload(); 
-    }, 500); 
-  });
-});
+// Contact form is submitted via Sendbah in index.html inline script
 // Ensure the DOM is fully loaded before executing the script
 document.addEventListener("DOMContentLoaded", function () {
   
@@ -331,56 +314,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  function handleFormSubmission(event) {
-    event.preventDefault();
-
-    sendEmail();
-    resetForm();
-  }
-
-  const form = document.getElementById('contactForm');
-
-  form.addEventListener('submit', handleFormSubmission);
-});
-  function sendEmail() {
-    if (validateForm()) {
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "phisoft.marketing@gmail.com",
-        Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
-        To: 'hello@phisoft.my',
-        From: "phisoft.marketing@gmail.com",
-        Subject: "Queuebos Contact Form Submission",
-        Body: "Name: " + document.getElementById("name").value +
-          "<br> Email: " + document.getElementById("email").value +
-          "<br> Phone Number: " + document.getElementById("phone").value +
-          "<br> Company: " + document.getElementById("company").value +
-          "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => alert("Message successfully sent.")
-      );
-    } else {
-      alert("Please fill in all required fields.");
-    }
-  }
-
-  function validateForm() {
-    var isValid = true;
-    var inputs = document.getElementsByClassName('demo-input');
-    for (var i = 0; i < inputs.length; i++) {
-      if (!inputs[i].value) {
-        isValid = false;
-        inputs[i].classList.add('is-invalid');
-      } else {
-        inputs[i].classList.remove('is-invalid');
-      }
-    }
-    return isValid;
-  }
-
-  // Function to reset the form after successful submission
-  function resetForm() {
-    const form = document.getElementById('contactForm');
-    form.reset();
-  }
