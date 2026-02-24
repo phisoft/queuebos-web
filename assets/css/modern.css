@@ -924,6 +924,11 @@ a:hover {
   box-shadow: 0 0 0 3px rgba(44, 116, 179, 0.1);
 }
 
+.form-group input.is-invalid,
+.form-group textarea.is-invalid {
+  border-color: #dc3545;
+}
+
 .form-group textarea {
   min-height: 120px;
   resize: vertical;
