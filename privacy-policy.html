@@ -166,11 +166,14 @@
                     <a href="index.html" class="logo">
                         <img
                             src="assets/img/logo/qbos-v2.png"
-                            alt="QueueBos Logo"
+                            alt="QueueBos - Smart Queue Management System"
                         />
                     </a>
 
-                    <nav class="nav-menu d-none d-lg-flex">
+                    <nav
+                        class="nav-menu d-none d-lg-flex"
+                        aria-label="Main navigation"
+                    >
                         <a href="index.html#hero" class="nav-link">Home</a>
                         <a href="index.html#features" class="nav-link"
                             >Features</a
@@ -187,7 +190,12 @@
                         </a>
                     </nav>
 
-                    <div class="mobile-nav-toggle d-lg-none">
+                    <div
+                        class="mobile-nav-toggle d-lg-none"
+                        aria-label="Toggle navigation"
+                        role="button"
+                        tabindex="0"
+                    >
                         <span></span>
                         <span></span>
                         <span></span>
@@ -495,16 +503,24 @@
                             management.
                         </p>
                         <div class="footer-social">
-                            <a href="https://www.facebook.com/phisoft.my/"
+                            <a
+                                href="https://www.facebook.com/phisoft.my/"
+                                aria-label="QueueBos on Facebook"
                                 ><i class="bi bi-facebook"></i
                             ></a>
-                            <a href="https://www.instagram.com/phisoft.my/"
+                            <a
+                                href="https://www.instagram.com/phisoft.my/"
+                                aria-label="QueueBos on Instagram"
                                 ><i class="bi bi-instagram"></i
                             ></a>
-                            <a href="https://www.phisoft.my/index.html"
+                            <a
+                                href="https://www.phisoft.my/index.html"
+                                aria-label="PhiSoft Website"
                                 ><i class="bi bi-globe2"></i
                             ></a>
-                            <a href="mailto:hello@phisoft.my"
+                            <a
+                                href="mailto:hello@phisoft.my"
+                                aria-label="Email QueueBos"
                                 ><i class="bi bi-envelope-fill"></i
                             ></a>
                         </div>
@@ -549,7 +565,9 @@
         <a
             href="https://wa.me/60128731819"
             target="_blank"
+            rel="noopener noreferrer"
             class="whatsapp-float"
+            aria-label="Contact QueueBos on WhatsApp"
             onmouseover="this.style.transform = 'scale(1.1)'"
             onmouseout="this.style.transform = 'scale(1)'"
             style="

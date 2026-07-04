@@ -87,6 +87,45 @@
             }
         </script>
 
+        <!-- Structured Data: LocalBusiness -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "QueueBos",
+                "image": "https://queuebos.com/assets/img/logo/qbos-v2.png",
+                "url": "https://queuebos.com",
+                "telephone": "+60128731819",
+                "email": "hello@queuebos.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "H-03-09, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan",
+                    "addressLocality": "Kota Kinabalu",
+                    "addressRegion": "Sabah",
+                    "postalCode": "88200",
+                    "addressCountry": "MY"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "5.9455",
+                    "longitude": "116.0716"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                "priceRange": "$$"
+            }
+        </script>
+
         <!-- Structured Data: Software Application -->
         <script type="application/ld+json">
             {
@@ -108,6 +147,56 @@
                     "ratingValue": "4.8",
                     "reviewCount": "150"
                 }
+            }
+        </script>
+
+        <!-- Structured Data: FAQ -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is QueueBos?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "QueueBos is an intelligent queue management system that helps businesses reduce wait times by up to 60%, improve customer satisfaction, and gain actionable insights through real-time analytics. It supports virtual queues, smart notifications, multi-branch management, and digital display integration."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How does QueueBos queue management system work?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "QueueBos works in four simple steps: 1) Sign up and create your account in minutes. 2) Configure your queue types, services, and notification preferences. 3) Deploy by adding service counters and training your staff. 4) Optimize using real-time analytics to continuously improve service times and customer satisfaction."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which industries can use QueueBos?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "QueueBos serves a wide range of industries including banking and finance, government agencies, healthcare facilities, restaurants, retail stores, telecommunications providers, educational institutions, and transportation services. The platform is versatile and can be customized for any industry with queue management needs."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can customers join queues remotely?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, QueueBos supports virtual queues that allow customers to join queues remotely via mobile app or web browser. Customers receive real-time SMS, WhatsApp, and push notifications about their queue position and estimated wait time, so they never miss their turn."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does QueueBos support multiple branches?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, QueueBos offers multi-branch management that allows you to manage multiple locations from a single dashboard. You can monitor performance, allocate resources, and standardize operations across all branches with enterprise-grade security and role-based access control."
+                        }
+                    }
+                ]
             }
         </script>
 
@@ -165,11 +254,14 @@
                     <a href="index.html" class="logo">
                         <img
                             src="assets/img/logo/qbos-v2.png"
-                            alt="QueueBos Logo"
+                            alt="QueueBos - Smart Queue Management System"
                         />
                     </a>
 
-                    <nav class="nav-menu d-none d-lg-flex">
+                    <nav
+                        class="nav-menu d-none d-lg-flex"
+                        aria-label="Main navigation"
+                    >
                         <a href="#hero" class="nav-link active">Home</a>
                         <a href="#features" class="nav-link">Features</a>
                         <a href="#how-it-works" class="nav-link"
@@ -182,7 +274,12 @@
                         </a>
                     </nav>
 
-                    <div class="mobile-nav-toggle d-lg-none">
+                    <div
+                        class="mobile-nav-toggle d-lg-none"
+                        aria-label="Toggle navigation"
+                        role="button"
+                        tabindex="0"
+                    >
                         <span></span>
                         <span></span>
                         <span></span>
@@ -787,7 +884,7 @@
                     <div class="footer-brand">
                         <img
                             src="assets/img/logo/qbos-v2.png"
-                            alt="QueueBos Logo"
+                            alt="QueueBos - Smart Queue Management System"
                             style="height: 40px; margin-bottom: 20px"
                         />
                         <p>
@@ -796,16 +893,24 @@
                             and grow.
                         </p>
                         <div class="footer-social">
-                            <a href="https://www.facebook.com/phisoft.my/"
+                            <a
+                                href="https://www.facebook.com/phisoft.my/"
+                                aria-label="QueueBos on Facebook"
                                 ><i class="bi bi-facebook"></i
                             ></a>
-                            <a href="https://www.instagram.com/phisoft.my/"
+                            <a
+                                href="https://www.instagram.com/phisoft.my/"
+                                aria-label="QueueBos on Instagram"
                                 ><i class="bi bi-instagram"></i
                             ></a>
-                            <a href="https://www.phisoft.my/index.html"
+                            <a
+                                href="https://www.phisoft.my/index.html"
+                                aria-label="PhiSoft Website"
                                 ><i class="bi bi-globe2"></i
                             ></a>
-                            <a href="mailto:hello@phisoft.my"
+                            <a
+                                href="mailto:hello@phisoft.my"
+                                aria-label="Email QueueBos"
                                 ><i class="bi bi-envelope-fill"></i
                             ></a>
                         </div>
@@ -846,7 +951,9 @@
         <a
             href="https://wa.me/60128731819"
             target="_blank"
+            rel="noopener noreferrer"
             class="whatsapp-float"
+            aria-label="Contact QueueBos on WhatsApp"
             onmouseover="this.style.transform = 'scale(1.1)'"
             onmouseout="this.style.transform = 'scale(1)'"
             style="
