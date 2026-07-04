@@ -1,0 +1,6 @@
+# https://queuebos.com/robots.txt
+User-agent: *
+Allow: /
+Disallow: /assets/vendor/
+
+Sitemap: https://queuebos.com/sitemap.xml
