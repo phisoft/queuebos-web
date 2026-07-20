@@ -88,6 +88,8 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: var(--qb-radius-md); border: 2px solid var(--qb-gray-300); cursor: pointer; transition: var(--qb-transition);
 }
 .btn-outline-dark-lg:hover { border-color: var(--qb-gray-800); color: var(--qb-gray-900); }
+.footer-cta__actions-row .btn-outline-dark-lg { background: #fff; border-color: #fff; color: var(--qb-gray-800); }
+.footer-cta__actions-row .btn-outline-dark-lg:hover { background: rgba(255,255,255,0.9); border-color: rgba(255,255,255,0.9); color: var(--qb-gray-900); }
 .btn-outline-blue {
   display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px;
   background: transparent; color: var(--qb-accent); font-weight: 600; font-size: 0.95rem;
