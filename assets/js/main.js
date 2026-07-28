@@ -1,169 +1,99 @@
 /**
  * QueueBos - Main JavaScript
  */
-document.addEventListener("DOMContentLoaded", () => {
-  "use strict";
+document.addEventListener("DOMContentLoaded", function () {
+    "use strict";
 
-  /**
-   * Preloader
-   */
-  const preloader = document.querySelector("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
-    });
-  }
-
-  /**
-   * Sticky header on scroll
-   */
-  const selectHeader = document.querySelector("#header");
-  if (selectHeader) {
-    document.addEventListener("scroll", () => {
-      window.scrollY > 100
-        ? selectHeader.classList.add("sticked")
-        : selectHeader.classList.remove("sticked");
-    });
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = document.querySelectorAll("#navbar .scrollto");
-
-  function navbarlinksActive() {
-    navbarlinks.forEach((navbarlink) => {
-      if (!navbarlink.hash) return;
-      let section = document.querySelector(navbarlink.hash);
-      if (!section) return;
-      let position = window.scrollY;
-      if (navbarlink.hash != "#header") position += 200;
-      if (
-        position >= section.offsetTop &&
-        position <= section.offsetTop + section.offsetHeight
-      ) {
-        navbarlink.classList.add("active");
-      } else {
-        navbarlink.classList.remove("active");
-      }
-    });
-  }
-  window.addEventListener("load", navbarlinksActive);
-  document.addEventListener("scroll", navbarlinksActive);
-
-  /**
-   * Function to scroll to an element with top offset
-   */
-  function scrollto(el) {
-    const selectHeader = document.querySelector("#header");
-    let offset = 0;
-    if (selectHeader.classList.contains("sticked")) {
-      offset = document.querySelector("#header.sticked").offsetHeight;
-    } else if (selectHeader.hasAttribute("data-scrollto-offset")) {
-      offset =
-        selectHeader.offsetHeight -
-        parseInt(selectHeader.getAttribute("data-scrollto-offset"));
+    // Initialize AOS
+    if (typeof AOS !== "undefined") {
+        AOS.init({ duration: 800, easing: "ease-out-cubic", once: true, offset: 100 });
     }
-    window.scrollTo({
-      top: document.querySelector(el).offsetTop - offset,
-      behavior: "smooth",
+
+    // Header scroll + scroll-top toggle
+    var scrollTopBtn = document.querySelector(".scroll-top");
+    window.addEventListener("scroll", function () {
+        var h = document.getElementById("header");
+        if (h) { h.classList.toggle("scrolled", window.scrollY > 50); }
+        if (scrollTopBtn) { scrollTopBtn.classList.toggle("active", window.scrollY > 400); }
     });
-  }
 
-  /**
-   * Fires the scrollto function on click to links .scrollto
-   */
-  let selectScrollto = document.querySelectorAll(".scrollto");
-  selectScrollto.forEach((el) =>
-    el.addEventListener("click", function (event) {
-      if (document.querySelector(this.hash)) {
-        event.preventDefault();
-        let mobileNavActive = document.querySelector(".mobile-nav-active");
-        if (mobileNavActive) {
-          mobileNavActive.classList.remove("mobile-nav-active");
-          let navbarToggle = document.querySelector(".mobile-nav-toggle");
-          if (navbarToggle) {
-            navbarToggle.classList.toggle("bi-list");
-            navbarToggle.classList.toggle("bi-x");
-          }
-        }
-        scrollto(this.hash);
-      }
-    }),
-  );
-
-  /**
-   * Scroll with offset on page load with hash links in the url
-   */
-  window.addEventListener("load", () => {
-    if (window.location.hash) {
-      if (document.querySelector(window.location.hash)) {
-        scrollto(window.location.hash);
-      }
+    // Mobile nav
+    var mobileToggle = document.querySelector(".mobile-nav-toggle");
+    var navMain = document.querySelector(".nav-main");
+    if (mobileToggle && navMain) {
+        mobileToggle.addEventListener("click", function () {
+            var expanded = this.getAttribute("aria-expanded") === "true";
+            this.setAttribute("aria-expanded", !expanded);
+            navMain.classList.toggle("active");
+            this.classList.toggle("active");
+        });
     }
-  });
 
-  /**
-   * Mobile nav toggle
-   */
-  const mobileNavToogle = document.querySelector(".mobile-nav-toggle");
-  if (mobileNavToogle) {
-    mobileNavToogle.addEventListener("click", function (event) {
-      event.preventDefault();
-      document.querySelector("body").classList.toggle("mobile-nav-active");
-      this.classList.toggle("bi-list");
-      this.classList.toggle("bi-x");
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener("click", function (e) {
+            e.preventDefault();
+            var t = document.querySelector(this.getAttribute("href"));
+            if (t) {
+                t.scrollIntoView({ behavior: "smooth", block: "start" });
+                if (navMain && navMain.classList.contains("active")) {
+                    navMain.classList.remove("active");
+                    if (mobileToggle) { mobileToggle.classList.remove("active"); mobileToggle.setAttribute("aria-expanded", "false"); }
+                }
+            }
+        });
     });
-  }
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  const navDropdowns = document.querySelectorAll(".navbar .dropdown > a");
-  navDropdowns.forEach((el) => {
-    el.addEventListener("click", function (event) {
-      if (document.querySelector(".mobile-nav-active")) {
-        event.preventDefault();
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("dropdown-active");
-        let dropDownIndicator = this.querySelector(".dropdown-indicator");
-        if (dropDownIndicator) {
-          dropDownIndicator.classList.toggle("bi-chevron-up");
-          dropDownIndicator.classList.toggle("bi-chevron-down");
-        }
-      }
+    // How It Works interactive steps
+    var howSteps = document.querySelectorAll(".how-step");
+    var howImgs = document.querySelectorAll(".how-illustration__img");
+    howSteps.forEach(function (step) {
+        step.addEventListener("click", function () {
+            var idx = parseInt(this.getAttribute("data-step"));
+            howSteps.forEach(function (s, i) {
+                s.classList.toggle("is-active", i <= idx);
+            });
+            howImgs.forEach(function (img) {
+                img.classList.toggle("active", parseInt(img.getAttribute("data-illustration")) === idx);
+            });
+        });
     });
-  });
+    // Activate first step by default
+    if (howSteps.length > 0) { howSteps[0].classList.add("is-active"); }
+    if (howImgs.length > 0) { howImgs[0].classList.add("active"); }
 
-  /**
-   * Scroll top button
-   */
-  const scrollTop = document.querySelector(".scroll-top");
-  if (scrollTop) {
-    const togglescrollTop = function () {
-      window.scrollY > 100
-        ? scrollTop.classList.add("active")
-        : scrollTop.classList.remove("active");
-    };
-    window.addEventListener("load", togglescrollTop);
-    document.addEventListener("scroll", togglescrollTop);
-    scrollTop.addEventListener("click", () =>
-      window.scrollTo({ top: 0, behavior: "smooth" }),
-    );
-  }
-
-  /**
-   * Animation on scroll init
-   */
-  function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false,
+    // FAQ Accordion
+    document.querySelectorAll(".faq-question").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            var item = this.parentElement;
+            var isOpen = item.classList.contains("active");
+            document.querySelectorAll(".faq-item").forEach(function (i) {
+                i.classList.remove("active");
+                var q = i.querySelector(".faq-question");
+                if (q) q.setAttribute("aria-expanded", "false");
+            });
+            if (!isOpen) {
+                item.classList.add("active");
+                this.setAttribute("aria-expanded", "true");
+            }
+        });
     });
-  }
-  window.addEventListener("load", () => {
-    aos_init();
-  });
+
+    // Contact form
+    var contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var valid = true;
+            this.querySelectorAll(".demo-input[required]").forEach(function (inp) {
+                if (!inp.value.trim()) { valid = false; inp.classList.add("is-invalid"); }
+                else { inp.classList.remove("is-invalid"); }
+            });
+            if (!valid) return;
+            var fd = new FormData(this);
+            fetch(this.action, { method: this.method, body: fd })
+                .then(function () { alert("Thank you! Your message has been sent. We will contact you soon."); contactForm.reset(); })
+                .catch(function () { alert("Something went wrong. Please try again or contact us directly."); });
+        });
+    }
 });
