@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <meta name="theme-color" content="#0d2137" />
+        <meta name="theme-color" content="#ffffff" />
 
         <title>
             Privacy Policy - QueueBos | Data Protection & User Privacy
@@ -66,34 +66,26 @@
         </script>
 
         <!-- Favicons -->
+        <link rel="preload" href="assets/css/skiplino-style.css" as="style" />
         <link href="assets/img/logo/qbos-icon.png" rel="icon" />
         <link href="assets/img/logo/qbos-icon.png" rel="apple-touch-icon" />
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-        <!-- Vendor CSS Files -->
-        <link
-            href="assets/vendor/bootstrap/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css"
-            rel="stylesheet"
-        />
+        <!-- Vendor CSS -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet" />
         <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
-        <!-- Modern Theme CSS -->
-        <link href="assets/css/modern.css" rel="stylesheet" />
+        <!-- Main Theme CSS -->
+        <link href="assets/css/skiplino-style.css" rel="stylesheet" />
 
         <style>
             .page-header {
-                background: var(--qb-gradient-hero);
+                background: var(--qb-gradient-hero, linear-gradient(135deg, #0d2137 0%, #1398b2 100%));
                 padding: 120px 0 60px;
                 position: relative;
             }
@@ -125,18 +117,20 @@
                 background: var(--qb-white);
                 padding: 40px;
                 border-radius: var(--qb-radius-lg);
-                box-shadow: var(--qb-shadow-card);
+                box-shadow: var(--qb-shadow-card, var(--qb-shadow-sm));
                 margin-bottom: 30px;
             }
             .policy-section h2 {
                 font-size: 1.5rem;
                 margin-bottom: 20px;
                 color: var(--qb-primary);
+                font-weight: 700;
             }
             .policy-section h3 {
                 font-size: 1.125rem;
                 margin: 20px 0 10px;
                 color: var(--qb-primary);
+                font-weight: 600;
             }
             .policy-section p,
             .policy-section ul {
@@ -160,47 +154,25 @@
 
     <body>
         <!-- ======= Header ======= -->
-        <header class="header" id="header">
-            <div class="container">
-                <div class="header-inner">
-                    <a href="index.html" class="logo">
-                        <img
-                            src="assets/img/logo/qbos-v2.png"
-                            alt="QueueBos - Smart Queue Management System"
-                        />
-                    </a>
-
-                    <nav
-                        class="nav-menu d-none d-lg-flex"
-                        aria-label="Main navigation"
-                    >
-                        <a href="index.html#hero" class="nav-link">Home</a>
-                        <a href="index.html#features" class="nav-link"
-                            >Features</a
-                        >
-                        <a href="index.html#how-it-works" class="nav-link"
-                            >How It Works</a
-                        >
-                        <a href="index.html#industries" class="nav-link"
-                            >Industries</a
-                        >
-                        <a href="index.html#contact" class="nav-cta">
-                            <span>Book a Demo</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </nav>
-
-                    <div
-                        class="mobile-nav-toggle d-lg-none"
-                        aria-label="Toggle navigation"
-                        role="button"
-                        tabindex="0"
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+        <header class="site-header" id="header">
+            <div class="site-header__inner container">
+                <a href="/" class="site-logo">
+                    <img src="assets/img/logo/qbos-v2.png" alt="QueueBos" class="site-logo__img" />
+                </a>
+                <nav class="nav-main" aria-label="Main navigation">
+                    <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+                    <a href="index.html#features" class="nav-link">Features</a>
+                    <a href="index.html#architecture" class="nav-link">Architecture</a>
+                    <a href="index.html#comparison" class="nav-link">Comparison</a>
+                    <a href="index.html#faq" class="nav-link">FAQ</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="index.html#contact" class="btn-outline-dark">Contact Us</a>
+                    <a href="index.html#contact" class="btn-solid-green">Get a Demo</a>
                 </div>
+                <button class="mobile-nav-toggle d-lg-none" type="button" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </header>
 
@@ -209,12 +181,13 @@
             <section class="page-header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 mx-auto text-center">
+                        <div class="col-lg-8 mx-auto text-center" style="position: relative; z-index: 1;">
                             <h1
                                 style="
-                                    color: var(--qb-white);
+                                    color: #fff;
                                     font-size: 2.5rem;
                                     margin-bottom: 16px;
+                                    font-weight: 800;
                                 "
                             >
                                 Privacy Policy
@@ -345,8 +318,8 @@
                                         <strong>Service Providers:</strong> We
                                         may share your information with
                                         third-party vendors who perform services
-                                        for us (e.g., hosting,数据分析, customer
-                                        service).
+                                        for us (e.g., hosting, data analysis,
+                                        customer service).
                                     </li>
                                     <li>
                                         <strong>Business Transfers:</strong> We
@@ -489,134 +462,72 @@
         </main>
 
         <!-- ======= Footer ======= -->
-        <footer class="footer">
+        <footer class="site-footer">
             <div class="container">
-                <div class="footer-grid">
+                <div class="footer-body">
                     <div class="footer-brand">
-                        <img
-                            src="assets/img/logo/qbos-v2.png"
-                            alt="QueueBos Logo"
-                            style="height: 40px; margin-bottom: 20px"
-                        />
-                        <p>
-                            Transform your business with intelligent queue
-                            management.
-                        </p>
+                        <a href="/" class="footer-logo"><img src="assets/img/logo/qbos-v2-white.png" alt="QueueBos" class="footer-logo__img" /></a>
+                        <p class="footer-brand__desc">The all-in-one queue management system that runs on a single tablet. No internet. No monthly fees. No hassle.</p>
                         <div class="footer-social">
-                            <a
-                                href="https://www.facebook.com/phisoft.my/"
-                                aria-label="QueueBos on Facebook"
-                                ><i class="bi bi-facebook"></i
-                            ></a>
-                            <a
-                                href="https://www.instagram.com/phisoft.my/"
-                                aria-label="QueueBos on Instagram"
-                                ><i class="bi bi-instagram"></i
-                            ></a>
-                            <a
-                                href="https://www.phisoft.my/index.html"
-                                aria-label="PhiSoft Website"
-                                ><i class="bi bi-globe2"></i
-                            ></a>
-                            <a
-                                href="mailto:hello@phisoft.my"
-                                aria-label="Email QueueBos"
-                                ><i class="bi bi-envelope-fill"></i
-                            ></a>
+                            <a href="https://www.facebook.com/phisoft.my/" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/phisoft.my/" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.phisoft.my/index.html" aria-label="PhiSoft Website" target="_blank" rel="noopener"><i class="bi bi-globe2"></i></a>
+                            <a href="mailto:hello@phisoft.my" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
                         </div>
                     </div>
-
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <ul class="footer-links">
-                            <li><a href="index.html#hero">Home</a></li>
-                            <li><a href="index.html#features">Features</a></li>
-                            <li>
-                                <a href="index.html#how-it-works"
-                                    >How It Works</a
-                                >
-                            </li>
-                            <li><a href="index.html#contact">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="terms-of-service.html"
-                                    >Terms of Service</a
-                                >
-                            </li>
-                        </ul>
+                    <div class="footer-nav">
+                        <div class="footer-nav__col">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html#hero">Home</a></li>
+                                <li><a href="index.html#how-it-works">How It Works</a></li>
+                                <li><a href="index.html#features">Features</a></li>
+                                <li><a href="index.html#comparison">Comparison</a></li>
+                                <li><a href="index.html#faq">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__col">
+                            <h3>Industries</h3>
+                            <ul>
+                                <li><a href="index.html#industries">Banking</a></li>
+                                <li><a href="index.html#industries">Government</a></li>
+                                <li><a href="index.html#industries">Healthcare</a></li>
+                                <li><a href="index.html#industries">Retail</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__col">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="mailto:hello@queuebos.com">hello@queuebos.com</a></li>
+                                <li><a href="tel:+60128731819">+6012 8731 819</a></li>
+                                <li><a href="index.html#contact">Contact Form</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
                 <div class="footer-bottom">
-                    <p>&copy; 2026 QueueBos. All Rights Reserved.</p>
+                    <span>&copy; 2026 QueueBos. All Rights Reserved.</span>
+                    <div class="footer-bottom__links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                    </div>
                 </div>
             </div>
         </footer>
 
         <!-- Floating WhatsApp Button -->
-        <a
-            href="https://wa.me/60128731819"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="whatsapp-float"
-            aria-label="Contact QueueBos on WhatsApp"
-            onmouseover="this.style.transform = 'scale(1.1)'"
-            onmouseout="this.style.transform = 'scale(1)'"
-            style="
-                position: fixed;
-                bottom: 90px;
-                right: 30px;
-                background-color: #25d366;
-                border-radius: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                padding: 12px 24px;
-                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-                z-index: 999;
-                transition:
-                    transform 0.3s ease,
-                    box-shadow 0.3s ease;
-                text-decoration: none;
-            "
-        >
-            <i class="bi bi-whatsapp" style="color: white; font-size: 24px"></i>
-            <span style="color: white; font-weight: 600; font-size: 14px"
-                >Contact Us</span
-            >
+        <a href="https://wa.me/60128731819" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact QueueBos on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span>Contact Us</span>
         </a>
 
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
+        <a href="#" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
 
-        <script>
-            if (typeof AOS !== "undefined") {
-                AOS.init({
-                    duration: 800,
-                    easing: "ease-out-cubic",
-                    once: true,
-                    offset: 100,
-                });
-            }
+        <!-- Vendor JS -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+        <script src="assets/vendor/aos/aos.js" defer></script>
 
-            window.addEventListener("scroll", function () {
-                const header = document.getElementById("header");
-                if (window.scrollY > 50) {
-                    header.classList.add("scrolled");
-                } else {
-                    header.classList.remove("scrolled");
-                }
-            });
-        </script>
+        <!-- Main JS -->
+        <script src="assets/js/main.js" defer></script>
     </body>
 </html>
