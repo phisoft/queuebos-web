@@ -441,8 +441,6 @@ img { max-width: 100%; height: auto; display: block; }
 .scroll-top.active { opacity: 1; visibility: visible; }
 .scroll-top:hover { background: var(--qb-green); color: #fff; transform: translateY(-3px); }
 
-#preloader { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #fff; z-index: 9999; }
-
 /* =============================================================
    RESPONSIVE
    ============================================================= */
