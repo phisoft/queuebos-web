@@ -261,8 +261,8 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 18px 24px; font-size: 1.05rem; font-weight: 700; color: #fff; text-align: center;
 }
 .compare-table thead th:first-child { text-align: left; }
-.th-queuebos { background: rgba(0, 201, 167, 0.3); }
-.th-traditional { background: rgba(255,255,255,0.1); }
+.th-queuebos { background: rgba(255, 255, 255, 0.15); }
+.th-traditional { background: rgba(255, 255, 255, 0.05); }
 .compare-table tbody td {
   padding: 16px 24px; font-size: 0.95rem; color: var(--qb-text-secondary); border-bottom: 1px solid var(--qb-gray-200); text-align: center;
 }
