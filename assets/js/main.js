@@ -107,15 +107,28 @@ document.addEventListener("DOMContentLoaded", function () {
             var company = (document.getElementById("company") || {}).value.trim() || "";
             var message = (document.getElementById("message") || {}).value.trim() || "";
 
-            // Build mailto: URL with pre-filled body
-            var body =
-                "Name: " + name + "%0D%0A" +
-                "Email: " + email + "%0D%0A" +
-                "Phone: " + phone + "%0D%0A" +
-                "Company: " + company + "%0D%0A%0D%0A" +
-                message;
+            // Build a well-formatted email body
+            var body = [
+                "Hello QueueBos Team,",
+                "",
+                "A new demo request has been submitted via the contact form:",
+                "",
+                "━━━━━━━━━━━━━━━━━━━━━━━━",
+                "  Full Name     : " + name,
+                "  Email Address : " + email,
+                "  Phone Number  : " + phone,
+                "  Company Name  : " + company,
+                "━━━━━━━━━━━━━━━━━━━━━━━━",
+                "",
+                "Message:",
+                message,
+                "",
+                "---",
+                "Sent from queuebos.com contact form"
+            ].join("%0D%0A");
 
-            var mailtoHref = "mailto:hello@queuebos.com?subject=Request%20Demo%20-%20QueueBos&body=" + body;
+            var subject = encodeURIComponent("Demo Request - " + (name || "QueueBos"));
+            var mailtoHref = "mailto:hello@queuebos.com?subject=" + subject + "&body=" + body;
 
             // Open the user's email client
             window.location.href = mailtoHref;
