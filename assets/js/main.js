@@ -86,81 +86,55 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Contact form
+    // Contact form — builds a mailto: link and opens the user's email client
     var contactForm = document.getElementById("contactForm");
     if (contactForm) {
         contactForm.addEventListener("submit", function (e) {
             e.preventDefault();
+
+            // Validate required fields
             var valid = true;
             this.querySelectorAll(".demo-input[required]").forEach(function (inp) {
                 if (!inp.value.trim()) { valid = false; inp.classList.add("is-invalid"); }
                 else { inp.classList.remove("is-invalid"); }
             });
             if (!valid) return;
-            var fd = new FormData(this);
-            var submitBtn = contactForm.querySelector("button[type=\"submit\"]");
-            var originalBtnText = submitBtn.innerHTML;
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = "Sending...";
 
-            fetch(contactForm.action, { method: contactForm.method, body: fd })
-                .then(function (response) {
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalBtnText;
+            // Read form values
+            var name    = (document.getElementById("name")    || {}).value.trim() || "";
+            var email   = (document.getElementById("email")   || {}).value.trim() || "";
+            var phone   = (document.getElementById("phone")   || {}).value.trim() || "";
+            var company = (document.getElementById("company") || {}).value.trim() || "";
+            var message = (document.getElementById("message") || {}).value.trim() || "";
 
-                    if (!response.ok) {
-                        // API returned an error (400, 500, etc.) — service is reachable but rejecting
-                        showFallback();
-                        return;
-                    }
+            // Build a well-formatted email body
+            var body = [
+                "Hello QueueBos Team,",
+                "",
+                "A new demo request has been submitted via the contact form:",
+                "",
+                "━━━━━━━━━━━━━━━━━━━━━━━━",
+                "  Full Name     : " + name,
+                "  Email Address : " + email,
+                "  Phone Number  : " + phone,
+                "  Company Name  : " + company,
+                "━━━━━━━━━━━━━━━━━━━━━━━━",
+                "",
+                "Message:",
+                message,
+                "",
+                "---",
+                "Sent from queuebos.com contact form"
+            ].join("%0D%0A");
 
-                    alert("Thank you! Your message has been sent. We will contact you soon.");
-                    contactForm.reset();
-                    removeFallback();
-                })
-                .catch(function () {
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalBtnText;
-                    showFallback();
-                });
+            var subject = encodeURIComponent("Demo Request - " + (name || "QueueBos"));
+            var mailtoHref = "mailto:hello@queuebos.com?subject=" + subject + "&body=" + body;
+
+            // Open the user's email client
+            window.location.href = mailtoHref;
+
+            // Reset form so it's clean when the user comes back
+            contactForm.reset();
         });
     }
-
-    // Fallback notice when third-party form service is unavailable
-    var fallbackEl = document.getElementById("formFallback");
-
-    window.showFallback = function () {
-        if (!fallbackEl) return;
-
-        // Read current form values to pre-fill the mailto link
-        var name    = (document.getElementById("name")    || {}).value || "";
-        var email   = (document.getElementById("email")   || {}).value || "";
-        var phone   = (document.getElementById("phone")   || {}).value || "";
-        var company = (document.getElementById("company") || {}).value || "";
-        var message = (document.getElementById("message") || {}).value || "";
-
-        var body =
-            "Name: " + name + "%0D%0A" +
-            "Email: " + email + "%0D%0A" +
-            "Phone: " + phone + "%0D%0A" +
-            "Company: " + company + "%0D%0A%0D%0A" +
-            message;
-
-        var mailtoHref = "mailto:hello@queuebos.com?subject=Request%20Demo%20-%20QueueBos&body=" + body;
-
-        // Build the mailto link and trigger it to open the user's email client
-        var mailtoLink = fallbackEl.querySelector(".form-fallback__mailto");
-        if (mailtoLink) {
-            mailtoLink.href = mailtoHref;
-        }
-        window.open(mailtoHref, "_self");
-
-        fallbackEl.classList.add("active");
-        fallbackEl.focus({ preventScroll: false });
-    };
-
-    window.removeFallback = function () {
-        if (!fallbackEl) return;
-        fallbackEl.classList.remove("active");
-    };
 });
