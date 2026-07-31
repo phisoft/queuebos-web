@@ -393,6 +393,54 @@ img { max-width: 100%; height: auto; display: block; }
 .form-group input.is-invalid, .form-group textarea.is-invalid { border-color: #EF4444; }
 .form-group textarea { min-height: 120px; resize: vertical; }
 
+/* Form Fallback (shown when third-party form service is down) */
+.form-fallback {
+  display: none;
+  margin-top: 20px;
+  padding: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.35s ease, max-height 0.35s ease, padding 0.35s ease;
+}
+.form-fallback.active {
+  display: block;
+  opacity: 1;
+  max-height: 400px;
+  padding: 24px;
+  background: #FFF8E1;
+  border: 1px solid #F0C000;
+  border-radius: var(--qb-radius-md);
+}
+.form-fallback__content {
+  text-align: center;
+}
+.form-fallback__icon {
+  font-size: 2rem;
+  color: #D97706;
+  margin-bottom: 12px;
+  display: block;
+}
+.form-fallback__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--qb-gray-800);
+  margin-bottom: 8px;
+}
+.form-fallback__text {
+  font-size: 0.95rem;
+  color: var(--qb-text-secondary);
+  margin-bottom: 20px;
+}
+.form-fallback__text strong {
+  color: var(--qb-gray-900);
+}
+.form-fallback__mailto {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* =============================================================
    FOOTER
    ============================================================= */

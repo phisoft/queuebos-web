@@ -98,9 +98,69 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             if (!valid) return;
             var fd = new FormData(this);
-            fetch(this.action, { method: this.method, body: fd })
-                .then(function () { alert("Thank you! Your message has been sent. We will contact you soon."); contactForm.reset(); })
-                .catch(function () { alert("Something went wrong. Please try again or contact us directly."); });
+            var submitBtn = contactForm.querySelector("button[type=\"submit\"]");
+            var originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = "Sending...";
+
+            fetch(contactForm.action, { method: contactForm.method, body: fd })
+                .then(function (response) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+
+                    if (!response.ok) {
+                        // API returned an error (400, 500, etc.) — service is reachable but rejecting
+                        showFallback();
+                        return;
+                    }
+
+                    alert("Thank you! Your message has been sent. We will contact you soon.");
+                    contactForm.reset();
+                    removeFallback();
+                })
+                .catch(function () {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+                    showFallback();
+                });
         });
     }
+
+    // Fallback notice when third-party form service is unavailable
+    var fallbackEl = document.getElementById("formFallback");
+
+    window.showFallback = function () {
+        if (!fallbackEl) return;
+
+        // Read current form values to pre-fill the mailto link
+        var name    = (document.getElementById("name")    || {}).value || "";
+        var email   = (document.getElementById("email")   || {}).value || "";
+        var phone   = (document.getElementById("phone")   || {}).value || "";
+        var company = (document.getElementById("company") || {}).value || "";
+        var message = (document.getElementById("message") || {}).value || "";
+
+        var body =
+            "Name: " + name + "%0D%0A" +
+            "Email: " + email + "%0D%0A" +
+            "Phone: " + phone + "%0D%0A" +
+            "Company: " + company + "%0D%0A%0D%0A" +
+            message;
+
+        var mailtoHref = "mailto:hello@queuebos.com?subject=Request%20Demo%20-%20QueueBos&body=" + body;
+
+        // Build the mailto link and trigger it to open the user's email client
+        var mailtoLink = fallbackEl.querySelector(".form-fallback__mailto");
+        if (mailtoLink) {
+            mailtoLink.href = mailtoHref;
+        }
+        window.open(mailtoHref, "_self");
+
+        fallbackEl.classList.add("active");
+        fallbackEl.focus({ preventScroll: false });
+    };
+
+    window.removeFallback = function () {
+        if (!fallbackEl) return;
+        fallbackEl.classList.remove("active");
+    };
 });
