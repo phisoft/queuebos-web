@@ -529,7 +529,7 @@ img { max-width: 100%; height: auto; display: block; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .feature-sub-grid { grid-template-columns: 1fr; }
   .hardware-grid { grid-template-columns: 1fr 1fr; }
-  .form-row { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; gap: 24px; }
   .footer-cta__heading { font-size: 1.75rem; }
   .footer-nav { flex-direction: column; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
