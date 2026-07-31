@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (scrollTopBtn) { scrollTopBtn.classList.toggle("active", window.scrollY > 400); }
     });
 
+    // Scroll-to-top button click handler
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+
     // Mobile nav
     var mobileToggle = document.querySelector(".mobile-nav-toggle");
     var navMain = document.querySelector(".nav-main");
