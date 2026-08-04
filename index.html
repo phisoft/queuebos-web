@@ -59,6 +59,11 @@
             {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does QueueBos need internet?","acceptedAnswer":{"@type":"Answer","text":"No. QueueBos works completely offline. The tablet, TV, and staff phones just need to be on the same local WiFi network."}},{"@type":"Question","name":"How many counters can QueueBos support?","acceptedAnswer":{"@type":"Answer","text":"Unlimited. Add as many counters as you need — no per-counter licensing or additional fees."}},{"@type":"Question","name":"Is there a recurring fee?","acceptedAnswer":{"@type":"Answer","text":"No. QueueBos is a one-time purchase. No monthly subscriptions, no per-user fees, no cloud hosting required. You own your hardware and your data."}},{"@type":"Question","name":"What happens if the tablet breaks?","acceptedAnswer":{"@type":"Answer","text":"Export your data as JSON, install the app on a new tablet, and import the file. All settings, users, and queue history are restored in minutes."}}]}
         </script>
 
+        <!-- Structured Data: Packages / Pricing -->
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"ItemList","name":"QueueBos Packages","itemListElement":[{"@type":"ListItem","position":1,"name":"Starter","description":"All-in-one queue kiosk with tablet, thermal printer, up to 3 counters, and TV display. One-time purchase, zero monthly fees.","offers":{"@type":"Offer","price":"2999","priceCurrency":"MYR"}},{"@type":"ListItem","position":2,"name":"Professional","description":"Unlimited counters, advanced analytics, multi-service queuing, custom branding, and customer rating system. Most popular package.","offers":{"@type":"Offer","price":"3999","priceCurrency":"MYR"}},{"@type":"ListItem","position":3,"name":"Enterprise","description":"Multi-branch dashboard, custom integrations, white-label branding, dedicated account manager, and SLA support.","offers":{"@type":"Offer","price":"5499","priceCurrency":"MYR"}},{"@type":"ListItem","position":4,"name":"QueueBos Rental","description":"Monthly rental plan with full Professional features, hardware included, free setup.","offers":{"@type":"Offer","price":"299","priceCurrency":"MYR"}}]}
+        </script>
+
         <!-- Structured Data: Breadcrumb -->
         <script type="application/ld+json">
             {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://queuebos.com/"}]}
@@ -92,6 +97,7 @@
                 <nav class="nav-main" aria-label="Main navigation">
                     <a href="#how-it-works" class="nav-link">How It Works</a>
                     <a href="#features" class="nav-link">Features</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
                     <a href="#architecture" class="nav-link">Architecture</a>
                     <a href="#comparison" class="nav-link">Comparison</a>
                     <a href="#faq" class="nav-link">FAQ</a>
@@ -113,28 +119,25 @@
                     <div class="hero-grid">
                         <div class="hero-content" data-aos="fade-up">
                             <h1 id="hero-heading" class="hero-heading">
-                                Turn Any Tablet Into a <span class="highlight">Professional Queue Kiosk</span> — in 15 Minutes
+                                Stop Long Queues.<br />Start Serving Customers <span class="highlight">in 15 Minutes.</span>
                             </h1>
                             <p class="hero-body">
-                                The all-in-one queue management system that runs on a single Imin Android tablet. No internet, no monthly fees, no server setup — self-service ticketing, counter controls, TV display, and voice announcements all included.
+                                QueueBos is the complete queue management system that works on a single tablet — ticket printing, counter display, and staff controls all built in. No internet. No monthly fees. No complicated setup.
                             </p>
                             <div class="hero-feature-list">
-                                <div class="hero-feature-item"><i class="bi bi-printer"></i> Built-in thermal printer — instant ticket with QR code</div>
-                                <div class="hero-feature-item"><i class="bi bi-phone"></i> Staff counter controls on any phone browser</div>
-                                <div class="hero-feature-item"><i class="bi bi-tv"></i> Live TV display for the waiting area</div>
-                                <div class="hero-feature-item"><i class="bi bi-volume-up"></i> Automated voice announcements (TTS)</div>
-                                <div class="hero-feature-item"><i class="bi bi-qr-code"></i> QR badge staff login — scan & go</div>
-                                <div class="hero-feature-item"><i class="bi bi-shield-check"></i> 100% offline — your data stays yours</div>
+                                <div class="hero-feature-item"><i class="bi bi-printer"></i>Customer taps screen → gets printed ticket instantly</div>
+                                <div class="hero-feature-item"><i class="bi bi-tv"></i>TV screen shows live queue — customers can wait anywhere</div>
+                                <div class="hero-feature-item"><i class="bi bi-phone"></i>Staff call next number from their own phone</div>
                             </div>
                             <div class="hero-cta-group">
                                 <div class="hero-cta-buttons">
-                                    <a href="#contact" class="btn-solid-green-lg">Request a Demo</a>
-                                    <a href="#how-it-works" class="btn-outline-dark-lg">How It Works</a>
+                                    <a href="#contact" class="btn-solid-green-lg">Get a Free Demo</a>
+                                    <a href="#how-it-works" class="btn-outline-dark-lg">See How It Works</a>
                                 </div>
                                 <div class="hero-trust-badges">
-                                    <span class="trust-badge"><span class="trust-badge__check">✓</span> No internet needed</span>
+                                    <span class="trust-badge"><span class="trust-badge__check">✓</span> No internet required</span>
                                     <span class="trust-badge"><span class="trust-badge__check">✓</span> Zero monthly fees</span>
-                                    <span class="trust-badge"><span class="trust-badge__check">✓</span> One-time purchase</span>
+                                    <span class="trust-badge"><span class="trust-badge__check">✓</span> One tablet does everything</span>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +166,7 @@
                             <span class="trust-card__score">500+</span>
                             <div class="trust-card__meta">
                                 <div class="trust-card__stars">★★★★★</div>
-                                <span class="trust-card__source">Active Installations</span>
+                                <span class="trust-card__source">Businesses Using QueueBos</span>
                             </div>
                         </div>
                         <div class="trust-card">
@@ -177,7 +180,7 @@
                             <span class="trust-card__score">15min</span>
                             <div class="trust-card__meta">
                                 <div class="trust-card__stars">★★★★★</div>
-                                <span class="trust-card__source">Setup Time — Install APK & Go</span>
+                                <span class="trust-card__source">Setup Time — Plug in & Go</span>
                             </div>
                         </div>
                     </div>
@@ -244,7 +247,7 @@
                         <div class="feature-card-hero" data-aos="fade-up">
                             <div class="feature-card-hero__body">
                                 <h3 class="feature-card-hero__heading">Self-Service Kiosk — All in One Device</h3>
-                                <p class="feature-card-hero__desc">One-tap service selection with instant ticket printing via built-in thermal printer. QR code on every ticket for live tracking. Company branding on screen and tickets. Touch-friendly large buttons for all ages.</p>
+                                <p class="feature-card-hero__desc">Customers select their service with one tap on the touch-friendly screen. The built-in printer instantly prints a ticket with queue number and QR code. Add your company logo to the screen and tickets.</p>
                                 <a href="#contact" class="btn-solid-green">Request a Demo</a>
                             </div>
                             <div class="feature-card-hero__media">
@@ -255,8 +258,8 @@
                         <!-- Feature 2 -->
                         <div class="feature-card-hero feature-card-hero--reverse" data-aos="fade-up">
                             <div class="feature-card-hero__body">
-                                <h3 class="feature-card-hero__heading">Powerful Admin Dashboard & Analytics</h3>
-                                <p class="feature-card-hero__desc">Real-time statistics, bar charts by counter, doughnut charts by service. Service and counter management. Staff and user management with QR badge login. Full queue log history, audit trail, and data export/import — all from a web browser.</p>
+                                <h3 class="feature-card-hero__heading">Powerful Admin Dashboard</h3>
+                                <p class="feature-card-hero__desc">See who's waiting, who's being served, and how long each service takes — all in real-time from any web browser. Manage your services, counters, and staff in one place. View reports and export data anytime.</p>
                                 <a href="#contact" class="btn-outline-blue">Learn More</a>
                             </div>
                             <div class="feature-card-hero__media">
@@ -269,7 +272,7 @@
                             <div class="feature-sub-card" data-aos="fade-up">
                                 <div class="feature-sub-card__text">
                                     <h3 class="feature-sub-card__title">Counter Controls on Any Phone</h3>
-                                    <p class="feature-sub-card__desc">One-tap NEXT, HOLD & Recall, CALL functions. Works on any smartphone browser — Android or iPhone. No app install needed. Unlimited counters from the same queue pool.</p>
+                                    <p class="feature-sub-card__desc">Staff press Next, Hold, or Recall from their own smartphone — no special app needed. Works on any phone browser. Add as many counters as you need at no extra cost.</p>
                                 </div>
                                 <div class="feature-sub-card__media">
                                     <img src="assets/img/feature-sub-card-1.png" alt="Staff counter controls" class="feature-sub-card__img" loading="lazy" />
@@ -277,8 +280,8 @@
                             </div>
                             <div class="feature-sub-card" data-aos="fade-up" data-aos-delay="100">
                                 <div class="feature-sub-card__text">
-                                    <h3 class="feature-sub-card__title">Public TV Display & Voice TTS</h3>
-                                    <p class="feature-sub-card__desc">Giant counter display for waiting areas — up to 4 counters with real-time updates. Audio chime on every call. Built-in Android TTS voice announcements. Works on any screen with a browser.</p>
+                                    <h3 class="feature-sub-card__title">TV Display & Voice Announcements</h3>
+                                    <p class="feature-sub-card__desc">Show live queue information on any TV screen in your waiting area. Up to 4 counters displayed at once. Built-in voice calls out the next number so customers always know when it's their turn.</p>
                                 </div>
                                 <div class="feature-sub-card__media">
                                     <img src="assets/img/feature-sub-card-2.png" alt="TV display and voice announcements" class="feature-sub-card__img" loading="lazy" />
@@ -287,7 +290,7 @@
                             <div class="feature-sub-card" data-aos="fade-up" data-aos-delay="200">
                                 <div class="feature-sub-card__text">
                                     <h3 class="feature-sub-card__title">QR Badge Staff Login</h3>
-                                    <p class="feature-sub-card__desc">Staff scan a printed QR badge to log in instantly — no typing. Desk sticker mode auto-assigns counters. Badges never expire. Printed on the same thermal printer the kiosk uses.</p>
+                                    <p class="feature-sub-card__desc">Print a QR badge for each staff member using the same printer. Staff scan their badge to log in instantly — no typing usernames or passwords. Badges never expire.</p>
                                 </div>
                                 <div class="feature-sub-card__media">
                                     <img src="assets/img/feature-sub-card-3.png" alt="QR badge staff login" class="feature-sub-card__img" loading="lazy" />
@@ -298,55 +301,55 @@
                 </div>
             </section>
 
-            <!-- ======= Architecture Section ======= -->
+            <!-- ======= What You Need Section ======= -->
             <section class="arch-section" id="architecture" aria-labelledby="arch-heading">
                 <div class="container">
                     <div class="section-header">
-                        <p class="section-eyebrow">System Architecture</p>
-                        <h2 id="arch-heading" class="section-heading-lg">One Tablet.<br />Everything Connected.</h2>
+                        <p class="section-eyebrow">What You Need</p>
+                        <h2 id="arch-heading" class="section-heading-lg">One Tablet.<br />Everything Built In.</h2>
                     </div>
                     <div class="arch-layout" data-aos="fade-up">
                         <div class="arch-hub">
                             <div class="arch-hub__card">
                                 <i class="bi bi-tablet"></i>
                                 <span>Imin Android Tablet</span>
-                                <small>Kiosk + Server + Printer</small>
+                                <small>Everything runs on this one device</small>
                             </div>
                         </div>
                         <div class="arch-nodes">
                             <div class="arch-node-card">
                                 <i class="bi bi-hand-index-thumb"></i>
-                                <span>Self-Service Kiosk</span>
-                                <small>Customer touch screen</small>
+                                <span>Customer Kiosk</span>
+                                <small>Touch screen ticketing</small>
                             </div>
                             <div class="arch-node-card">
                                 <i class="bi bi-printer"></i>
-                                <span>Thermal Printer</span>
-                                <small>Instant ticket + QR badge</small>
+                                <span>Printer Built-In</span>
+                                <small>Instant ticket printing</small>
                             </div>
                             <div class="arch-node-card">
                                 <i class="bi bi-tv"></i>
-                                <span>TV Display</span>
-                                <small>Waiting area screen</small>
+                                <span>TV Screen</span>
+                                <small>Shows current queue</small>
                             </div>
                             <div class="arch-node-card">
                                 <i class="bi bi-phone"></i>
                                 <span>Staff Phones</span>
-                                <small>Counter controls</small>
+                                <small>Call next number</small>
                             </div>
                             <div class="arch-node-card">
                                 <i class="bi bi-shield-check"></i>
-                                <span>Local SQLite DB</span>
-                                <small>Your data, your device</small>
+                                <span>Your Data Safe</span>
+                                <small>Stored on your tablet</small>
                             </div>
                             <div class="arch-node-card">
                                 <i class="bi bi-wifi"></i>
-                                <span>Local WiFi</span>
+                                <span>Existing WiFi</span>
                                 <small>No internet needed</small>
                             </div>
                         </div>
                     </div>
-                    <p class="arch-caption" data-aos="fade-up" data-aos-delay="100">Everything runs on one tablet — no server, no Docker, no cloud. Just install the APK and go.</p>
+                    <p class="arch-caption" data-aos="fade-up" data-aos-delay="100">No separate server. No subscription fees. No cloud setup. Everything works on your tablet in 15 minutes.</p>
                 </div>
             </section>
 
@@ -368,9 +371,9 @@
                             </thead>
                             <tbody>
                                 <tr><td>Hardware</td><td class="td-queuebos">1 tablet + 1 TV</td><td>Server room + IT maintenance</td></tr>
-                                <tr><td>Setup Time</td><td class="td-queuebos">Install APK in 15 minutes</td><td>1–2 days server setup</td></tr>
-                                <tr><td>Monthly Fees</td><td class="td-queuebos highlight">Zero — one-time purchase</td><td>Ongoing hosting + license costs</td></tr>
-                                <tr><td>Internet Required</td><td class="td-queuebos highlight">No — works fully offline</td><td>Yes — internet-dependent</td></tr>
+                                <tr><td>Setup Time</td><td class="td-queuebos">Works in 15 minutes</td><td>1–2 days server setup</td></tr>
+                                <tr><td>Monthly Fees</td><td class="td-queuebos highlight">Zero — one-time purchase</td><td>Monthly subscriptions & license fees</td></tr>
+                                <tr><td>Internet Required</td><td class="td-queuebos highlight">No — works offline</td><td>Yes — cloud-dependent</td></tr>
                                 <tr><td>Counters</td><td class="td-queuebos">Unlimited counters</td><td>Licensed per counter</td></tr>
                                 <tr><td>Staff Users</td><td class="td-queuebos">Unlimited staff users</td><td>Per-user pricing</td></tr>
                                 <tr><td>Printer</td><td class="td-queuebos">Built-in thermal printer</td><td>Separate printer purchase</td></tr>
@@ -379,6 +382,152 @@
                                 <tr><td>Data Ownership</td><td class="td-queuebos highlight">You own your data</td><td>Data in vendor's cloud</td></tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Packages & Pricing Section ======= -->
+            <section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow">Packages & Pricing</p>
+                        <h2 id="pricing-heading" class="section-heading-lg">Simple, Transparent Pricing.<br />One-Time. Zero Monthly Fees.</h2>
+                    </div>
+                    <div class="pricing-grid">
+                        <!-- Starter -->
+                        <div class="pricing-card" data-aos="fade-up">
+                            <div class="pricing-card__header">
+                                <h3>Starter</h3>
+                                <p class="pricing-card__type">For small businesses getting started</p>
+                                <div class="pricing-card__price">
+                                    <span class="pricing-card__currency">RM</span>
+                                    <span class="pricing-card__amount">2,999</span>
+                                </div>
+                                <p class="pricing-card__period">one-time · no recurring fees</p>
+                            </div>
+                            <div class="pricing-card__body">
+                                <ul class="pricing-card__features">
+                                    <li><i class="bi bi-check-lg"></i> 1 Imin Android tablet included</li>
+                                    <li><i class="bi bi-check-lg"></i> Built-in thermal printer</li>
+                                    <li><i class="bi bi-check-lg"></i> Up to 3 counters</li>
+                                    <li><i class="bi bi-check-lg"></i> Unlimited staff users</li>
+                                    <li><i class="bi bi-check-lg"></i> TV display support</li>
+                                    <li><i class="bi bi-check-lg"></i> Voice announcements (TTS)</li>
+                                    <li><i class="bi bi-check-lg"></i> QR badge staff login</li>
+                                    <li><i class="bi bi-check-lg"></i> Basic analytics dashboard</li>
+                                    <li><i class="bi bi-check-lg"></i> Email support</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-card__footer">
+                                <a href="#contact" class="btn-outline-dark-lg pricing-card__cta">Get Started</a>
+                            </div>
+                        </div>
+
+                        <!-- Professional (Featured) -->
+                        <div class="pricing-card pricing-card--featured" data-aos="fade-up" data-aos-delay="100">
+                            <span class="pricing-card__badge">Most Popular</span>
+                            <div class="pricing-card__header">
+                                <h3>Professional</h3>
+                                <p class="pricing-card__type">For growing teams & high-traffic locations</p>
+                                <div class="pricing-card__price">
+                                    <span class="pricing-card__currency">RM</span>
+                                    <span class="pricing-card__amount">3,999</span>
+                                </div>
+                                <p class="pricing-card__period">one-time · no recurring fees</p>
+                            </div>
+                            <div class="pricing-card__body">
+                                <ul class="pricing-card__features">
+                                    <li><i class="bi bi-check-lg"></i> <strong>Everything in Starter</strong></li>
+                                    <li><i class="bi bi-check-lg"></i> Unlimited counters</li>
+                                    <li><i class="bi bi-check-lg"></i> Advanced analytics & reports</li>
+                                    <li><i class="bi bi-check-lg"></i> Multi-service queuing</li>
+                                    <li><i class="bi bi-check-lg"></i> Customer rating system</li>
+                                    <li><i class="bi bi-check-lg"></i> Custom branding on kiosk & tickets</li>
+                                    <li><i class="bi bi-check-lg"></i> Data export / import (JSON)</li>
+                                    <li><i class="bi bi-check-lg"></i> Priority WhatsApp support</li>
+                                    <li><i class="bi bi-check-lg"></i> Free software updates for life</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-card__footer">
+                                <a href="#contact" class="btn-solid-green-lg pricing-card__cta">Get a Demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Enterprise -->
+                        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="pricing-card__header">
+                                <h3>Enterprise</h3>
+                                <p class="pricing-card__type">For multi-branch & custom deployments</p>
+                                <div class="pricing-card__price">
+                                    <span class="pricing-card__currency">RM</span>
+                                    <span class="pricing-card__amount">5,499</span>
+                                </div>
+                                <p class="pricing-card__period">one-time · no recurring fees</p>
+                            </div>
+                            <div class="pricing-card__body">
+                                <ul class="pricing-card__features">
+                                    <li><i class="bi bi-check-lg"></i> <strong>Everything in Professional</strong></li>
+                                    <li><i class="bi bi-check-lg"></i> Multi-branch dashboard</li>
+                                    <li><i class="bi bi-check-lg"></i> Custom integrations (API access)</li>
+                                    <li><i class="bi bi-check-lg"></i> White-label kiosk branding</li>
+                                    <li><i class="bi bi-check-lg"></i> Priority onboarding & setup</li>
+                                    <li><i class="bi bi-check-lg"></i> Dedicated account manager</li>
+                                    <li><i class="bi bi-check-lg"></i> SLA & priority support</li>
+                                    <li><i class="bi bi-check-lg"></i> Staff training session</li>
+                                    <li><i class="bi bi-check-lg"></i> Custom feature development</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-card__footer">
+                                <a href="#contact" class="btn-outline-dark-lg pricing-card__cta">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rental Banner -->
+                    <div class="pricing-rental" data-aos="fade-up" data-aos-delay="150">
+                        <div class="pricing-rental__inner">
+                            <div class="pricing-rental__text">
+                                <h3>Not Ready to Buy?</h3>
+                                <p class="pricing-rental__sub">Try QueueBos with our flexible rental plan</p>
+                                <div class="pricing-rental__price">
+                                    <span>from</span>
+                                    <span class="pricing-rental__amount">RM 299</span>
+                                    <span>/month</span>
+                                </div>
+                                <ul class="pricing-rental__features">
+                                    <li><i class="bi bi-check-lg"></i> Full Professional features included</li>
+                                    <li><i class="bi bi-check-lg"></i> Hardware provided (tablet + printer)</li>
+                                    <li><i class="bi bi-check-lg"></i> Free setup & configuration</li>
+                                    <li><i class="bi bi-check-lg"></i> Cancel anytime — no lock-in contract</li>
+                                </ul>
+                                <a href="#contact" class="btn-solid-green-lg">Enquire About Rental</a>
+                            </div>
+                            <div class="pricing-rental__note">
+                                <div class="pricing-rental__note-box">
+                                    <i class="bi bi-info-circle"></i>
+                                    <div>
+                                        <strong>Why rent?</strong>
+                                        <p>Perfect for events, pop-up counters, seasonal businesses, or trying QueueBos before committing. Minimum 1-month rental. Upgrade to purchase anytime with rental fees credited.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust row under pricing -->
+                    <div class="pricing-trust" data-aos="fade-up">
+                        <div class="pricing-trust__item">
+                            <i class="bi bi-shield-check"></i>
+                            <span>One-time purchase — no hidden fees</span>
+                        </div>
+                        <div class="pricing-trust__item">
+                            <i class="bi bi-arrow-repeat"></i>
+                            <span>Free updates for life</span>
+                        </div>
+                        <div class="pricing-trust__item">
+                            <i class="bi bi-headset"></i>
+                            <span>30-day money-back guarantee</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -613,7 +762,7 @@
                 <div class="container">
                     <div class="footer-cta__content">
                         <h2 id="footer-cta-heading" class="footer-cta__heading">Ready to cut wait times by 60% with zero monthly fees?</h2>
-                        <p class="footer-cta__sub">One tablet. One-time purchase. Install the APK and you're running in 15 minutes. Or talk to us for a personalized demo.</p>
+                        <p class="footer-cta__sub">One tablet. One-time purchase. You're up and running in 15 minutes. Contact us for a free personalized demo.</p>
                     </div>
                     <div class="footer-cta__actions">
                         <a href="#contact" class="footer-cta__btn-primary">Get a Demo</a>
