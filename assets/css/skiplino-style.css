@@ -144,14 +144,10 @@ img { max-width: 100%; height: auto; display: block; }
 .trust-badge { display: flex; align-items: center; gap: 6px; font-size: 0.875rem; color: var(--qb-text-muted); font-weight: 500; }
 .trust-badge__check { color: var(--qb-green); font-weight: 700; font-size: 1rem; }
 .hero-visual { display: flex; justify-content: center; }
-.hero-browser-frame {
-  background: var(--qb-white); border-radius: var(--qb-radius-lg); box-shadow: var(--qb-shadow-xl);
-  overflow: hidden; width: 100%; max-width: 560px; border: 1px solid var(--qb-gray-200);
+.hero-product-img {
+  width: 100%; max-width: 520px; border-radius: var(--qb-radius-lg);
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
 }
-.hero-browser-bar { display: flex; gap: 6px; padding: 12px 16px; background: var(--qb-gray-100); border-bottom: 1px solid var(--qb-gray-200); }
-.browser-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--qb-gray-300); }
-.hero-browser-content { padding: 0; }
-.hero-dashboard-img { width: 100%; display: block; }
 
 /* =============================================================
    TRUST BAR
