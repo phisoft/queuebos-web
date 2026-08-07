@@ -61,7 +61,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 0.875rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--qb-green); margin-bottom: 12px;
 }
-.section-heading-lg { font-size: 2.75rem; font-weight: 800; color: var(--qb-gray-900); }
+.section-heading-lg { font-size: 2.25rem; font-weight: 700; color: var(--qb-gray-900); }
 
 /* === Buttons === */
 .btn-solid-green {
@@ -125,8 +125,7 @@ img { max-width: 100%; height: auto; display: block; }
    ============================================================= */
 .hero-section { padding: 140px 0 80px; background: var(--qb-white); }
 .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-.hero-heading { font-size: 3.25rem; font-weight: 800; color: var(--qb-gray-900); margin-bottom: 20px; line-height: 1.15; }
-.hero-heading .highlight { color: var(--qb-green); }
+.hero-heading { font-size: 2.5rem; font-weight: 700; color: var(--qb-gray-900); margin-bottom: 20px; line-height: 1.25; }
 .hero-body { font-size: 1.1rem; color: var(--qb-text-secondary); margin-bottom: 20px; max-width: 560px; }
 .hero-feature-list {
   display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px;
@@ -160,7 +159,7 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: var(--qb-shadow-sm); text-align: center; min-width: 200px; transition: var(--qb-transition);
 }
 .trust-card:hover { box-shadow: var(--qb-shadow-md); transform: translateY(-2px); }
-.trust-card__score { font-size: 2.5rem; font-weight: 800; color: var(--qb-primary); display: block; margin-bottom: 8px; }
+.trust-card__score { font-size: 2.25rem; font-weight: 700; color: var(--qb-primary); display: block; margin-bottom: 8px; }
 .trust-card__source { font-size: 0.85rem; color: var(--qb-text-muted); }
 
 /* =============================================================
@@ -200,7 +199,7 @@ img { max-width: 100%; height: auto; display: block; }
 .feature-card-hero:hover { box-shadow: var(--qb-shadow-lg); }
 .feature-card-hero--reverse { direction: rtl; }
 .feature-card-hero--reverse > * { direction: ltr; }
-.feature-card-hero__heading { font-size: 2rem; font-weight: 800; color: var(--qb-gray-900); margin-bottom: 16px; }
+.feature-card-hero__heading { font-size: 1.75rem; font-weight: 700; color: var(--qb-gray-900); margin-bottom: 16px; }
 .feature-card-hero__desc { font-size: 1.05rem; color: var(--qb-text-secondary); margin-bottom: 24px; }
 .feature-card-hero__media { display: flex; justify-content: center; }
 .feature-card-hero__img { width: 100%; border-radius: var(--qb-radius-lg); box-shadow: var(--qb-shadow-md); }
@@ -302,7 +301,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hardware-card__icon { font-size: 2rem; color: var(--qb-green); margin-bottom: 16px; }
 .hardware-card h3 { font-size: 1.125rem; font-weight: 700; color: var(--qb-gray-900); margin-bottom: 8px; }
 .hardware-card__role { font-size: 0.875rem; color: var(--qb-text-muted); margin-bottom: 8px; }
-.hardware-card__cost { font-size: 1.05rem; font-weight: 800; color: var(--qb-green); margin: 0; }
+.hardware-card__cost { font-size: 1.05rem; font-weight: 700; color: var(--qb-green); margin: 0; }
 
 /* =============================================================
    TESTIMONIALS SECTION
@@ -358,7 +357,7 @@ img { max-width: 100%; height: auto; display: block; }
 .pricing-card__type { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-bottom: 18px; }
 .pricing-card__price { display: flex; align-items: baseline; justify-content: center; gap: 2px; margin-bottom: 6px; }
 .pricing-card__currency { font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,0.7); }
-.pricing-card__amount { font-family: 'Inter', sans-serif; font-size: 2.6rem; font-weight: 800; color: #fff; line-height: 1; }
+.pricing-card__amount { font-family: 'Inter', sans-serif; font-size: 2.25rem; font-weight: 700; color: #fff; line-height: 1; }
 .pricing-card__period { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin: 0; }
 
 .pricing-card__body { padding: 28px 24px; flex-grow: 1; }
@@ -385,7 +384,7 @@ img { max-width: 100%; height: auto; display: block; }
 .pricing-rental__sub { font-size: 0.9rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
 .pricing-rental__price { display: flex; align-items: baseline; gap: 6px; margin-bottom: 22px; }
 .pricing-rental__price span { font-size: 1rem; color: rgba(255,255,255,0.55); }
-.pricing-rental__amount { font-family: 'Inter', sans-serif; font-size: 2.6rem !important; font-weight: 800 !important; color: #3182ce !important; line-height: 1; }
+.pricing-rental__amount { font-family: 'Inter', sans-serif; font-size: 2.25rem !important; font-weight: 700 !important; color: #3182ce !important; line-height: 1; }
 .pricing-rental__features { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 10px; }
 .pricing-rental__features li {
   display: flex; align-items: flex-start; gap: 9px; font-size: 0.88rem; color: rgba(255,255,255,0.75);
@@ -449,7 +448,7 @@ img { max-width: 100%; height: auto; display: block; }
    ============================================================= */
 .footer-cta { padding: 80px 0; background: var(--qb-primary); text-align: center; }
 .footer-cta__content { margin-bottom: 36px; }
-.footer-cta__heading { font-size: 2.25rem; font-weight: 800; color: #fff; margin-bottom: 16px; }
+.footer-cta__heading { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 16px; }
 .footer-cta__sub { font-size: 1.1rem; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 0; }
 .footer-cta__actions { display: flex; flex-direction: column; align-items: center; gap: 20px; }
 .footer-cta__btn-primary {
@@ -539,7 +538,7 @@ img { max-width: 100%; height: auto; display: block; }
    RESPONSIVE
    ============================================================= */
 @media (max-width: 1200px) {
-  .hero-heading { font-size: 2.75rem; }
+  .hero-heading { font-size: 2.25rem; }
   .feature-sub-grid { grid-template-columns: repeat(2, 1fr); }
   .hardware-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -562,7 +561,7 @@ img { max-width: 100%; height: auto; display: block; }
   }
   .mobile-nav-toggle { display: flex; }
   .nav-actions .btn-outline-dark { display: none; }
-  .section-heading-lg { font-size: 2.25rem; }
+  .section-heading-lg { font-size: 1.75rem; }
 }
 @media (max-width: 768px) {
   .hero-heading { font-size: 2.25rem; }
