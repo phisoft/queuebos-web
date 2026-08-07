@@ -152,7 +152,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    TRUST BAR
    ============================================================= */
-.trust-bar { padding: 60px 0; background: var(--qb-off-white); text-align: center; border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.trust-bar { padding: 60px 0; background: var(--qb-off-white); text-align: center; border-radius: 0; position: relative; z-index: 2; }
 .trust-heading { font-size: 1.5rem; font-weight: 700; color: var(--qb-gray-900); margin-bottom: 40px; }
 .trust-cards { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
 .trust-card {
@@ -191,7 +191,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    FEATURES SECTION
    ============================================================= */
-.features-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.features-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 0; position: relative; z-index: 2; }
 .feature-cards { display: flex; flex-direction: column; gap: 32px; }
 .feature-card-hero {
   display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
@@ -219,7 +219,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    ARCHITECTURE SECTION
    ============================================================= */
-.arch-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 80px 80px 0 0; }
+.arch-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 0; }
 .arch-layout { max-width: 800px; margin: 0 auto 40px; }
 .arch-hub { text-align: center; margin-bottom: 32px; }
 .arch-hub__card {
@@ -249,7 +249,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    COMPARISON SECTION
    ============================================================= */
-.compare-section { padding: 100px 0; background: var(--qb-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.compare-section { padding: 100px 0; background: var(--qb-white); border-radius: 0; position: relative; z-index: 2; }
 .compare-table-wrap { overflow-x: auto; box-shadow: var(--qb-shadow-md); border-radius: var(--qb-radius-lg); }
 .compare-table { width: 100%; border-collapse: collapse; background: #fff; min-width: 700px; }
 .compare-table thead { background: var(--qb-primary); }
@@ -271,7 +271,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    INDUSTRIES SECTION
    ============================================================= */
-.industries-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.industries-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 0; position: relative; z-index: 2; }
 .industries-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .industry-card {
   background: var(--qb-white); padding: 36px; border-radius: var(--qb-radius-lg);
@@ -286,7 +286,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    HARDWARE SECTION
    ============================================================= */
-.hardware-section { padding: 100px 0; background: var(--qb-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.hardware-section { padding: 100px 0; background: var(--qb-white); border-radius: 0; position: relative; z-index: 2; }
 .hardware-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .hardware-card {
   background: var(--qb-off-white); padding: 36px 24px; border-radius: var(--qb-radius-lg);
@@ -308,7 +308,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    TESTIMONIALS SECTION
    ============================================================= */
-.testimonials-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.testimonials-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 0; position: relative; z-index: 2; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .testimonial-card {
   background: var(--qb-white); padding: 36px; border-radius: var(--qb-radius-lg);
@@ -328,7 +328,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
     PRICING / PACKAGES SECTION
     ============================================================= */
-.pricing-section { padding: 100px 0; background: var(--qb-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.pricing-section { padding: 100px 0; background: var(--qb-white); border-radius: 0; position: relative; z-index: 2; }
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 48px; }
 
 .pricing-card {
@@ -426,7 +426,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
     FAQ SECTION
     ============================================================= */
-.faq-section { padding: 100px 0; background: var(--qb-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.faq-section { padding: 100px 0; background: var(--qb-white); border-radius: 0; position: relative; z-index: 2; }
 .faq-container { max-width: 800px; margin: 0 auto; }
 .faq-item { border: 1px solid var(--qb-gray-200); border-radius: var(--qb-radius-md); margin-bottom: 14px; overflow: hidden; transition: var(--qb-transition); }
 .faq-item:hover { border-color: var(--qb-gray-300); }
@@ -464,7 +464,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* =============================================================
    CONTACT SECTION
    ============================================================= */
-.contact-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 80px 80px 0 0; position: relative; z-index: 2; }
+.contact-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 0; position: relative; z-index: 2; }
 .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .contact-info { display: flex; flex-direction: column; gap: 24px; }
 .contact-info__item { display: flex; align-items: flex-start; gap: 16px; }
