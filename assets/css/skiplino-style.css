@@ -161,7 +161,6 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .trust-card:hover { box-shadow: var(--qb-shadow-md); transform: translateY(-2px); }
 .trust-card__score { font-size: 2.5rem; font-weight: 800; color: var(--qb-primary); display: block; margin-bottom: 8px; }
-.trust-card__stars { color: #F59E0B; font-size: 1.125rem; margin-bottom: 4px; }
 .trust-card__source { font-size: 0.85rem; color: var(--qb-text-muted); }
 
 /* =============================================================
