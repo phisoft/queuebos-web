@@ -4,11 +4,11 @@
 
 /* === CSS Variables === */
 :root {
-  --qb-primary: #1398b2;
-  --qb-primary-light: #00a7da;
-  --qb-accent: #00a7da;
-  --qb-green: #1398b2;
-  --qb-green-dark: #0e7d94;
+  --qb-primary: #1a365d;
+  --qb-primary-light: #2a5082;
+  --qb-accent: #3182ce;
+  --qb-green: #1a365d;
+  --qb-green-dark: #122b45;
   --qb-white: #FFFFFF;
   --qb-off-white: #ecfcff;
   --qb-gray-50: #e6f4f1;
@@ -20,7 +20,7 @@
   --qb-gray-600: #4B5563;
   --qb-gray-700: #374151;
   --qb-gray-800: #1F2937;
-  --qb-gray-900: #0e4d5c;
+  --qb-gray-900: #0d1f32;
   --qb-text: #1F2937;
   --qb-text-secondary: #4B5563;
   --qb-text-muted: #6B7280;
@@ -263,8 +263,8 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 16px 24px; font-size: 0.95rem; color: var(--qb-text-secondary); border-bottom: 1px solid var(--qb-gray-200); text-align: center;
 }
 .compare-table tbody td:first-child { font-weight: 600; color: var(--qb-gray-900); text-align: left; }
-.td-queuebos { background: rgba(0, 201, 167, 0.04); font-weight: 600; color: var(--qb-gray-800); }
-.td-queuebos.highlight { background: rgba(0, 201, 167, 0.1); color: var(--qb-green-dark); }
+.td-queuebos { background: rgba(26, 54, 93, 0.04); font-weight: 600; color: var(--qb-gray-800); }
+.td-queuebos.highlight { background: rgba(26, 54, 93, 0.08); color: var(--qb-green-dark); }
 .compare-table tbody tr:last-child td { border-bottom: none; }
 .compare-table tbody tr:hover td { background: var(--qb-gray-50); }
 
@@ -339,7 +339,7 @@ img { max-width: 100%; height: auto; display: block; }
 .pricing-card:hover { box-shadow: var(--qb-shadow-lg); transform: translateY(-5px); }
 
 .pricing-card--featured {
-  border: 2px solid var(--qb-green); box-shadow: 0 0 0 6px rgba(19,152,178,0.08), var(--qb-shadow-lg);
+  border: 2px solid var(--qb-green); box-shadow: 0 0 0 6px rgba(26, 54, 93, 0.08), var(--qb-shadow-lg);
   transform: scale(1.03); z-index: 2;
 }
 .pricing-card--featured:hover { transform: scale(1.03) translateY(-5px); }
@@ -352,7 +352,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .pricing-card__header {
-  background: linear-gradient(135deg, var(--qb-gray-900) 0%, #0a3d4a 100%);
+  background: linear-gradient(135deg, var(--qb-gray-900) 0%, #122b45 100%);
   color: #fff; padding: 32px 28px 26px; text-align: center;
 }
 .pricing-card__header h3 { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 4px; letter-spacing: 0.02em; }
@@ -377,7 +377,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Rental Banner */
 .pricing-rental {
-  background: linear-gradient(135deg, var(--qb-gray-900) 0%, #0a3d4a 100%);
+  background: linear-gradient(135deg, var(--qb-gray-900) 0%, #122b45 100%);
   border-radius: var(--qb-radius-xl); overflow: hidden; margin-bottom: 48px;
 }
 .pricing-rental__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
@@ -386,7 +386,7 @@ img { max-width: 100%; height: auto; display: block; }
 .pricing-rental__sub { font-size: 0.9rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
 .pricing-rental__price { display: flex; align-items: baseline; gap: 6px; margin-bottom: 22px; }
 .pricing-rental__price span { font-size: 1rem; color: rgba(255,255,255,0.55); }
-.pricing-rental__amount { font-family: 'Inter', sans-serif; font-size: 2.6rem !important; font-weight: 800 !important; color: #48d1b8 !important; line-height: 1; }
+.pricing-rental__amount { font-family: 'Inter', sans-serif; font-size: 2.6rem !important; font-weight: 800 !important; color: #3182ce !important; line-height: 1; }
 .pricing-rental__features { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 10px; }
 .pricing-rental__features li {
   display: flex; align-items: flex-start; gap: 9px; font-size: 0.88rem; color: rgba(255,255,255,0.75);
@@ -483,7 +483,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 12px 16px; border: 2px solid var(--qb-gray-200); border-radius: var(--qb-radius-md);
   font-size: 0.95rem; font-family: inherit; transition: var(--qb-transition); background: #fff;
 }
-.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--qb-green); box-shadow: 0 0 0 3px rgba(0,201,167,0.1); }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--qb-green); box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.08); }
 .form-group input.is-invalid, .form-group textarea.is-invalid { border-color: #EF4444; }
 .form-group textarea { min-height: 120px; resize: vertical; }
 
