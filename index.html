@@ -56,12 +56,12 @@
 
         <!-- Structured Data: FAQ -->
         <script type="application/ld+json">
-            {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does QueueBos need internet?","acceptedAnswer":{"@type":"Answer","text":"No. QueueBos works completely offline. The tablet, TV, and staff phones just need to be on the same local WiFi network."}},{"@type":"Question","name":"How many counters can QueueBos support?","acceptedAnswer":{"@type":"Answer","text":"Unlimited. Add as many counters as you need — no per-counter licensing or additional fees."}},{"@type":"Question","name":"Is there a recurring fee?","acceptedAnswer":{"@type":"Answer","text":"No. QueueBos is a one-time purchase. No monthly subscriptions, no per-user fees, no cloud hosting required. You own your hardware and your data."}},{"@type":"Question","name":"What happens if the tablet breaks?","acceptedAnswer":{"@type":"Answer","text":"Export your data as JSON, install the app on a new tablet, and import the file. All settings, users, and queue history are restored in minutes."}}]}
+            {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does QueueBos need internet?","acceptedAnswer":{"@type":"Answer","text":"No. QueueBos works completely offline. The tablet, TV, and staff phones just need to be on the same local WiFi network."}},{"@type":"Question","name":"How many counters can QueueBos support?","acceptedAnswer":{"@type":"Answer","text":"Unlimited. Add as many counters as you need — no per-counter licensing or additional fees."}},{"@type":"Question","name":"Is there a recurring fee?","acceptedAnswer":{"@type":"Answer","text":"The Basic Package is a one-time purchase. The only optional recurring cost is the Virtual Queue add-on at RM 35/month, which you can add or cancel anytime."}},{"@type":"Question","name":"What happens if the tablet breaks?","acceptedAnswer":{"@type":"Answer","text":"Export your data as JSON, install the app on a new tablet, and import the file. All settings, users, and queue history are restored in minutes."}}]}
         </script>
 
         <!-- Structured Data: Packages / Pricing -->
         <script type="application/ld+json">
-            {"@context":"https://schema.org","@type":"ItemList","name":"QueueBos Packages","itemListElement":[{"@type":"ListItem","position":1,"name":"Starter","description":"All-in-one queue kiosk with tablet, thermal printer, up to 3 counters, and TV display. One-time purchase, zero monthly fees.","offers":{"@type":"Offer","price":"2999","priceCurrency":"MYR"}},{"@type":"ListItem","position":2,"name":"Professional","description":"Unlimited counters, advanced analytics, multi-service queuing, custom branding, and customer rating system. Most popular package.","offers":{"@type":"Offer","price":"3999","priceCurrency":"MYR"}},{"@type":"ListItem","position":3,"name":"Enterprise","description":"Multi-branch dashboard, custom integrations, white-label branding, dedicated account manager, and SLA support.","offers":{"@type":"Offer","price":"5499","priceCurrency":"MYR"}}]}
+            {"@context":"https://schema.org","@type":"ItemList","name":"QueueBos Pricing","itemListElement":[{"@type":"ListItem","position":1,"name":"Basic Package","description":"One Imin Android tablet kiosk with built-in thermal printer, one 32-inch smart TV, and mobile phone queue control. Includes free installation and setup within Kota Kinabalu, Sabah, plus one-time on-site user training and a 6-month warranty. One-time purchase.","offers":{"@type":"Offer","price":"3888","priceCurrency":"MYR"}},{"@type":"ListItem","position":2,"name":"Virtual Queue Subscription","description":"Optional subscription letting customers track their queue on their phone, even from outside the premises.","offers":{"@type":"Offer","price":"35","priceCurrency":"MYR","priceSpecification":{"@type":"UnitPriceSpecification","price":"35","priceCurrency":"MYR","billingDuration":{"@type":"QuantitativeValue","value":1,"unitCode":"MON"},"unitText":"month"}}},{"@type":"ListItem","position":3,"name":"Extra Display","description":"Additional 32-inch smart TV unit for larger waiting areas.","offers":{"@type":"Offer","price":"1200","priceCurrency":"MYR"}},{"@type":"ListItem","position":4,"name":"Speaker","description":"External voice announcement speaker unit.","offers":{"@type":"Offer","price":"500","priceCurrency":"MYR"}},{"@type":"ListItem","position":5,"name":"Control Tablet","description":"Dedicated staff tablet for queue control.","offers":{"@type":"Offer","price":"600","priceCurrency":"MYR"}},{"@type":"ListItem","position":6,"name":"WiFi Router","description":"Local WiFi router connecting kiosk, displays, and staff phones.","offers":{"@type":"Offer","price":"350","priceCurrency":"MYR"}}]}
         </script>
 
         <!-- Structured Data: Breadcrumb -->
@@ -316,98 +316,75 @@
                 <div class="container">
                     <div class="section-header">
                         <p class="section-eyebrow">Packages & Pricing</p>
-                        <h2 id="pricing-heading" class="section-heading-lg">Simple, Transparent Pricing.<br />One-Time. Zero Monthly Fees.</h2>
+                        <h2 id="pricing-heading" class="section-heading-lg">Simple, Transparent Pricing.<br />One Purchase. Add Only What You Need.</h2>
                     </div>
-                    <div class="pricing-grid">
-                        <!-- Starter -->
-                        <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-grid pricing-grid--single">
+                        <!-- Basic Package -->
+                        <div class="pricing-card pricing-card--featured" data-aos="fade-up">
+                            <span class="pricing-card__badge">One-Time Purchase</span>
                             <div class="pricing-card__header">
-                                <h3>Starter</h3>
-                                <p class="pricing-card__type">For small businesses getting started</p>
+                                <h3>Basic Package</h3>
+                                <p class="pricing-card__type">One device + one display. Everything you need to start.</p>
                                 <div class="pricing-card__price">
                                     <span class="pricing-card__currency">RM</span>
-                                    <span class="pricing-card__amount">2,999</span>
+                                    <span class="pricing-card__amount">3,888</span>
                                 </div>
                                 <p class="pricing-card__period">one-time · no recurring fees</p>
                             </div>
                             <div class="pricing-card__body">
                                 <ul class="pricing-card__features">
-                                    <li><i class="bi bi-check-lg"></i> 1 Imin Android tablet included</li>
+                                    <li><i class="bi bi-check-lg"></i> 1 × Imin Android tablet kiosk</li>
                                     <li><i class="bi bi-check-lg"></i> Built-in thermal printer</li>
-                                    <li><i class="bi bi-check-lg"></i> Up to 3 counters</li>
-                                    <li><i class="bi bi-check-lg"></i> Unlimited staff users</li>
-                                    <li><i class="bi bi-check-lg"></i> TV display support</li>
-                                    <li><i class="bi bi-check-lg"></i> Voice announcements (TTS)</li>
+                                    <li><i class="bi bi-check-lg"></i> 1 × 32" smart TV included</li>
+                                    <li><i class="bi bi-check-lg"></i> Free installation & setup — Kota Kinabalu, Sabah</li>
+                                    <li><i class="bi bi-check-lg"></i> One-time user training on-site</li>
+                                    <li><i class="bi bi-check-lg"></i> 6-month warranty</li>
+                                    <li><i class="bi bi-check-lg"></i> Queue control from any mobile phone</li>
+                                    <li><i class="bi bi-check-lg"></i> Unlimited counters & staff users</li>
                                     <li><i class="bi bi-check-lg"></i> QR badge staff login</li>
-                                    <li><i class="bi bi-check-lg"></i> Basic analytics dashboard</li>
-                                    <li><i class="bi bi-check-lg"></i> Email support</li>
-                                </ul>
-                            </div>
-                            <div class="pricing-card__footer">
-                                <a href="#contact" class="btn-outline-dark-lg pricing-card__cta">Get Started</a>
-                            </div>
-                        </div>
-
-                        <!-- Professional (Featured) -->
-                        <div class="pricing-card pricing-card--featured" data-aos="fade-up" data-aos-delay="100">
-                            <span class="pricing-card__badge">Most Popular</span>
-                            <div class="pricing-card__header">
-                                <h3>Professional</h3>
-                                <p class="pricing-card__type">For growing teams & high-traffic locations</p>
-                                <div class="pricing-card__price">
-                                    <span class="pricing-card__currency">RM</span>
-                                    <span class="pricing-card__amount">3,999</span>
-                                </div>
-                                <p class="pricing-card__period">one-time · no recurring fees</p>
-                            </div>
-                            <div class="pricing-card__body">
-                                <ul class="pricing-card__features">
-                                    <li><i class="bi bi-check-lg"></i> <strong>Everything in Starter</strong></li>
-                                    <li><i class="bi bi-check-lg"></i> Unlimited counters</li>
-                                    <li><i class="bi bi-check-lg"></i> Advanced analytics & reports</li>
-                                    <li><i class="bi bi-check-lg"></i> Multi-service queuing</li>
-                                    <li><i class="bi bi-check-lg"></i> Customer rating system</li>
-                                    <li><i class="bi bi-check-lg"></i> Custom branding on kiosk & tickets</li>
-                                    <li><i class="bi bi-check-lg"></i> Data export / import (JSON)</li>
-                                    <li><i class="bi bi-check-lg"></i> Priority WhatsApp support</li>
-                                    <li><i class="bi bi-check-lg"></i> Free software updates for life</li>
+                                    <li><i class="bi bi-check-lg"></i> Voice announcements (TTS)</li>
+                                    <li><i class="bi bi-check-lg"></i> Analytics dashboard & reports</li>
+                                    <li><i class="bi bi-check-lg"></i> Free software updates</li>
                                 </ul>
                             </div>
                             <div class="pricing-card__footer">
                                 <a href="#contact" class="btn-solid-green-lg pricing-card__cta">Get a Demo</a>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Enterprise -->
-                        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="pricing-card__header">
-                                <h3>Enterprise</h3>
-                                <p class="pricing-card__type">For multi-branch & custom deployments</p>
-                                <div class="pricing-card__price">
-                                    <span class="pricing-card__currency">RM</span>
-                                    <span class="pricing-card__amount">5,499</span>
-                                </div>
-                                <p class="pricing-card__period">one-time · no recurring fees</p>
+                    <!-- Optional Add-Ons -->
+                    <div class="pricing-addons" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="pricing-addons__title">Optional Add-Ons</h3>
+                        <p class="pricing-addons__sub">Everything beyond the Basic Package is optional — buy only what your business needs.</p>
+                        <div class="addon-grid">
+                            <div class="addon-card addon-card--sub">
+                                <h4 class="addon-card__name">Virtual Queue</h4>
+                                <div class="addon-card__price">RM 35 <span>/month</span></div>
+                                <p class="addon-card__desc">Customers track their queue on their phone — even from outside your premises.</p>
                             </div>
-                            <div class="pricing-card__body">
-                                <ul class="pricing-card__features">
-                                    <li><i class="bi bi-check-lg"></i> <strong>Everything in Professional</strong></li>
-                                    <li><i class="bi bi-check-lg"></i> Multi-branch dashboard</li>
-                                    <li><i class="bi bi-check-lg"></i> Custom integrations (API access)</li>
-                                    <li><i class="bi bi-check-lg"></i> White-label kiosk branding</li>
-                                    <li><i class="bi bi-check-lg"></i> Priority onboarding & setup</li>
-                                    <li><i class="bi bi-check-lg"></i> Dedicated account manager</li>
-                                    <li><i class="bi bi-check-lg"></i> SLA & priority support</li>
-                                    <li><i class="bi bi-check-lg"></i> Staff training session</li>
-                                    <li><i class="bi bi-check-lg"></i> Custom feature development</li>
-                                </ul>
+                            <div class="addon-card">
+                                <h4 class="addon-card__name">Extra Display</h4>
+                                <div class="addon-card__price">RM 1,200 <span>/unit</span></div>
+                                <p class="addon-card__desc">Add another 32" smart TV for larger waiting areas.</p>
                             </div>
-                            <div class="pricing-card__footer">
-                                <a href="#contact" class="btn-outline-dark-lg pricing-card__cta">Contact Sales</a>
+                            <div class="addon-card">
+                                <h4 class="addon-card__name">Speaker</h4>
+                                <div class="addon-card__price">RM 500 <span>/unit</span></div>
+                                <p class="addon-card__desc">External voice announcement unit for louder environments.</p>
+                            </div>
+                            <div class="addon-card">
+                                <h4 class="addon-card__name">Control Tablet</h4>
+                                <div class="addon-card__price">RM 600 <span>/unit</span></div>
+                                <p class="addon-card__desc">Dedicated staff tablet for counter control.</p>
+                            </div>
+                            <div class="addon-card">
+                                <h4 class="addon-card__name">WiFi Router</h4>
+                                <div class="addon-card__price">RM 350 <span>/unit</span></div>
+                                <p class="addon-card__desc">Reliable local network connecting kiosk, display, and staff phones.</p>
                             </div>
                         </div>
                     </div>
-
 
                     <!-- Trust row under pricing -->
                     <div class="pricing-trust" data-aos="fade-up">
@@ -418,6 +395,10 @@
                         <div class="pricing-trust__item">
                             <i class="bi bi-arrow-repeat"></i>
                             <span>Free updates for life</span>
+                        </div>
+                        <div class="pricing-trust__item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Free installation & setup — Kota Kinabalu, Sabah</span>
                         </div>
                         <div class="pricing-trust__item">
                             <i class="bi bi-headset"></i>
@@ -600,7 +581,7 @@
                                 <span>Can customers track their queue from their phone?</span>
                                 <i class="bi bi-chevron-down"></i>
                             </button>
-                            <div class="faq-answer"><p>Yes — they scan the QR code on the printed ticket and see live status. With optional cloud relay, they can even check from outside your premises.</p></div>
+                            <div class="faq-answer"><p>Yes — with the optional Virtual Queue add-on (RM 35/month), customers scan the QR code on their printed ticket and see live status on their phone, even from outside your premises.</p></div>
                         </div>
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
@@ -628,7 +609,7 @@
                                 <span>Is there a recurring fee?</span>
                                 <i class="bi bi-chevron-down"></i>
                             </button>
-                            <div class="faq-answer"><p>No. QueueBos is a one-time purchase. No monthly subscriptions, no per-user fees, no cloud hosting required. You own the hardware and your data.</p></div>
+                            <div class="faq-answer"><p>The Basic Package is a one-time purchase — no monthly subscriptions, no per-user fees, no cloud hosting required. The only optional recurring cost is the Virtual Queue add-on at RM 35/month, which you can add or cancel anytime.</p></div>
                         </div>
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
