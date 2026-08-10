@@ -357,6 +357,7 @@ img { max-width: 100%; height: auto; display: block; }
 .pricing-card__type { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-bottom: 18px; }
 .pricing-card__price { display: flex; align-items: baseline; justify-content: center; gap: 2px; margin-bottom: 6px; }
 .pricing-card__currency { font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,0.7); }
+.pricing-card__from { font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,0.7); }
 .pricing-card__amount { font-family: 'Inter', sans-serif; font-size: 2.25rem; font-weight: 700; color: #fff; line-height: 1; }
 .pricing-card__period { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin: 0; }
 
@@ -373,10 +374,10 @@ img { max-width: 100%; height: auto; display: block; }
 .pricing-card__footer { padding: 0 24px 28px; text-align: center; }
 .pricing-card__cta { width: 100%; justify-content: center; }
 
-/* Single package layout */
-.pricing-grid--single { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; }
-.pricing-grid--single .pricing-card--featured { transform: none; }
-.pricing-grid--single .pricing-card--featured:hover { transform: translateY(-5px); }
+/* Package grid */
+.pricing-grid--two { grid-template-columns: repeat(2, 1fr); max-width: 1000px; margin-left: auto; margin-right: auto; }
+.pricing-grid--two .pricing-card--featured { transform: none; }
+.pricing-grid--two .pricing-card--featured:hover { transform: translateY(-5px); }
 
 /* Optional add-ons */
 .pricing-addons { margin-bottom: 48px; text-align: center; }
@@ -390,8 +391,6 @@ img { max-width: 100%; height: auto; display: block; }
 .addon-card:hover { box-shadow: var(--qb-shadow-md); border-color: var(--qb-gray-300); }
 .addon-card--sub { border-color: var(--qb-accent); background: var(--qb-off-white); }
 .addon-card__name { font-size: 1rem; font-weight: 700; color: var(--qb-gray-900); margin-bottom: 10px; }
-.addon-card__price { font-size: 1.25rem; font-weight: 700; color: var(--qb-green); margin-bottom: 8px; }
-.addon-card__price span { font-size: 0.8rem; font-weight: 500; color: var(--qb-text-muted); }
 .addon-card__desc { font-size: 0.85rem; color: var(--qb-text-muted); margin: 0; line-height: 1.6; }
 
 /* Pricing trust row */
@@ -484,7 +483,7 @@ img { max-width: 100%; height: auto; display: block; }
    ============================================================= */
 .site-footer { padding: 80px 0 30px; background: var(--qb-gray-900); color: #fff; }
 .footer-body { display: grid; grid-template-columns: 2fr 1.5fr; gap: 48px; margin-bottom: 50px; }
-.footer-logo__img { height: 38px; margin-bottom: 16px; }
+.footer-logo__img { height: 38px; width: auto; margin-bottom: 16px; }
 .footer-brand__desc { color: rgba(255,255,255,0.6); font-size: 0.95rem; max-width: 320px; margin-bottom: 24px; }
 .footer-social { display: flex; gap: 12px; }
 .footer-social a {
