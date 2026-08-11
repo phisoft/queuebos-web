@@ -170,7 +170,9 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 50%; background: #078a91; color: #fff; font-size: 0.9rem; font-weight: 800; box-shadow: 0 8px 20px rgba(7,138,145,0.22);
 }
 .hero-process__item strong { display: block; margin-bottom: 5px; color: #061c45; font-size: 0.79rem; text-transform: uppercase; letter-spacing: 0.035em; }
-.hero-process__item small { display: block; color: #33486b; font-size: 0.78rem; line-height: 1.45; }
+.hero-process__item small { display: block; color: #33486b; font-size: 0.78rem; line-height: 1.45; margin-bottom: 20px; }
+.hero-process__icon { display: block; margin: 12px auto 0; }
+.hero-process__icon--shadow { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15)); }
 .hero-cta-group { display: flex; flex-direction: column; gap: 18px; }
 .hero-cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
 .hero-trust-badges { display: flex; gap: 18px; flex-wrap: wrap; }
