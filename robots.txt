@@ -1,6 +1,6 @@
-# https://queuebos.com/robots.txt
+# https://www.queuebos.com/robots.txt
 User-agent: *
 Allow: /
 Disallow: /assets/vendor/
 
-Sitemap: https://queuebos.com/sitemap.xml
+Sitemap: https://www.queuebos.com/sitemap.xml
