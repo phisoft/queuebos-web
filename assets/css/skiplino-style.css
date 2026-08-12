@@ -618,6 +618,7 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-process__item strong { margin-bottom: 0; }
   .hero-visual { min-height: auto; }
   .hero-composite-img { width: 100%; max-width: 620px; }
+  .arch-nodes { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .trust-cards { gap: 16px; }
   .trust-card { min-width: 140px; padding: 20px 24px; }
   .trust-card__score { font-size: 2rem; }
