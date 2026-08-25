@@ -259,7 +259,7 @@ img { max-width: 100%; height: auto; display: block; }
 .compare-section { padding: 100px 0; background: var(--qb-off-white); border-radius: 0; position: relative; z-index: 2; }
 .section-sub { max-width: 640px; margin: 16px auto 0; font-size: 1.02rem; color: var(--qb-text-secondary); }
 .compare-table-wrap { overflow-x: auto; box-shadow: var(--qb-shadow-md); border-radius: var(--qb-radius-lg); }
-.compare-table { width: 100%; border-collapse: collapse; background: #fff; min-width: 860px; }
+.compare-table { width: 100%; border-collapse: collapse; background: #fff; min-width: 640px; }
 .compare-table thead { background: var(--qb-primary); }
 .compare-table thead th {
   padding: 18px 24px; font-size: 1.05rem; font-weight: 700; color: #fff; text-align: center;
@@ -267,7 +267,6 @@ img { max-width: 100%; height: auto; display: block; }
 .compare-table thead th:first-child { text-align: left; }
 .th-queuebos { background: rgba(255, 255, 255, 0.15); }
 .th-cloud { background: rgba(7, 138, 145, 0.28); }
-.th-traditional { background: rgba(255, 255, 255, 0.05); }
 .compare-table tbody td {
   padding: 16px 24px; font-size: 0.95rem; color: var(--qb-text-secondary); border-bottom: 1px solid var(--qb-gray-200); text-align: center;
 }
