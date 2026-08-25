@@ -455,9 +455,14 @@ img { max-width: 100%; height: auto; display: block; }
 .footer-contact li a { color: rgba(255,255,255,0.65); }
 .footer-contact li a:hover { color: #fff; }
 .footer-bottom { padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
-.footer-bottom__links { display: flex; gap: 20px; }
+.footer-bottom__links { display: flex; gap: 20px; align-items: center; }
 .footer-bottom__links a { color: rgba(255,255,255,0.5); transition: var(--qb-transition); }
 .footer-bottom__links a:hover { color: #fff; }
+.footer-bottom__lang { display: inline-flex; align-items: center; gap: 8px; }
+.footer-bottom__lang-link { font-weight: 700; font-size: 0.85rem; letter-spacing: 0.04em; }
+.footer-bottom__lang-link:hover { color: #fff; }
+.footer-bottom__lang-link.active { color: var(--qb-accent); }
+.footer-bottom__lang-sep { color: rgba(255,255,255,0.25); }
 
 /* =============================================================
    WHATSAPP FLOAT
